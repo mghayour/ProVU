@@ -14,48 +14,95 @@
         <VBox styleClass="" >
             <HBox spacing="25" styleClass="notifications">
                 
-                                
-                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
-                    <ImageView><image><Image url="gui/img/message.png" /></image></ImageView>
-                    <Pane HBox.hgrow="ALWAYS" />
-                    <VBox>
-                        <Label styleClass="caption"  text="3"  />
-                        <Label styleClass="description"  text="اطلاعیه"  />
-                    </VBox>
-                </HBox>
 
-                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
-                    <ImageView><image><Image url="gui/img/speech_bubble.png" /></image></ImageView>
-                    <Pane HBox.hgrow="ALWAYS" />
-                    <VBox>
-                        <Label styleClass="caption"  text="21"  />
-                        <Label styleClass="description"  text="نظر"  />
-                    </VBox>
-                </HBox>
-
-                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
-                    <ImageView><image><Image url="gui/img/task.png" /></image></ImageView>
-                    <Pane HBox.hgrow="ALWAYS" />
-                    <VBox>
-                        <Label styleClass="caption"  text="3"  />
-                        <Label styleClass="description"  text="کار"  />
-                    </VBox>
-                </HBox>
-
-                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
-                    <ImageView><image><Image url="gui/img/user.png" /></image></ImageView>
-                    <Pane HBox.hgrow="ALWAYS" />
+                <HBox styleClass="bg-cyan" HBox.hgrow="ALWAYS" >
                     <VBox>
                         <Label styleClass="caption"  text="5"  />
                         <Label styleClass="description"  text="کاربر"  />
                     </VBox>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <ImageView><image><Image url="gui/img/user.png" /></image></ImageView>
                 </HBox>
                                 
+                <HBox styleClass="bg-green" HBox.hgrow="ALWAYS" >
+                    <VBox>
+                        <Label styleClass="caption"  text="3"  />
+                        <Label styleClass="description"  text="کار"  />
+                    </VBox>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <ImageView><image><Image url="gui/img/task.png" /></image></ImageView>
+                </HBox>
                 
+                <HBox styleClass="bg-orange" HBox.hgrow="ALWAYS" >
+                    <VBox>
+                        <Label styleClass="caption"  text="3"  />
+                        <Label styleClass="description"  text="اطلاعیه"  />
+                    </VBox>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <ImageView><image><Image url="gui/img/message.png" /></image></ImageView>
+                </HBox>
                 
+                <HBox styleClass="bg-red" HBox.hgrow="ALWAYS" >
+                    <VBox>
+                        <Label styleClass="caption"  text="21"  />
+                        <Label styleClass="description"  text="نظر"  />
+                    </VBox>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <ImageView><image><Image url="gui/img/speech_bubble.png" /></image></ImageView>
+                </HBox>
+
+
+
+
             </HBox>
-            <HBox>
+            
+            <HBox spacing="25" >
+                <VBox spacing="25" HBox.hgrow="ALWAYS">
+                    
+
+                    <VBox styleClass="card" spacing="5" HBox.hgrow="ALWAYS">
+                        <HBox spacing="25" styleClass="card-item, bg-orange, header" >
+                            <Label text="آخرین اطلاعیه ها"  />
+                        </HBox>
+                        
+                        <HBox spacing="15" styleClass="card-item" >
+                            <ImageView><image><Image url="gui/img/emoji/envelope.png" /></image></ImageView>
+                            <Label text="کلاس حل تمرین"  />
+                            <Pane HBox.hgrow="ALWAYS" />                            
+                            <Label text="3" minWidth="50" styleClass="icon-speech" />
+                            <Label text="20/2/95 (هفته پیش)"  minWidth="170" styleClass="icon-date" />
+                        </HBox>
+                        
+                        <HBox spacing="15" styleClass="card-item" >
+                            <ImageView><image><Image url="gui/img/emoji/envelope.png" /></image></ImageView>
+                            <Label text="کوئیز جاوا"  />
+                            <Pane HBox.hgrow="ALWAYS" />                            
+                            <Label text="4" minWidth="50" styleClass="icon-speech" />
+                            <Label text="12/2/95 (دوهفته پیش)" minWidth="170" styleClass="icon-date" />
+                        </HBox>
+                        
+                        <HBox spacing="15" styleClass="card-item" >
+                            <ImageView><image><Image url="gui/img/emoji/envelope.png" /></image></ImageView>
+                            <Label text="پروژه سوم"  />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="75" minWidth="50" styleClass="icon-speech" />
+                            <Label text="26/1/95 (سه هفته پیش)" minWidth="170" styleClass="icon-date" />
+                        </HBox>
+                    </VBox>
+                    
+                    
+                </VBox>
                 
+                <VBox spacing="25" HBox.hgrow="ALWAYS">
+
+                    <VBox styleClass="card" spacing="5" HBox.hgrow="ALWAYS">
+                        <HBox spacing="25" styleClass="card-item, bg-red, header" >
+                            <Label styleClass="txt-white" text="آخرین نظرات"  />
+                        </HBox>
+                    </VBox>
+
+                                        
+                </VBox>
             </HBox>            
         </VBox>
 

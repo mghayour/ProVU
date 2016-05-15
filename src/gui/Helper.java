@@ -42,15 +42,17 @@ public class Helper {
         stage.setHeight(bounds.getHeight());        
     }
       
-    
     public static void addBackground(Pane rooter) {
+        addBackground(rooter, 0.59, 0.95);
+    }
+    public static void addBackground(Pane rooter,double saturation, double brightness) {
         
         System.out.println(rooter);
         ObservableList<Node> childs = rooter.getChildren();
         int randomHue = 10;
         for (int i=7;i>-3;i--) {
             randomHue += 20;
-            Rectangle c1 = new Rectangle(1500,500,Color.hsb(randomHue, 0.59, 0.95));
+            Rectangle c1 = new Rectangle(1500,500,Color.hsb(randomHue, saturation, brightness));
             
             int y = 100*i;
             setXY(c1,-50,y);

@@ -51,7 +51,7 @@ public class DashboardController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        /*addBackground(rooter);*/
+        addBackground(rooter, 0.3, 1);
     }
 
     

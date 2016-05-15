@@ -42,6 +42,7 @@ import com.jfoenix.controls.*;
 import java.lang.reflect.InvocationTargetException;
 
 import static gui.Helper.*;
+import javafx.geometry.NodeOrientation;
 
 /**
  * ملاک ما نسخه 6 جاوا
@@ -69,8 +70,9 @@ public class Login extends Application {
         
         //Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
-        
+        root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         Scene scene = new Scene(root);
+        //scene.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         stage.setScene(scene);
         setFullScreen(stage);
         stage.show();

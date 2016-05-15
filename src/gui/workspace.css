@@ -98,13 +98,32 @@
 .bg-orange { -fx-background-color: #F39C12; }
 
 .card-item.header Label {
-    -fx-font-family: "B Nazanin";
-    -fx-font-weight: bold;
     -fx-font-size: 20px;
     -fx-text-fill: #fbfbfb;
 }
 
-/**************  BUTTON *************************/
+
+.label-icon {
+    -fx-padding: 0;
+    -fx-background-color: #F56954; 
+}
+
+.icon-speech {
+    -fx-padding: 5 5 5 25;
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: left center;
+    -fx-background-image : url('img/emoji/speech_balloon.png');
+}
+.icon-date {
+    
+    -fx-padding: 5 5 5 25;
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: left center;
+    -fx-background-image : url('img/emoji/date.png');
+}
+
+
+/**************  BUTTON *************************
 .button {
     -fx-padding: 0.7em 0.57em;
     -fx-font-size: 14px;
@@ -122,6 +141,12 @@
 
 
 /**************  Title & Text *******************/
+Label {
+    -fx-font-family: "B Nazanin";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
 .title {
     -fx-font-size: 37px;
     -fx-font-family: "Brandish";
