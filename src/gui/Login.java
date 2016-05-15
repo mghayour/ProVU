@@ -67,7 +67,9 @@ public class Login extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
-        Parent root = FXMLLoader.load(getClass().getResource(/*"Button.fxml"/**/"Login.fxml"/**/));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource(/**/"Dashboard.fxml"/**"Login.fxml"/**/));
+        
         Scene scene = new Scene(root);
         stage.setScene(scene);
         setFullScreen(stage);

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+
+<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController" stylesheets="gui/workspace.css">
+    <center>
+
+        <VBox styleClass="" >
+            <HBox spacing="25" styleClass="notifications">
+                
+                                
+                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
+                    <ImageView><image><Image url="gui/img/task.png" /></image></ImageView>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <VBox>
+                        <Label styleClass="caption"  text="3"  />
+                        <Label styleClass="description"  text="اطلاعیه"  />
+                    </VBox>
+                </HBox>
+
+                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
+                    <ImageView><image><Image url="gui/img/speech_bubble.png" /></image></ImageView>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <VBox>
+                        <Label styleClass="caption"  text="21"  />
+                        <Label styleClass="description"  text="پیام"  />
+                    </VBox>
+                </HBox>
+
+                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
+                    <ImageView><image><Image url="gui/img/task.png" /></image></ImageView>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <VBox>
+                        <Label styleClass="caption"  text="3"  />
+                        <Label styleClass="description"  text="کار"  />
+                    </VBox>
+                </HBox>
+
+                <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
+                    <ImageView><image><Image url="gui/img/user.png" /></image></ImageView>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <VBox>
+                        <Label styleClass="caption"  text="5"  />
+                        <Label styleClass="description"  text="کاربر"  />
+                    </VBox>
+                </HBox>
+                                
+                
+                
+            </HBox>
+            <HBox>
+                
+            </HBox>            
+        </VBox>
+
+    </center>
+</BorderPane>
