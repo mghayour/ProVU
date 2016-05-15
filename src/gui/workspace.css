@@ -8,7 +8,7 @@
 }
 
 .material-elem {
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 0, 0);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
 }
 
 
@@ -85,7 +85,6 @@
 }
 .notifications HBox .description {
     -fx-font-family: "B Nazanin";
-    
     -fx-font-weight: bold;
     -fx-font-size: 24px;
     -fx-text-fill: #eee;
@@ -93,7 +92,17 @@
 
 /**************  BG-Color  **********************/
 
+.bg-cyan { -fx-background-color: #00C0EF; }
+.bg-green { -fx-background-color: #00A65A; }
+.bg-red { -fx-background-color: #F56954; }
+.bg-orange { -fx-background-color: #F39C12; }
 
+.card-item.header Label {
+    -fx-font-family: "B Nazanin";
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: #fbfbfb;
+}
 
 /**************  BUTTON *************************/
 .button {
