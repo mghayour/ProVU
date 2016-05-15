@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+
+
+<!--
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.LoginController">
+    <children>
+        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
+        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+    </children>
+</AnchorPane>
+xmlns:fx="http://javafx.com/fxml/1" 
+ -->
+<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController" stylesheets="gui/login.css">
+    <center>
+       
+        <VBox maxHeight="20"  maxWidth="300" styleClass="card" >
+            <Label  minHeight="16" minWidth="69" fx:id="label" text="TEST"  />
+        </VBox>
+ 
+        
+        <VBox maxHeight="20" maxWidth="300" styleClass="card" >
+            <HBox styleClass="card-item" spacing="10" >
+                <ImageView><image><Image url="gui/user.png" /></image></ImageView>
+                <VBox spacing="5"  >
+                    <Label styleClass="title"  fx:id="title" text="Login"  />
+                    <Label styleClass="description" text="ProVU By MGhayour"  />
+                </VBox>
+
+            </HBox>
+
+            <VBox styleClass="card-item" spacing="10" fx:id="contentPanel" >
+                
+            </VBox>
+            <VBox styleClass="card-item" spacing="10">
+                
+                <HBox spacing="5" styleClass="padder" >
+                    <JFXButton text="Register" minWidth="100" onAction="#btn_register_click" fx:id="btn_register" />
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <JFXButton text="Login" minWidth="100"  onAction="#btn_login_click" fx:id="btn_login" />
+                </HBox>
+                
+            </VBox>
+            
+            
+        </VBox>
+        
+        
+        
+        
+       
+
+
+    </center>
+</BorderPane>
