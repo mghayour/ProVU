@@ -1,0 +1,136 @@
+/** clock.css (place input same directory as Clock.java and ensure build script copies the file to the same location as Clock.class) */
+
+
+
+.root {
+    -fx-background-color: #fff;
+    -fx-padding: 12;
+}
+
+.material-elem {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 0, 0);
+}
+
+
+
+.tmp {
+    /*    -fx-background-image: url("button.png");
+    /*-fx-background-position: center center;
+    /*-fx-background-repeat: stretch;*/
+    /*-fx-background-color: linear-gradient(to bottom, cornsilk, burlywood);
+    /*-fx-background-color: linear-gradient(to bottom, cornsilk, wheat);*/
+    /*-fx-background-insets: 5;*/
+    /*-fx-effect: dropshadow(three-pass-box, wheat, 10, 0, 0, 0);*/
+}
+
+
+/**************  Padding  ***********************/
+.pad-10 {
+    -fx-padding: 10px;
+}
+
+.pad-top {
+    -fx-padding-top: 10px;
+}
+
+.pad-5 {
+    -fx-padding: 5px;
+}
+
+.padder {
+    -fx-padding: 10 20 10 20;
+    
+}
+
+
+/**************  Card   *************************/
+
+.card {
+    -fx-background-color: linear-gradient(to bottom, #fff, #fcfcfc);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 2);
+}
+
+.card-item {
+    -fx-background-color: #fff;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #ddd;
+    -fx-padding: 10 20 10 20;
+}
+
+
+
+/**************  Notification *************************/
+.notifications {
+    -fx-padding: 20 30 20 30;
+}
+.notifications HBox {
+    -fx-padding: 20px;
+    -fx-background-color: #F39C12;
+    /*-fx-background-color: linear-gradient(to bottom, #F39C12, #F2A529);
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 2);*/
+    
+    -fx-background-radius: 2;
+}
+
+.notifications HBox ImageView {
+    /*-fx-effect: dropshadow(three-pass-box, rgba(255,255,255,0.5), 25, 0, 0, 2);*/
+    -fx-opacity: 0.1;
+}
+.notifications HBox .caption {
+    -fx-font-family: "B Nazanin";
+    
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to top, #fff, #eee);    
+}
+.notifications HBox .description {
+    -fx-font-family: "B Nazanin";
+    
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: #eee;
+}
+
+/**************  BG-Color  **********************/
+
+
+
+/**************  BUTTON *************************/
+.button {
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -fx-button-type: RAISED;
+    -fx-background-color: rgb(77,102,204);
+    -fx-pref-width: 200;
+    -fx-text-fill: WHITE;
+}
+
+
+
+.radio-button .dot {
+    -fx-fill: #5264AE;
+}
+
+
+/**************  Title & Text *******************/
+.title {
+    -fx-font-size: 37px;
+    -fx-font-family: "Brandish";
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to top, #aaa, #555);
+}
+.description {
+    -fx-font-size: 10px;
+    -fx-text-fill: #999;
+}
+
+/**************  Field  *************************/
+.text-field {
+    
+    /*
+   -fx-padding: 10px;
+   -fx-border-insets: 10px;
+   -fx-background-insets: 10px;*/
+}
+
+

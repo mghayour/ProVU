@@ -16,7 +16,7 @@
                 
                                 
                 <HBox styleClass="notification" HBox.hgrow="ALWAYS" >
-                    <ImageView><image><Image url="gui/img/task.png" /></image></ImageView>
+                    <ImageView><image><Image url="gui/img/message.png" /></image></ImageView>
                     <Pane HBox.hgrow="ALWAYS" />
                     <VBox>
                         <Label styleClass="caption"  text="3"  />
@@ -29,7 +29,7 @@
                     <Pane HBox.hgrow="ALWAYS" />
                     <VBox>
                         <Label styleClass="caption"  text="21"  />
-                        <Label styleClass="description"  text="پیام"  />
+                        <Label styleClass="description"  text="نظر"  />
                     </VBox>
                 </HBox>
 
