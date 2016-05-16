@@ -12,7 +12,10 @@
     <center>
 
         <VBox styleClass="" >
-            <HBox spacing="25" styleClass="notifications">
+            
+            
+            
+            <HBox spacing="25" styleClass="notifications" HBox.hgrow="ALWAYS">
                 
 
                 <HBox styleClass="bg-cyan" HBox.hgrow="ALWAYS" >
@@ -56,53 +59,141 @@
 
             </HBox>
             
-            <HBox spacing="25" >
-                <VBox spacing="25" HBox.hgrow="ALWAYS">
+            <HBox spacing="25" HBox.hgrow="ALWAYS" >
+                <VBox spacing="15" HBox.hgrow="ALWAYS">
                     
 
-                    <VBox styleClass="card" spacing="5" HBox.hgrow="ALWAYS">
+                    <VBox styleClass="card" HBox.hgrow="ALWAYS">
                         <HBox spacing="25" styleClass="card-item, bg-orange, header" >
                             <Label text="آخرین اطلاعیه ها"  />
+                            <JFXButton styleClass="txt-white" text="مشاهده همه ..." />
                         </HBox>
                         
-                        <HBox spacing="15" styleClass="card-item" >
-                            <ImageView><image><Image url="gui/img/emoji/envelope.png" /></image></ImageView>
-                            <Label text="کلاس حل تمرین"  />
-                            <Pane HBox.hgrow="ALWAYS" />                            
-                            <Label text="3" minWidth="50" styleClass="icon-speech" />
-                            <Label text="20/2/95 (هفته پیش)"  minWidth="170" styleClass="icon-date" />
-                        </HBox>
-                        
-                        <HBox spacing="15" styleClass="card-item" >
-                            <ImageView><image><Image url="gui/img/emoji/envelope.png" /></image></ImageView>
-                            <Label text="کوئیز جاوا"  />
-                            <Pane HBox.hgrow="ALWAYS" />                            
-                            <Label text="4" minWidth="50" styleClass="icon-speech" />
-                            <Label text="12/2/95 (دوهفته پیش)" minWidth="170" styleClass="icon-date" />
-                        </HBox>
-                        
-                        <HBox spacing="15" styleClass="card-item" >
-                            <ImageView><image><Image url="gui/img/emoji/envelope.png" /></image></ImageView>
-                            <Label text="پروژه سوم"  />
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="کلاس حل تمرین"  styleClass="em, em-message" />
                             <Pane HBox.hgrow="ALWAYS" />
-                            <Label text="75" minWidth="50" styleClass="icon-speech" />
-                            <Label text="26/1/95 (سه هفته پیش)" minWidth="170" styleClass="icon-date" />
+                            <Label text="گسسته" minWidth="70" styleClass="em, em-books" />
+                            <Label text="3" minWidth="50" styleClass="em, em-speech" />
+                            <Label text="20/2/95 (هفته پیش)"  minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+                        
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="کوئیز جاوا"  styleClass="em, em-message" />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="برنامه پ" minWidth="70" styleClass="em, em-books" />
+                            <Label text="4" minWidth="50" styleClass="em, em-speech" />
+                            <Label text="12/2/95 (2هفته پیش)" minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+                        
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="پروژه سوم"  styleClass="em, em-message" />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="برنامه پ" minWidth="70" styleClass="em, em-books" />
+                            <Label text="75" minWidth="50" styleClass="em, em-speech" />
+                            <Label text="26/1/95 (3هفته پیش)" minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="پروژه سوم"  styleClass="em, em-message" />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="برنامه پ" minWidth="70" styleClass="em, em-books" />
+                            <Label text="75" minWidth="50" styleClass="em, em-speech" />
+                            <Label text="26/1/95 (3هفته پیش)" minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="پروژه سوم"  styleClass="em, em-message" />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="برنامه پ" minWidth="70" styleClass="em, em-books" />
+                            <Label text="75" minWidth="50" styleClass="em, em-speech" />
+                            <Label text="26/1/95 (3هفته پیش)" minWidth="120" styleClass="em, em-date" />
                         </HBox>
                     </VBox>
-                    
-                    
-                </VBox>
-                
-                <VBox spacing="25" HBox.hgrow="ALWAYS">
+
 
                     <VBox styleClass="card" spacing="5" HBox.hgrow="ALWAYS">
                         <HBox spacing="25" styleClass="card-item, bg-red, header" >
                             <Label styleClass="txt-white" text="آخرین نظرات"  />
                         </HBox>
+
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="چرا نشه نمرات رو ..."  />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
+                            <Label text="کلاس حل تمرین" minWidth="50" styleClass="em, em-message" />
+                            <Label text="گسسته" minWidth="70" styleClass="em, em-books" />
+                            <Label text="20/2/95 (هفته پیش)"  minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="نه نمیشه نمرات رو ..."  />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="ب. شبیری" minWidth="90" styleClass="em, em-pen" />
+                            <Label text="کلاس حل تمرین" minWidth="50" styleClass="em, em-message" />
+                            <Label text="گسسته" minWidth="70" styleClass="em, em-books" />
+                            <Label text="20/2/95 (هفته پیش)"  minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="میشه نمرات امتحان رو..."  />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="ک. همتیان" minWidth="90" styleClass="em, em-pen" />
+                            <Label text="کلاس حل تمرین" minWidth="50" styleClass="em, em-message" />
+                            <Label text="گسسته" minWidth="70" styleClass="em, em-books" />
+                            <Label text="20/2/95 (هفته پیش)"  minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="میشه نمرات امتحان رو..."  />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="ک. همتیان" minWidth="90" styleClass="em, em-pen" />
+                            <Label text="کلاس حل تمرین" minWidth="50" styleClass="em, em-message" />
+                            <Label text="گسسته" minWidth="70" styleClass="em, em-books" />
+                            <Label text="20/2/95 (هفته پیش)"  minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+
+
+                    </VBox>
+                </VBox>
+            
+                <VBox spacing="15" HBox.hgrow="ALWAYS">
+
+                    <VBox styleClass="card" spacing="5" HBox.hgrow="ALWAYS">
+                        <HBox spacing="25" styleClass="card-item, bg-green, header" >
+                            <Label text="کار ها"  />
+                        </HBox>
+                        
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="پروژه سوم"  styleClass="em, em-pencil" />
+                            <JFXButton text="مشاهده ..." />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="برنامه پ" minWidth="70" styleClass="em, em-books" />
+                            <Label text="6/3/95 (تا 2هفته)" minWidth="120" styleClass="em, em-date" />
+                        </HBox>
+
+                        <HBox spacing="8" styleClass="card-item" >
+                            <Label text="پروژه دوم" styleClass="em, em-check" />
+                            <JFXButton text="مشاهده ..." />
+                            <Pane HBox.hgrow="ALWAYS" />
+                            <Label text="برنامه پ" minWidth="70" styleClass="em, em-books" />
+                            <Label text="6/3/95 (تا فردا)" minWidth="120" styleClass="em, em-date" />
+                        </HBox>
                     </VBox>
 
-                                        
+
+
+                    <VBox styleClass="card" spacing="5" HBox.hgrow="ALWAYS">
+                        <HBox spacing="25" styleClass="card-item, bg-blue, header" >
+                            <Label text="تقویم"  />
+                        </HBox>
+                        
+                        <Label text="خب !؟ ...."  />
+
+                    </VBox>
+
+
+
                 </VBox>
+                                        
+                
             </HBox>            
         </VBox>
 

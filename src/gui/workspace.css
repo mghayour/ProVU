@@ -54,14 +54,14 @@
     -fx-background-color: #fff;
     -fx-border-width: 0 0 1 0;
     -fx-border-color: #ddd;
-    -fx-padding: 10 20 10 20;
+    -fx-padding: 5 15 5 15;
 }
 
 
 
 /**************  Notification *************************/
 .notifications {
-    -fx-padding: 20 30 20 30;
+    -fx-padding: 8 20 20 20;
 }
 .notifications HBox {
     -fx-padding: 20px;
@@ -96,31 +96,7 @@
 .bg-green { -fx-background-color: #00A65A; }
 .bg-red { -fx-background-color: #F56954; }
 .bg-orange { -fx-background-color: #F39C12; }
-
-.card-item.header Label {
-    -fx-font-size: 20px;
-    -fx-text-fill: #fbfbfb;
-}
-
-
-.label-icon {
-    -fx-padding: 0;
-    -fx-background-color: #F56954; 
-}
-
-.icon-speech {
-    -fx-padding: 5 5 5 25;
-    -fx-background-repeat : no-repeat;
-    -fx-background-position: left center;
-    -fx-background-image : url('img/emoji/speech_balloon.png');
-}
-.icon-date {
-    
-    -fx-padding: 5 5 5 25;
-    -fx-background-repeat : no-repeat;
-    -fx-background-position: left center;
-    -fx-background-image : url('img/emoji/date.png');
-}
+.bg-blue { -fx-background-color: #0063A6; }
 
 
 /**************  BUTTON *************************
@@ -144,7 +120,8 @@
 Label {
     -fx-font-family: "B Nazanin";
     -fx-font-weight: bold;
-    -fx-font-size: 16px;
+    -fx-font-size: 14px;
+    -fx-font-letterSpacing: 2;
 }
 
 .title {
@@ -157,6 +134,27 @@ Label {
     -fx-font-size: 10px;
     -fx-text-fill: #999;
 }
+
+.card-item.header Label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #fbfbfb;
+}
+
+.txt-white { -fx-text-fill: #fbfbfb; }
+
+.em {
+    -fx-padding: 5 5 5 25;
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: left center;    
+}
+.em-speech { -fx-background-image : url('img/emoji/speech_balloon.png'); }
+.em-date { -fx-background-image : url('img/emoji/date.png'); }
+.em-books { -fx-background-image : url('img/emoji/books.png'); }
+.em-pen { -fx-background-image : url('img/emoji/black_nib.png'); }
+.em-message { -fx-background-image : url('img/emoji/envelope20x20.png'); }
+.em-check { -fx-background-image : url('img/emoji/white_check_mark.png'); }
+.em-pencil { -fx-background-image : url('img/emoji/pencil.png'); }
+
 
 /**************  Field  *************************/
 .text-field {
