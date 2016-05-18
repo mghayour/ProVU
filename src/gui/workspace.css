@@ -32,6 +32,9 @@
 .pad-top {
     -fx-padding-top: 10px;
 }
+.no-pad-top {
+    -fx-padding-top: 1px;
+}
 
 .pad-5 {
     -fx-padding: 5px;
@@ -120,11 +123,12 @@
 
 
 /**************  Title & Text *******************/
-Label {
-    -fx-font-family: "B Nazanin";
-    -fx-font-weight: bold;
+Label,
+.text{
+    -fx-font-family: "B Koodak";
+    /*-fx-font-weight: bold;*/
     -fx-font-size: 14px;
-    -fx-font-letterSpacing: 2;
+    -fx-font-smoothing-type: gray;
 }
 
 .title {
@@ -133,14 +137,20 @@ Label {
     -fx-font-weight: bold;
     -fx-text-fill: linear-gradient(to top, #aaa, #555);
 }
+
 .description {
     -fx-font-size: 10px;
     -fx-text-fill: #999;
 }
 
 .card-item.header Label {
-    -fx-font-size: 20px;
     -fx-text-fill: #fbfbfb;
+}
+.card-item.header Label.head-title .text,
+.card-item.header Label.head-title {
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 18px; 
+    -fx-font-weight: bold;
 }
 
 .txt-white { -fx-text-fill: #fbfbfb; }

@@ -15,6 +15,7 @@ public class ProVU {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println(com.sun.javafx.runtime.VersionInfo.getRuntimeVersion()); 
         // TODO code application logic here
         gui.Login.main(args);
     }
