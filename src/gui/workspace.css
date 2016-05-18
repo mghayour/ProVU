@@ -57,6 +57,9 @@
     -fx-padding: 5 15 5 15;
 }
 
+.card-item-top {
+    -fx-border-width: 1 0 1 0;    
+}
 
 
 /**************  Notification *************************/

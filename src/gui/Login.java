@@ -69,12 +69,15 @@ public class Login extends Application {
     public void start(Stage stage) throws Exception {
         
         //Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MessageBoard.fxml"));
+        
         root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         Scene scene = new Scene(root);
         //scene.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         stage.setScene(scene);
-        setFullScreen(stage);
+        stage.setMaximized(true);
+        //setFullScreen(stage);
         stage.show();
 
     }
