@@ -21,10 +21,11 @@
                 </HBox>
                 <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
                     <content>
-                        <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" >
+                        <VBox fx:id="messageSubjectHolder" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" >
                             
                             <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" >
                                 <Label text="کوئیز جاوا"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="4" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="12/2/95 (2هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -32,32 +33,21 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
                             </HBox>
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
                             </HBox>
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -65,6 +55,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -72,6 +63,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -79,6 +71,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -86,6 +79,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -93,6 +87,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -100,6 +95,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -107,6 +103,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -114,6 +111,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -121,6 +119,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -128,6 +127,7 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
@@ -135,6 +135,23 @@
 
                             <HBox spacing="8" styleClass="card-item" >
                                 <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
+                                <Pane HBox.hgrow="ALWAYS" />
+                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
+                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
+                            </HBox>
+
+                            <HBox spacing="8" styleClass="card-item" >
+                                <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton text="مشاهده" onAction="#btn_viewPost_click"  />
+                                <Pane HBox.hgrow="ALWAYS" />
+                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
+                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
+                            </HBox>
+
+                            <HBox spacing="8" styleClass="card-item" >
+                                <Label text="پروژه سوم"  styleClass="em, em-message" />
+                                <JFXButton styleClass="txt-white" text="مشاهده" onAction="#btn_viewPost_click"  />
                                 <Pane HBox.hgrow="ALWAYS" />
                                 <Label text="75" minWidth="50" styleClass="em, em-speech" />
                                 <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
