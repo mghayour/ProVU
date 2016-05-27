@@ -22,7 +22,7 @@ import static gui.Helper.*;
  *
  * @author Ghayour
  */
-public class MessageBoardController implements Initializable {
+public class CourseBoardController implements Initializable {
     
     @FXML private Pane rooter;
 

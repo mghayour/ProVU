@@ -9,373 +9,59 @@
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
 
-<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoardController" stylesheets="gui/workspace.css">
+<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CourseBoardController" stylesheets="gui/workspace.css">
     <center>
 
         <HBox styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
             
             
             <VBox styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
-                <HBox spacing="25" styleClass="card-item, bg-orange, header" >
-                    <Label styleClass="head-title" text="اطلاعیه های برنامه پیشرفته"  />
+                <HBox spacing="25" styleClass="card-item, bg-blue, header" >
+                    <Label styleClass="head-title" text="درس های من"  />
                 </HBox>
                 <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
                     <content>
                         <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" >
                             
                             <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" >
-                                <Label text="کوئیز جاوا"  styleClass="em, em-message" />
+                                <Label text="برنامه پیشرفته"  styleClass="em, em-books, txt-med" />
+                                <JFXButton text="حذف" styleClass="red, txt-med" />
                                 <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="4" minWidth="50" styleClass="em, em-speech" />
+                                <Label text="م. نوری" minWidth="85" styleClass="em, em-pen" />
+                                <Label text="34" minWidth="50" styleClass="em, em-users" />
                                 <Label text="12/2/95 (2هفته پیش)" minWidth="140" styleClass="em, em-date" />
                             </HBox>
 
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-                            <HBox spacing="8" styleClass="card-item" >
-                                <Label text="پروژه سوم"  styleClass="em, em-message" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="75" minWidth="50" styleClass="em, em-speech" />
-                                <Label text="26/1/95 (3هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
 
                         </VBox>
                     </content>
                 </ScrollPane>
             </VBox>
 
-            <VBox spacing="15" HBox.hgrow="ALWAYS" >
-                
-                <VBox styleClass="card"  minHeight="100" maxHeight="400">
-                    <HBox spacing="25" styleClass="card-item, bg-blue, header" >
-                        <Label styleClass="head-title" text="کوئیز جاوا"  />
-                        <Pane HBox.hgrow="ALWAYS" />
-                        <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                        <Label text="گسسته" minWidth="70" styleClass="em, em-books" />
-                        <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                    </HBox>
-                    <VBox styleClass="card-item" minHeight="200">
-                        <WebView />
-                    </VBox>
-
-                    <!--<HTMLEditor /> -->
-                </VBox>
-                
-                <VBox styleClass="card" VBox.vgrow="ALWAYS">
-                    <HBox spacing="25" styleClass="card-item, bg-red, header" >
-                        <Label styleClass="head-title" text="نظرات"  />
-                    </HBox>
-                    <ScrollPane  HBox.hgrow="ALWAYS" fitToWidth="true"  maxHeight="500">
-                        <content>
-                            <VBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
+            
+            <VBox styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
+                <HBox spacing="25" styleClass="card-item, bg-blue, header" >
+                    <Label styleClass="head-title" text="دروس ارائه شده"  />
+                </HBox>
+                <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
+                    <content>
+                        <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" >
+                            
+                            <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" >
+                                <Label text="گسسته"  styleClass="em, em-books, txt-med" />
+                                <JFXButton text="اضافه" styleClass="green, txt-med" />
+                                <Pane HBox.hgrow="ALWAYS" />
+                                <Label text="م. نوری" minWidth="85" styleClass="em, em-pen" />
+                                <Label text="21" minWidth="50" styleClass="em, em-users" />
+                                <Label text="12/2/95 (2هفته پیش)" minWidth="140" styleClass="em, em-date" />
+                            </HBox>
 
 
-                            </VBox>
-                        </content>
-                    </ScrollPane>
-                        
-                </VBox>
-                
+                        </VBox>
+                    </content>
+                </ScrollPane>
             </VBox>
+
             
             
         </HBox>
