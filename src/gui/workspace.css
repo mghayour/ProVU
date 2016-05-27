@@ -102,17 +102,20 @@
 .bg-green { -fx-background-color: #00A65A; }
 .bg-red { -fx-background-color: #F56954; }
 .bg-orange { -fx-background-color: #F39C12; }
-.bg-blue { -fx-background-color: #0063A6; }
+.bg-blue { -fx-background-color: #1E6FA6; /*#0063A6;*/ }
 
 
-/**************  BUTTON *************************
-.button {
-    -fx-padding: 0.7em 0.57em;
-    -fx-font-size: 14px;
-    -fx-button-type: RAISED;
-    -fx-background-color: rgb(77,102,204);
-    -fx-pref-width: 200;
+/**************  BUTTON *************************/
+.button.green,
+.button.red {
+    -fx-padding: 0.2em 0.4em;
+    -fx-font-size: 16px;
+    -fx-background-color: #DE1124;
+    -fx-pref-width: 100;
     -fx-text-fill: WHITE;
+}
+.button.green {
+    -fx-background-color: #32C50F;
 }
 
 
@@ -154,6 +157,7 @@ Label,
 }
 
 .txt-white { -fx-text-fill: #fbfbfb; }
+.txt-med .text{-fx-font-size: 16px;}
 
 .em {
     -fx-padding: 5 5 5 25;
@@ -167,6 +171,7 @@ Label,
 .em-message { -fx-background-image : url('img/emoji/envelope20x20.png'); }
 .em-check { -fx-background-image : url('img/emoji/white_check_mark.png'); }
 .em-pencil { -fx-background-image : url('img/emoji/pencil.png'); }
+.em-users { -fx-background-image : url('img/emoji/busts_in_silhouette.png'); }
 
 
 /**************  Field  *************************/
