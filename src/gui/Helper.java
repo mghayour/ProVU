@@ -113,7 +113,7 @@ public class Helper {
     }
     
     static void setXY (Node ctrl, double x, double y) {
-            System.out.println("SetXY: "+x+", "+y); // auto copy function to clip board...
+            //System.out.println("SetXY: "+x+", "+y); // auto copy function to clip board...
             //copy("setXY(c,"+x+","+y+");");
             ctrl.setLayoutX(x);
             ctrl.setLayoutY(y);    

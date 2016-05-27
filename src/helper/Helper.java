@@ -1,7 +1,8 @@
 package helper;
 
-import java.util.Random;
-import java.util.Scanner;
+import java.beans.*;
+import java.lang.reflect.InvocationTargetException;
+import java.util.*;
 
 public class Helper {
 
@@ -33,4 +34,33 @@ public class Helper {
 		return rand.nextInt(to);
 	}
 
+        
+        
+        public static Map<String, Object> getNonNullProperties(final Object thingy) {
+            final Map<String, Object> nonNullProperties = new TreeMap<String, Object>();
+            try {
+                final BeanInfo beanInfo = Introspector.getBeanInfo(thingy
+                        .getClass());
+                for (final PropertyDescriptor descriptor : beanInfo
+                        .getPropertyDescriptors()) {
+                    try {
+                        final Object propertyValue = descriptor.getReadMethod()
+                                .invoke(thingy);
+                        if (propertyValue != null) {
+                            nonNullProperties.put(descriptor.getName(),
+                                    propertyValue);
+                        }
+                    } catch (final IllegalArgumentException e) {
+                        // handle this please
+                    } catch (final IllegalAccessException e) {
+                        // and this also
+                    } catch (final InvocationTargetException e) {
+                        // and this, too
+                    }
+                }
+            } catch (final IntrospectionException e) {
+                // do something sensible here
+            }
+            return nonNullProperties;
+        }
 }
