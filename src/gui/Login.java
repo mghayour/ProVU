@@ -42,6 +42,7 @@ import com.jfoenix.controls.*;
 import java.lang.reflect.InvocationTargetException;
 
 import static gui.Helper.*;
+import java.util.Arrays;
 import javafx.geometry.NodeOrientation;
 
 /**
@@ -57,6 +58,11 @@ public class Login extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        String[] parts;
+        parts = "salam {man{{yek{ am".split("\\{");
+        System.out.println(Arrays.toString( parts ));
+        
         launch(args);
     }
     
@@ -71,6 +77,7 @@ public class Login extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("MessageBoard.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("CourseBoard.fxml"));
         
         root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         Scene scene = new Scene(root);
