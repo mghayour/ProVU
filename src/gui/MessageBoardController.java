@@ -17,6 +17,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 
 import static gui.Helper.*;
+import gui.helper.PatternControl;
+import java.util.HashMap;
 import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -42,6 +44,35 @@ public class MessageBoardController implements Initializable {
         addBackground(rooter, 0.3, 1);
         
         ObservableList<Node> childs = messageSubjectHolder.getChildren();
+        
+        childs.clear();
+        //ModelControl message = new ModelControl("model/messageItemInMessageBoard.fxml");
+        PatternControl message = new PatternControl("model/messageItemInMessageBoard.fxml") {
+            @Override
+            public void onButtonClick (HashMap<String,StringProperty> data) {
+                StringProperty number = data.get("number");
+                int n = Integer.parseInt(number.get());
+                n++;
+                number.set(""+n);
+            }
+            
+            @Override
+            public void onRootClick (HashMap<String,StringProperty> data) {
+                StringProperty number = data.get("number");
+                int n = Integer.parseInt(number.get());
+                n--;
+                number.set(""+n);
+            }
+        };
+        HashMap<String,StringProperty> data = new HashMap<String,StringProperty>();
+        data.put("title",new SimpleStringProperty("کوئیز جاوا"));
+        data.put("show",new SimpleStringProperty("مشاهده"));
+        data.put("number",new SimpleStringProperty("5"));
+
+        for (int i=0; i <100; i++)
+            childs.add(message.generate(data));
+        
+        /*
         HBox[] messageSubject = childs.toArray(new HBox[childs.size()]);
         int id=-1;
         for (HBox ms: messageSubject) {
@@ -63,7 +94,7 @@ public class MessageBoardController implements Initializable {
                 });
             
         }
-        
+        */
         
     }
 

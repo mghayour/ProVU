@@ -43,6 +43,10 @@ import java.lang.reflect.InvocationTargetException;
 
 import static gui.Helper.*;
 import java.util.Arrays;
+import java.util.HashMap;
+import javafx.beans.binding.Bindings;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.geometry.NodeOrientation;
 
 /**
@@ -62,7 +66,36 @@ public class Login extends Application {
         String[] parts;
         parts = "salam {man{{yek{ am".split("\\{");
         System.out.println(Arrays.toString( parts ));
+        StringProperty patternResult = new SimpleStringProperty("");
         
+        HashMap<String,StringProperty> data = new HashMap<String,StringProperty>();
+        data.put("man",new SimpleStringProperty("کوئیز جاوا"));
+        data.put("yek",new SimpleStringProperty("مشاهده"));
+        
+        //patternResult.set("S);
+        
+    
+        boolean itsData=false;
+        for (String s:parts) {
+            //System.out.println(s);
+            StringProperty tmp = new SimpleStringProperty();
+            if(itsData)
+                //patternResult.concat(data.get(s));
+                tmp.bind( patternResult.concat(data.get(s)) );
+            else
+                //patternResult.concat(s);
+                tmp.bind( patternResult.concat(s) );
+            patternResult = tmp;
+            itsData=!itsData;
+        }
+        System.out.println(patternResult.get());
+        
+        
+        data.get("man").set("to");
+        data.get("yek").set("yeki");
+        System.out.println(patternResult.get());
+        
+
         launch(args);
     }
     
