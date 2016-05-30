@@ -46,7 +46,7 @@ public class MessageBoardController implements Initializable {
         addBackground(rooter, 0.3, 1);
         messageSubjectHolder.getChildren().clear();
         
-        PatternControlCollection messages = new PatternControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
+        PatternControlCollection messages = new PatternControlCollection(messageSubjectHolder, "pattern/messageItemInMessageBoard.fxml") {
             @Override
             public void onButtonClick (NameValue data) {
                 StringProperty number = data.getStringProperty("number");
