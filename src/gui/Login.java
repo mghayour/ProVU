@@ -6,48 +6,14 @@
 package gui;
 
 import javafx.application.Application;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.scene.input.MouseEvent;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
-import java.awt.Toolkit;
-import javafx.animation.Animation;
-import javafx.animation.Interpolator;
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.*;
-import javafx.scene.transform.Rotate;
-import javafx.util.Duration;
-
-import javafx.css.StyleableObjectProperty;
-        
-import static helper.Helper.*;
-import javafx.beans.property.DoubleProperty;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Rectangle2D;
-import javafx.scene.Group;
 import javafx.scene.Parent;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.*;
-import javafx.stage.Screen;
-
-import com.jfoenix.controls.*;
-import java.lang.reflect.InvocationTargetException;
-
-import static gui.Helper.*;
-import java.util.Arrays;
-import java.util.HashMap;
-import javafx.beans.binding.Bindings;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.geometry.NodeOrientation;
+
+import helper.*;
+import org.joda.time.DateTime;
 
 /**
  * ملاک ما نسخه 6 جاوا
@@ -64,17 +30,15 @@ public class Login extends Application {
     public static void main(String[] args) {
         
         
-
-        try {
-        int a;
-        a = Integer.parseInt("4");
-        System.out.println(a);
-        } catch (java.lang.NumberFormatException e) {
-            
-        }
+        //PersianDateTime pd = PersianDateTime.now();
+        //pd = new PersianDateTime(pd.getTimeStamp()-1000*60);
         
+        PersianDateTime pd = new PersianDateTime( DateTime.now().getMillis() -1000*60*60 );
         
-        launch(args);
+        System.out.println(pd.toDateString());
+        System.out.println(pd.toTimeString());
+        System.out.println(pd.toString());
+        //launch(args);
     }
     
     
