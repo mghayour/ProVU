@@ -5,22 +5,16 @@
  */
 package gui.helper;
 
-import com.jfoenix.controls.JFXButton;
 import gui.Login;
-import java.util.*;
-import javafx.beans.binding.Bindings;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import helper.NameValue;
+import javafx.beans.property.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.Labeled;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 
 /**
  *
@@ -33,7 +27,7 @@ public class PatternControl {
         this.fxmlName = fxmlName;
     }
     
-    public Node generate( final HashMap<String,StringProperty> data ) {
+    public Node generate( final NameValue data ) {
         Pane root = null;
         try {
             root = (Pane)FXMLLoader.load(Login.class.getResource(fxmlName));
@@ -51,7 +45,7 @@ public class PatternControl {
         return generate(root, data);
     }
     
-    Node generate(Pane root,final HashMap<String,StringProperty> data) {
+    private Node generate(Pane root,final NameValue data) {
         final EventHandler<ActionEvent> btnAction = new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -79,7 +73,7 @@ public class PatternControl {
                     for (String s:parts) {
                         StringProperty tmp = new SimpleStringProperty();
                         if(itsData)
-                            tmp.bind( patternResult.concat(data.get(s)) );
+                            tmp.bind( patternResult.concat(data.getStringProperty(s)) );
                         else
                             tmp.bind( patternResult.concat(s) );
                         patternResult = tmp;
@@ -106,10 +100,10 @@ public class PatternControl {
     // do stuff inside anonymous class
     // We should have data[id] here !        
     // notice: after button action, root action will NOT run !!!
-    public void onRootClick  (HashMap<String,StringProperty> data, MouseEvent e) { onRootClick(data); }
-    public void onRootClick  (HashMap<String,StringProperty> data) { }
+    public void onRootClick  (NameValue data, MouseEvent e) { onRootClick(data); }
+    public void onRootClick  (NameValue data) { }
     
-    public void onButtonClick (HashMap<String,StringProperty> data, ActionEvent e) { onButtonClick(data); }
-    public void onButtonClick (HashMap<String,StringProperty> data) { }
+    public void onButtonClick (NameValue data, ActionEvent e) { onButtonClick(data); }
+    public void onButtonClick (NameValue data) { }
     
 }

@@ -35,7 +35,7 @@ public class Helper {
 	}
 
         
-        
+        // special thanks to STACKOVERFLOW
         public static Map<String, Object> getNonNullProperties(final Object thingy) {
             final Map<String, Object> nonNullProperties = new TreeMap<String, Object>();
             try {

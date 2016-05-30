@@ -18,6 +18,8 @@ import javafx.scene.layout.Pane;
 
 import static gui.Helper.*;
 import gui.helper.PatternControl;
+import gui.helper.PatternControlCollection;
+import helper.NameValue;
 import java.util.HashMap;
 import javafx.beans.property.*;
 import javafx.collections.ObservableList;
@@ -42,36 +44,69 @@ public class MessageBoardController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         addBackground(rooter, 0.3, 1);
+        messageSubjectHolder.getChildren().clear();
         
+        PatternControlCollection messages = new PatternControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
+            @Override
+            public void onButtonClick (NameValue data) {
+                StringProperty number = data.getStringProperty("number");
+                int n = data.getInt("number") + 1;
+                number.set(""+n);
+            }
+            
+            @Override
+            public void onRootClick (NameValue data) {
+                StringProperty number = data.getStringProperty("number");
+                int n = data.getInt("number") - 1;
+                number.set(""+n);
+            }
+        };
+        
+        for (int i=0; i<100; i++) {
+            NameValue data = new NameValue();
+            data.put("id",i);
+            data.put("title",new SimpleStringProperty("کوئیز جاوا"));
+            data.put("show",new SimpleStringProperty("مشاهده"));
+            data.put("number",new SimpleStringProperty(""+i));
+            
+            messages.add(data);
+        }
+        for (int i=0; i<100; i+=2)
+            messages.remove(i);
+                    
+        /*
         ObservableList<Node> childs = messageSubjectHolder.getChildren();
         
         childs.clear();
         //ModelControl message = new ModelControl("model/messageItemInMessageBoard.fxml");
         PatternControl message = new PatternControl("model/messageItemInMessageBoard.fxml") {
             @Override
-            public void onButtonClick (HashMap<String,StringProperty> data) {
-                StringProperty number = data.get("number");
-                int n = Integer.parseInt(number.get());
-                n++;
+            public void onButtonClick (NameValue data) {
+                StringProperty number = data.getStringProperty("number");
+                int n = data.getInt("number") + 1;
                 number.set(""+n);
             }
             
             @Override
-            public void onRootClick (HashMap<String,StringProperty> data) {
-                StringProperty number = data.get("number");
-                int n = Integer.parseInt(number.get());
-                n--;
+            public void onRootClick (NameValue data) {
+                StringProperty number = data.getStringProperty("number");
+                int n = data.getInt("number") - 1;
                 number.set(""+n);
             }
         };
-        HashMap<String,StringProperty> data = new HashMap<String,StringProperty>();
+        
+        NameValue data = new NameValue();
         data.put("title",new SimpleStringProperty("کوئیز جاوا"));
         data.put("show",new SimpleStringProperty("مشاهده"));
         data.put("number",new SimpleStringProperty("5"));
 
-        for (int i=0; i <100; i++)
-            childs.add(message.generate(data));
+        //for (int i=0; i <100; i++)
+        Node n = message.generate(data);
+        childs.add(n);
+        //childs.add(n);
         
+        childs.remove(n);
+        */
         /*
         HBox[] messageSubject = childs.toArray(new HBox[childs.size()]);
         int id=-1;

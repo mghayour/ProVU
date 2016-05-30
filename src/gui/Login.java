@@ -63,39 +63,17 @@ public class Login extends Application {
      */
     public static void main(String[] args) {
         
-        String[] parts;
-        parts = "salam {man{{yek{ am".split("\\{");
-        System.out.println(Arrays.toString( parts ));
-        StringProperty patternResult = new SimpleStringProperty("");
-        
-        HashMap<String,StringProperty> data = new HashMap<String,StringProperty>();
-        data.put("man",new SimpleStringProperty("کوئیز جاوا"));
-        data.put("yek",new SimpleStringProperty("مشاهده"));
-        
-        //patternResult.set("S);
-        
-    
-        boolean itsData=false;
-        for (String s:parts) {
-            //System.out.println(s);
-            StringProperty tmp = new SimpleStringProperty();
-            if(itsData)
-                //patternResult.concat(data.get(s));
-                tmp.bind( patternResult.concat(data.get(s)) );
-            else
-                //patternResult.concat(s);
-                tmp.bind( patternResult.concat(s) );
-            patternResult = tmp;
-            itsData=!itsData;
-        }
-        System.out.println(patternResult.get());
-        
-        
-        data.get("man").set("to");
-        data.get("yek").set("yeki");
-        System.out.println(patternResult.get());
         
 
+        try {
+        int a;
+        a = Integer.parseInt("4");
+        System.out.println(a);
+        } catch (java.lang.NumberFormatException e) {
+            
+        }
+        
+        
         launch(args);
     }
     
