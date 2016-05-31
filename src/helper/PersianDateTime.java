@@ -4,9 +4,10 @@
  */
 package helper;
 
+import java.io.Serializable;
 import org.joda.time.DateTime;
 
-public class PersianDateTime {
+public class PersianDateTime implements Serializable{
 
     protected int year = 0;
     protected int month = 0;

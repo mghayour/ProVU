@@ -7,12 +7,13 @@ package logic;
 
 import helper.NameValue;
 import helper.PersianDateTime;
+import java.io.Serializable;
 
 /**
  *
  * @author Ghayour
  */
-public abstract class User implements IdNeeded, Modelable{
+public abstract class User implements IdNeeded, Modelable, Serializable{
     public static final int TYPE_TEACHER = 1, TYPE_STUDENT = 2;
     abstract int getType();
 
@@ -66,5 +67,12 @@ public abstract class User implements IdNeeded, Modelable{
         
         return res;
     }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
+    
+    
     
 }

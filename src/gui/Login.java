@@ -13,6 +13,8 @@ import javafx.scene.Parent;
 import javafx.geometry.NodeOrientation;
 
 import helper.*;
+import logic.DataBase;
+import logic.Student;
 import org.joda.time.DateTime;
 
 /**
@@ -29,15 +31,14 @@ public class Login extends Application {
      */
     public static void main(String[] args) {
         
-        
-        //PersianDateTime pd = PersianDateTime.now();
-        //pd = new PersianDateTime(pd.getTimeStamp()-1000*60);
-        
-        PersianDateTime pd = new PersianDateTime( DateTime.now().getMillis() -1000*60*60 );
-        
-        System.out.println(pd.toDateString());
-        System.out.println(pd.toTimeString());
-        System.out.println(pd.toString());
+        DataBase db = DataBase.getInstance();
+        /**
+        db.user.add(
+                new Student("مهدی", "غیور", "test")
+        );/**/
+        System.out.println(db.user.toString());
+        System.out.println(db.user.size());
+
         launch(args);
     }
     
