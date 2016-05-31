@@ -17,8 +17,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 
 import static gui.Helper.*;
-import gui.helper.PatternControl;
-import gui.helper.PatternControlCollection;
+import gui.helper.ModelControl;
+import gui.helper.ModelControlCollection;
 import helper.NameValue;
 import java.util.HashMap;
 import javafx.beans.property.*;
@@ -46,7 +46,7 @@ public class MessageBoardController implements Initializable {
         addBackground(rooter, 0.3, 1);
         messageSubjectHolder.getChildren().clear();
         
-        PatternControlCollection messages = new PatternControlCollection(messageSubjectHolder, "pattern/messageItemInMessageBoard.fxml") {
+        ModelControlCollection messages = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
             @Override
             public void onButtonClick (NameValue data) {
                 StringProperty number = data.getStringProperty("number");

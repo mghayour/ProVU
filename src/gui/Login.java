@@ -38,7 +38,7 @@ public class Login extends Application {
         System.out.println(pd.toDateString());
         System.out.println(pd.toTimeString());
         System.out.println(pd.toString());
-        //launch(args);
+        launch(args);
     }
     
     

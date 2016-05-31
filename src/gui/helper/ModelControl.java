@@ -20,10 +20,10 @@ import javafx.scene.layout.Pane;
  *
  * @author Ghayour
  */
-public class PatternControl {
+public class ModelControl {
     String fxmlName;
                 
-    public PatternControl(String fxmlName) {
+    public ModelControl(String fxmlName) {
         this.fxmlName = fxmlName;
     }
     

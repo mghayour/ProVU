@@ -16,13 +16,13 @@ import javafx.scene.layout.*;
  *
  * @author Ghayour
  */
-public class PatternControlCollection extends PatternControl{
+public class ModelControlCollection extends ModelControl{
     
     IdValue<NameValue> dataList = new IdValue<NameValue>();
     Pane root=null;
     ObservableList<Node> rootChilds;
     
-    public PatternControlCollection(Pane root,String fxmlName) {
+    public ModelControlCollection(Pane root,String fxmlName) {
         super(fxmlName);
         this.root=root;
         rootChilds = root.getChildren();
