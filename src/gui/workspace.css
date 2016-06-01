@@ -82,14 +82,16 @@
     /*-fx-effect: dropshadow(three-pass-box, rgba(255,255,255,0.5), 25, 0, 0, 2);*/
     -fx-opacity: 0.1;
 }
-.notifications HBox .caption {
+.notifications HBox .caption,
+.notifications HBox .caption .text {
     -fx-font-family: "B Nazanin";
     
     -fx-font-size: 42px;
     -fx-font-weight: bold;
     -fx-text-fill: linear-gradient(to top, #fff, #eee);    
 }
-.notifications HBox .description {
+.notifications HBox .description,
+.notifications HBox .description .text {
     -fx-font-family: "B Nazanin";
     -fx-font-weight: bold;
     -fx-font-size: 24px;
