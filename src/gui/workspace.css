@@ -108,6 +108,7 @@
 
 
 /**************  BUTTON *************************/
+.button.blue,
 .button.green,
 .button.red {
     -fx-padding: 0.2em 0.4em;
@@ -118,6 +119,9 @@
 }
 .button.green {
     -fx-background-color: #32C50F;
+}
+.button.blue {
+    -fx-background-color: #1E6FA6;
 }
 
 
@@ -185,4 +189,10 @@ Label,
    -fx-background-insets: 10px;*/
 }
 
+
+/**************** mainMenuRoot ***************************/
+
+.mainMenuRoot {
+    -fx-padding: 0;
+}
 

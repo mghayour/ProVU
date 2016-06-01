@@ -55,7 +55,9 @@ public class GuiController extends Application {
     public void start(Stage stage) throws Exception {
         this.stage = stage;
 
-        gotoPage("Login");
+        ui.login("mghayour", "test");
+        gotoPage("Workspace");
+        //gotoPage("Login");
         //Thread.sleep(2000);
         //gotoPage("Dashboard");
         /*
@@ -83,17 +85,24 @@ public class GuiController extends Application {
         return ui;
     }
 
-    void gotoPage(String name) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(name+".fxml"));
+    private Parent loadFxml(String fname) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fname));
         Parent root = loader.load();
-        if (!name.equals("Login"))
+        ((MyController)loader.getController()).setGui(this);
+        return root;
+    }
+    
+    void gotoPage(String name) throws IOException {
+        Parent root = loadFxml(name+".fxml");
+        if (!name.equals("Login")) {
             root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
-        ((MyController)loader.getController()).setGui(this);        
+        }
 
         stage.setMaximized(false);
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setMaximized(true);
+        
         /*
         if (!stage.isFullScreen())
             //stage.setMaximized(true);
@@ -104,7 +113,7 @@ public class GuiController extends Application {
 
     void gotoDashBoard() {
         try {
-            gotoPage("Dashboard");
+            gotoPage("Workspace");
         } catch (IOException ex) {
             ex.printStackTrace();
         }
