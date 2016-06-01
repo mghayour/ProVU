@@ -44,7 +44,7 @@ import static gui.Helper.*;
  *
  * @author Ghayour
  */
-public class DashboardController implements Initializable {
+public class DashboardController extends MyController {
     
     @FXML private Pane rooter;
 

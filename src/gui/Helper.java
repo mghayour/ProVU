@@ -120,7 +120,7 @@ public class Helper {
     }
 
     static String getResource(String path) {
-        return Login.class.getResource(path).toExternalForm();
+        return GuiController.class.getResource(path).toExternalForm();
     }
     
     static void copy(String get) {

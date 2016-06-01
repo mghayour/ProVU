@@ -17,7 +17,7 @@ public class ProVU {
     public static void main(String[] args) {
         System.out.println(com.sun.javafx.runtime.VersionInfo.getRuntimeVersion()); 
         // TODO code application logic here
-        gui.Login.main(args);
+        gui.GuiController.main(args);
     }
     
 }

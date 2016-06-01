@@ -12,8 +12,12 @@
 
 <VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1" stylesheets="gui/login.css">
     <HBox spacing="20">
-        <Label text="Name:" minWidth="60" />
-        <JFXTextField fx:id="name" promptText="Enter your Name" minHeight="30" />                        
+        <Label text="FirstName:" minWidth="60" />
+        <JFXTextField fx:id="firstname" promptText="Enter your Name" minHeight="30" />                        
+    </HBox>                    
+    <HBox spacing="20">
+        <Label text="LastName:" minWidth="60" />
+        <JFXTextField fx:id="lastname" promptText="Enter your Name" minHeight="30" />                        
     </HBox>                    
     <HBox spacing="20">
         <Label text="Username:" minWidth="60"  />

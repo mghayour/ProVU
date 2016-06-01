@@ -5,7 +5,7 @@
  */
 package gui.helper;
 
-import gui.Login;
+import gui.GuiController;
 import helper.NameValue;
 import javafx.beans.property.*;
 import javafx.event.ActionEvent;
@@ -30,7 +30,7 @@ public class ModelControl {
     public Node generate( final NameValue data ) {
         Pane root = null;
         try {
-            root = (Pane)FXMLLoader.load(Login.class.getResource(fxmlName));
+            root = (Pane)FXMLLoader.load(GuiController.class.getResource(fxmlName));
         } catch(Exception e) {
             e.printStackTrace();
             return null;

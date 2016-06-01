@@ -12,62 +12,42 @@ package gui;
 import com.jfoenix.controls.*;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.animation.Animation;
-import javafx.animation.Interpolator;
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
-import javafx.collections.ObservableList;
+import java.util.*;
+import java.util.logging.*;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.util.Duration;
+import javafx.fxml.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
 
 import static gui.Helper.*;
+import logic.DataBase;
+import logic.User;
 //import gui.animation.*;
 
 /**
  *
  * @author Ghayour
  */
-public class LoginController implements Initializable {
+public class LoginController extends MyController {
     
     @FXML private Label title;
     @FXML private Pane rooter;
     @FXML private VBox contentPanel;
-    // TableView tb = (TableView) scene.lookup("#history");
-
+    
+    // inner content elements (fill with Lookup !)
+    private JFXTextField username;
+    private JFXPasswordField password;
+    private JFXTextField firstname;
+    private JFXTextField lastname;
+    private JFXPasswordField password2;
+    private JFXRadioButton rad_student;
+    private JFXRadioButton rad_teacher;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        //Login.loginController=this;
         addBackground(rooter);
         loadContentPanel("loginContent.fxml");
         title.setText("Login");
-/*
-        JFXTextField checkBox = new JFXTextField("JFX CheckBox");/*
-        JFXButton jfoenixButton = new JFXButton("JFoenix Button");
-        JFXButton button = new JFXButton("Raised Button".toUpperCase());
-        button.getStyleClass().add("button-raised");
-        contentPanel.getChildren().addAll(jfoenixButton,button);
-        
-        /**/        
-  //      contentPanel.getChildren().addAll(checkBox);
     }
 
     
@@ -85,11 +65,22 @@ public class LoginController implements Initializable {
             contentPanel.getChildren().addAll( ((VBox)FXMLLoader.load(getClass().getResource(fxmlName))).getChildren() );
             currentContent=fxmlName;
             System.out.println("Loaded");
+            
+            username = (JFXTextField)contentPanel.lookup("#username");
+            password = (JFXPasswordField)contentPanel.lookup("#password");
+            firstname = (JFXTextField)contentPanel.lookup("#firstname");        
+            lastname = (JFXTextField)contentPanel.lookup("#lastname");        
+            password2 = (JFXPasswordField)contentPanel.lookup("#password2");
+            rad_student = (JFXRadioButton)contentPanel.lookup("#rad_student");
+            rad_teacher = (JFXRadioButton)contentPanel.lookup("#rad_teacher");
+ 
+
         } catch (IOException ex) {
             Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
         }        
     }
-        
+
+    
     @FXML
     private void btn_login_click(ActionEvent event) {        
         if (!currentContent.equals("loginContent.fxml")) {
@@ -97,8 +88,16 @@ public class LoginController implements Initializable {
             title.setText("Login");            
             return;
         }
+
+        try {
+            if (gui.getUi().login(username.getText(), password.getText()))
+                gui.gotoDashBoard();
+            else
+                System.out.println("Username not found");
+        } catch (Exception ex) {
+            System.out.println("ERROR LOGIN: "+ex.getMessage());
+        }
         
-        System.out.println("LOGINACTION");
     }
 
     @FXML
@@ -108,8 +107,18 @@ public class LoginController implements Initializable {
             title.setText("Register");            
             return;
         }
+
         
-        System.out.println("REGISTERACTION");
+        
+        try {
+            if (gui.getUi().register(username.getText(), firstname.getText(), lastname.getText(), password.getText(), rad_teacher.isSelected()) )
+                System.out.println("Success registration");
+            else
+                System.out.println("registration failed");
+        } catch (Exception ex) {
+            System.out.println("ERROR Register: "+ex.getMessage());
+        }
+
     }
 
     
