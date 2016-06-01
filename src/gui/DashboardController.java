@@ -46,15 +46,13 @@ import static gui.Helper.*;
  */
 public class DashboardController extends MyController {
     
-    @FXML private Pane rooter;
-
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        addBackground(rooter, 0.3, 1);
+         super.initialize(url, rb);
     }
 
-    
+   
 
     
 }

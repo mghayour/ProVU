@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+
+<Pane   layoutX="-150" layoutY="0" fx:id="mainMenu" maxWidth="150" styleClass="mainMenuRoot" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SideMenuController" stylesheets="gui/workspace.css" VBox.vgrow="ALWAYS">
+    <!-- <Label styleClass="bg-blue, pad-10, txt-white, txt-big" text="=" layoutX="150" layoutY="0" minWidth="20" /> -->
+    <VBox fx:id="menu_buttons" VBox.vgrow="ALWAYS">
+            <VBox minWidth="150" >
+                <JFXButton minWidth="150" text="تست دکمه" styleClass="blue, txt-med" />
+            </VBox>        
+    </VBox>    
+</Pane>

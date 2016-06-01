@@ -164,6 +164,7 @@ Label,
 
 .txt-white { -fx-text-fill: #fbfbfb; }
 .txt-med .text{-fx-font-size: 16px;}
+.txt-big .text{-fx-font-size: 24px;}
 
 .em {
     -fx-padding: 5 5 5 25;
@@ -178,7 +179,7 @@ Label,
 .em-check { -fx-background-image : url('img/emoji/white_check_mark.png'); }
 .em-pencil { -fx-background-image : url('img/emoji/pencil.png'); }
 .em-users { -fx-background-image : url('img/emoji/busts_in_silhouette.png'); }
-
+.em-menu { -fx-background-image : url('img/emoji/menu.png'); }
 
 /**************  Field  *************************/
 .text-field {

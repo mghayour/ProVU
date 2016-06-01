@@ -34,7 +34,7 @@ import javafx.scene.layout.*;
  *
  * @author Ghayour
  */
-public class MessageBoardController implements Initializable {
+public class MessageBoardController extends MyController {
     
     @FXML private Pane rooter;
     @FXML private VBox messageSubjectHolder;
@@ -43,7 +43,9 @@ public class MessageBoardController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        addBackground(rooter, 0.3, 1);
+        super.initialize(url, rb);
+        
+        
         messageSubjectHolder.getChildren().clear();
         
         ModelControlCollection messages = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {

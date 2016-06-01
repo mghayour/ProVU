@@ -22,14 +22,14 @@ import static gui.Helper.*;
  *
  * @author Ghayour
  */
-public class CourseBoardController implements Initializable {
+public class CourseBoardController extends MyController {
     
     @FXML private Pane rooter;
 
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        addBackground(rooter, 0.3, 1);
+        super.initialize(url, rb);
     }
 
     

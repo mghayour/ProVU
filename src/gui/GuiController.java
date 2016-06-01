@@ -56,10 +56,13 @@ public class GuiController extends Application {
         this.stage = stage;
 
         ui.login("mghayour", "test");
-        gotoPage("Workspace");
+        
+        //gotoPage("Workspace");
         //gotoPage("Login");
         //Thread.sleep(2000);
         //gotoPage("Dashboard");
+        //gotoPage("Messageboard");
+        gotoPage("CourseBoard");
         /*
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
         //FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
