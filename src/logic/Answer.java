@@ -5,10 +5,19 @@
  */
 package logic;
 
+import helper.PersianDateTime;
+
 /**
  *
  * @author Ghayour
  */
 public class Answer extends Comment {
     String fileName;
+
+    public Answer(String fileName, String content, User sender, PersianDateTime sendTime) {
+        super(content, sender, sendTime);
+        this.fileName = fileName;
+    }
+    
+    
 }

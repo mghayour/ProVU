@@ -5,10 +5,16 @@
  */
 package logic;
 
+import helper.PersianDateTime;
+
 /**
  *
  * @author Ghayour
  */
 public class Comment extends Message {
+
+    public Comment(String content, User sender, PersianDateTime sendTime) {
+        super(content, sender, sendTime);
+    }
     
 }

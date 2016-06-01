@@ -19,6 +19,13 @@ public class Message implements IdNeeded, Modelable, Serializable{
     private String content;
     private User sender;
     private PersianDateTime sendTime;
+
+    public Message(String content, User sender, PersianDateTime sendTime) {
+        this.content = content;
+        this.sender = sender;
+        this.sendTime = sendTime;
+    }
+    
     
     
     @Override

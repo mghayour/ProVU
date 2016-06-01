@@ -11,8 +11,8 @@ package logic;
  */
 public class Student extends User{
 
-    public Student(String firstName, String lastName, String password) {
-        super(firstName, lastName, password);
+    public Student(String userName, String firstName, String lastName, String password) {
+        super(userName, firstName, lastName, password);
     }
 
     

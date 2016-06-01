@@ -16,10 +16,15 @@ import javafx.beans.property.*;
  */
 public class Post extends Message{
     String title;
-    List<Comment> comments;
+    ArrayList<Comment> comments = new ArrayList<>();
 
     
     private transient NameValue myNameValue = null;
+
+    public Post(String title, String content, User sender, PersianDateTime sendTime) {
+        super(content, sender, sendTime);
+        this.title = title;
+    }
             
     @Override
     public NameValue toNameValue() {

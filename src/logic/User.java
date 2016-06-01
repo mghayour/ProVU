@@ -18,21 +18,23 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     abstract int getType();
 
     private int id=0;
+    private String userName;
     private String firstName;
     private String lastName;
     private String password;
     private PersianDateTime registerTime;
 
     
-    public User(String firstName, String lastName, String password, PersianDateTime registerTime) {
+    public User(String userName, String firstName, String lastName, String password, PersianDateTime registerTime) {
+        this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.registerTime = registerTime;
     }
     
-    public User(String firstName, String lastName, String password) {
-        this(firstName, lastName, password, PersianDateTime.now());
+    public User(String userName, String firstName, String lastName, String password) {
+        this(userName, firstName, lastName, password, PersianDateTime.now());
     }
 
  
@@ -43,6 +45,9 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     //Getter
     public int getId() {
         return id;
+    }
+    public String getUserName() {
+        return userName;
     }
     public String getFirstName() {
         return firstName;
@@ -57,6 +62,9 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
         return firstName.substring(0, 1)+". "+lastName;
     }
 
+    public Boolean checkPassword(String pass) {
+        return (pass == null ? password == null : pass.equals(password));
+    }
     
     @Override
     public NameValue toNameValue() {
