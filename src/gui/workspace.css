@@ -25,6 +25,9 @@
 
 
 /**************  Padding  ***********************/
+.pad-0 {
+    -fx-padding: 0px;
+}
 .pad-10 {
     -fx-padding: 10px;
 }
@@ -197,3 +200,19 @@ Label,
     -fx-padding: 0;
 }
 
+/***************** Dialog *********************************/
+.dialog {
+    -fx-padding: 10px 15px 10px 15px;
+}
+.dialog .head {
+    -fx-padding: 0px 0px 0px 8px;
+}
+.dialog .head .text {
+    -fx-font-size: 18px;
+}
+.dialog .body {
+    -fx-padding: 10px 20px 8px 20px;
+}
+.dialog .actions {
+    -fx-padding: 0px 20px 10px 20px;
+}

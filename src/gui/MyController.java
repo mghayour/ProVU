@@ -5,6 +5,7 @@
  */
 package gui;
 
+import com.jfoenix.controls.JFXDialog;
 import static gui.Helper.addBackground;
 import java.io.IOException;
 import java.net.URL;
@@ -15,6 +16,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 
 /**
  *
@@ -22,6 +24,7 @@ import javafx.scene.layout.Pane;
  */
 public abstract class MyController implements Initializable {
     
+    @FXML protected StackPane backpane;
     @FXML protected Pane rooter;
 
     protected GuiController gui;
@@ -41,6 +44,13 @@ public abstract class MyController implements Initializable {
         }
     }
     
-    
+
+    // dialog functions
+    protected void showDialog(JFXDialog dialog) {
+        dialog.show(backpane);
+    }
+    void btn_cancelDialogClicked() {
+        
+    }
 
 }

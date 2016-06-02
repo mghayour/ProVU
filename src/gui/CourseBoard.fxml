@@ -76,20 +76,25 @@
 </BorderPane>
 
 
-	<JFXDialog fx:id="dialog">
-		<JFXDialogLayout>
+	<!-- <JFXDialog fx:id="dialog_addCourse"> -->
+        <JFXDialog fx:id="dialog">
+		<JFXDialogLayout styleClass="dialog">
 			<heading>
-				<Label>JFoenix Dialog</Label>
+                            <HBox styleClass="head" spacing="15" >
+				<Label>افزودن درس</Label>
+                            </HBox>
 			</heading>
 			<body>
-				<Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-					enim ad minim veniam, quis nostrud exercitation ullamco laboris
-					nisi ut aliquip ex ea commodo consequat.</Label>
+                            <VBox styleClass="body" spacing="10" >
+                                <Label text="نام درس را وارد کنید." minWidth="60" />
+                                <JFXTextField fx:id="courseName" promptText="نام درس" minHeight="30" />
+                            </VBox>
 			</body>
 			<actions>
-				<JFXButton fx:id="acceptButton" styleClass="dialog-accept">ACCEPT
-				</JFXButton>
+                            <HBox styleClass="actions" spacing="15" >
+				<JFXButton fx:id="btn_addCourse" styleClass="green" text="افزودن" />
+                                <JFXButton fx:id="btn_cancelDialog" onAction="#btn_cancelDialogClicked" styleClass="red" text="بی خیال" />
+                            </HBox>
 			</actions>
 		</JFXDialogLayout>
 	</JFXDialog>            

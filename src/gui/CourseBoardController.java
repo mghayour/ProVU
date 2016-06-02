@@ -28,7 +28,6 @@ import logic.*;
  */
 public class CourseBoardController extends MyController {
     
-    @FXML protected StackPane backpane;
     @FXML private VBox myCourseBox;
     @FXML private VBox editBox;
     @FXML private HBox boxes;
@@ -53,12 +52,12 @@ public class CourseBoardController extends MyController {
         //else
 //            boxes.getChildren().remove(editBox);
             
+        //initDialog();
     }
     
     
 
     @FXML void plusBtnClicked () {
-        dialog.show(backpane);
     }
 
     
