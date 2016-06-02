@@ -54,9 +54,8 @@ public class GuiController extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         this.stage = stage;
-
-        ui.login("mghayour", "test");
-        
+        //ui.login("mghayour", "test");
+        ui.login("mnouri", "test");
         //gotoPage("Workspace");
         //gotoPage("Login");
         //Thread.sleep(2000);
@@ -116,7 +115,7 @@ public class GuiController extends Application {
 
     void gotoDashBoard() {
         try {
-            gotoPage("Workspace");
+            gotoPage("DashBoard");
         } catch (IOException ex) {
             ex.printStackTrace();
         }

@@ -5,6 +5,7 @@
  */
 package logic;
 
+import helper.PersianDateTime;
 import java.util.*;
 
 /**
@@ -17,6 +18,8 @@ public class Course {
     ArrayList<Student> students;
     Teacher teacher;
     ArrayList<Post> posts;
+    PersianDateTime createdTime;
+    
     // List<User/Student> hallet !?
     
     

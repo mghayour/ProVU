@@ -9,15 +9,18 @@
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
 
-<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CourseBoardController" stylesheets="gui/workspace.css">
+<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CourseBoardController" stylesheets="gui/workspace.css">
+<BorderPane fx:id="rooter">
     <center>
 
-        <HBox styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
+        <HBox fx:id="boxes" styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
             
             
-            <VBox styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
+            <VBox fx:id="myCourseBox" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
                 <HBox spacing="25" styleClass="card-item, bg-blue, header" >
                     <Label styleClass="head-title" text="درس های من"  />
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <JFXButton text="+" styleClass="green, txt-white, txt-med" onAction="#plusBtnClicked" />
                 </HBox>
                 <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
                     <content>
@@ -40,28 +43,6 @@
                 
             </VBox>
 
-            <VBox fx:id="editBox" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
-                <HBox spacing="25" styleClass="card-item, bg-blue, header" >
-                    <Label styleClass="head-title" text="ویرایش/افزودن"  />
-                </HBox>
-                <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
-                    <content>
-                        <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" >
-                            
-                            <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" >
-                                <Label text="گسسته"  styleClass="em, em-books, txt-med" />
-                                <JFXButton text="اضافه" styleClass="green, txt-med" />
-                                <Pane HBox.hgrow="ALWAYS" />
-                                <Label text="م. نوری" minWidth="85" styleClass="em, em-pen" />
-                                <Label text="21" minWidth="50" styleClass="em, em-users" />
-                                <Label text="12/2/95 (2هفته پیش)" minWidth="140" styleClass="em, em-date" />
-                            </HBox>
-
-
-                        </VBox>
-                    </content>
-                </ScrollPane>
-            </VBox>
 
             <VBox styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
                 <HBox spacing="25" styleClass="card-item, bg-blue, header" >
@@ -87,8 +68,30 @@
             </VBox>
 
             
-            
         </HBox>
+
+
 
     </center>
 </BorderPane>
+
+
+	<JFXDialog fx:id="dialog">
+		<JFXDialogLayout>
+			<heading>
+				<Label>JFoenix Dialog</Label>
+			</heading>
+			<body>
+				<Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</Label>
+			</body>
+			<actions>
+				<JFXButton fx:id="acceptButton" styleClass="dialog-accept">ACCEPT
+				</JFXButton>
+			</actions>
+		</JFXDialogLayout>
+	</JFXDialog>            
+
+</StackPane>
