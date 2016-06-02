@@ -49,7 +49,9 @@ public abstract class MyController implements Initializable {
     protected void showDialog(JFXDialog dialog) {
         dialog.show(backpane);
     }
-    void btn_cancelDialogClicked() {
+    
+    @FXML
+    protected void btn_cancelDialogClicked() {
         
     }
 

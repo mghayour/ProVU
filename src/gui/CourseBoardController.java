@@ -58,6 +58,7 @@ public class CourseBoardController extends MyController {
     
 
     @FXML void plusBtnClicked () {
+        showDialog(dialog);
     }
 
     
