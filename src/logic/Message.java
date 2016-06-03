@@ -14,8 +14,7 @@ import java.util.*;
  *
  * @author Ghayour
  */
-public class Message implements IdNeeded, Modelable, Serializable{
-    private int id=0;
+public class Message extends IdNeeder implements Modelable {
     private String content;
     private User sender;
     private PersianDateTime sendTime;
@@ -27,9 +26,6 @@ public class Message implements IdNeeded, Modelable, Serializable{
     }
     
     
-    
-    @Override
-    public void setId(int id) { this.id = id; } // just should use in DB.add !
     
     @Override
     public NameValue toNameValue() {
