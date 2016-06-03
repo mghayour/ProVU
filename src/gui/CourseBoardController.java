@@ -18,7 +18,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.layout.*;
 
 import static gui.Helper.*;
+import gui.helper.ModelControlCollection;
+import helper.NameValue;
 import javafx.application.Platform;
+import javafx.beans.property.StringProperty;
 import logic.*;
 //import gui.animation.*;
 
@@ -28,10 +31,10 @@ import logic.*;
  */
 public class CourseBoardController extends MyController {
     
-    @FXML private VBox myCourseBox;
-    @FXML private VBox editBox;
-    @FXML private HBox boxes;
+    @FXML private VBox vbx_myCourseContent, vbx_allCourseContent;
     
+    private ModelControlCollection myCourses = null, allCourses = null;
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -42,18 +45,38 @@ public class CourseBoardController extends MyController {
     public void setGui(GuiController gui) {
         System.out.println("SET GUI");
         super.setGui(gui);
-
-        boxes.getChildren().remove(editBox);
-        
+       
+        DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
         System.out.println(u.getClass().toString());
-        //if (u instanceof Teacher)
-            //boxes.getChildren().remove(myCourseBox);
-        //else
-//            boxes.getChildren().remove(editBox);
-            
-        //initDialog();
+        
+
+        myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml") {
+            @Override
+            public void onButtonClick (NameValue data) {
+                //Todo: remove from my courses
+            }
+        };
+
+        allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml") {
+            @Override
+            public void onButtonClick (NameValue data) {
+                //Todo: add to my courses
+            }
+        };
+        
+        
+        for(Course c: u.getCourses())
+            myCourses.add(c);
+        
+        for(Course c: db.getCourse())
+            allCourses.add(c);
+        
+        
     }
+    
+    
+
     
     
 
@@ -64,12 +87,15 @@ public class CourseBoardController extends MyController {
     }
 
     @FXML void btn_addCourse_clicked() {
-        Teacher teacher = (Teacher)gui.getUi().getUser();
-        String courseName = txt_courseName.getText();
         DataBase db = DataBase.getInstance();
+        Teacher teacher = (Teacher)gui.getUi().getUser();
+        
+        String courseName = txt_courseName.getText();
         Course course = new Course(courseName, teacher);
         db.addCourse(course);
         teacher.addCourse(course);
+        myCourses.add(course);
+        allCourses.add(course);
         
         closeDialog();
     }
