@@ -18,8 +18,8 @@ public class IdValue<T> extends HashMap<Integer, T> implements Iterable<T> { // 
         super.put( (Integer)id, obj);
     }
     
-    public void add (IdNeeded d) {
-        put(d.getId(), (T)d);
+    public void add (T d) {
+        put(((IdNeeded)d).getId(), d);
     }
     
     public T get (int id) {

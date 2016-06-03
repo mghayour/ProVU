@@ -17,6 +17,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
+import logic.*;
 
 /**
  *
@@ -46,13 +47,15 @@ public abstract class MyController implements Initializable {
     
 
     // dialog functions
+    private JFXDialog currentDialog=null;
     protected void showDialog(JFXDialog dialog) {
+        currentDialog=dialog;
         dialog.show(backpane);
     }
     
     @FXML
-    protected void btn_cancelDialogClicked() {
-        
+    protected void closeDialog() {
+        currentDialog.close();
     }
 
 }

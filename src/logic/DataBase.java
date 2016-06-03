@@ -5,6 +5,7 @@
  */
 package logic;
 
+import helper.IdValue;
 import java.io.*;
 import java.util.*;
 import java.util.logging.Level;
@@ -16,9 +17,9 @@ import java.util.logging.Logger;
  */
 public class DataBase implements Serializable{
     
-    private ArrayList<User> user;
-    private ArrayList<Message> message;
-    private ArrayList<Course> course;
+    private IdValue<User> user;
+    private IdValue<Message> message;
+    private IdValue<Course> course;
 
     private int userAutoId=0;
     private int messageAutoId=0;
@@ -34,9 +35,9 @@ public class DataBase implements Serializable{
     
     
     private DataBase() {
-        user = new ArrayList<>();
-        message = new ArrayList<>();
-        course = new ArrayList<>();
+        user = new IdValue<>();
+        message = new IdValue<>();
+        course = new IdValue<>();
     }
     
     private static void loadDB() {
@@ -99,6 +100,10 @@ public class DataBase implements Serializable{
         u.setId(userAutoId++);
         user.add(u);
     }
+    public void addCourse(Course c) {
+        c.setId(courseAutoId++);
+        course.add(c);
+    }
     
     
     // GetObjects
@@ -116,6 +121,7 @@ public class DataBase implements Serializable{
                 return true;
         return false;
     }
+
     
     
 }
