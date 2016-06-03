@@ -10,5 +10,5 @@
 <?import com.jfoenix.controls.* ?>
 
 <HBox minWidth="150" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
-    <JFXButton minWidth="150" text="{title}" styleClass="blue, txt-med" />
+    <JFXButton minWidth="200" text="{title}" styleClass="blue, txt-med" />
 </HBox>

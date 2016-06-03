@@ -8,7 +8,8 @@
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
 
-<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController" stylesheets="gui/workspace.css">
+<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController" stylesheets="gui/workspace.css">
+<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter">
     <center>
 
         <VBox styleClass="" >
@@ -199,3 +200,5 @@
 
     </center>
 </BorderPane>
+
+</StackPane>

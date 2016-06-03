@@ -27,10 +27,13 @@ public abstract class MyController implements Initializable {
     
     @FXML protected StackPane backpane;
     @FXML protected Pane rooter;
-
+    protected SideMenuController sideMenuController = null;
+    
     protected GuiController gui;
     public void setGui(GuiController gui) {
         this.gui = gui;
+        if (sideMenuController!=null)
+            sideMenuController.setGui(gui);
     }
 
     @Override
@@ -38,8 +41,10 @@ public abstract class MyController implements Initializable {
         addBackground(rooter, 0.3, 1);
         
         try {
-            rooter.getChildren().add( (Pane)FXMLLoader.load(getClass().getResource("SideMenu.fxml")) );
-            //throw new IOException("FUN");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SideMenu.fxml"));
+            rooter.getChildren().add( (Pane)loader.load() );
+            sideMenuController = (SideMenuController)loader.getController();
+            System.out.println("Side menu added");
         } catch (IOException ex) {
             Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
         }

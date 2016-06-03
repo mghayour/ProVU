@@ -22,6 +22,7 @@ import javafx.scene.layout.Pane;
 import logic.DataBase;
 import logic.Student;
 import logic.Teacher;
+import logic.User;
 import logic.UserInterface;
 import org.joda.time.DateTime;
 
@@ -68,9 +69,9 @@ public class GuiController extends Application {
         //gotoPage("Workspace");
         //gotoPage("Login");
         //Thread.sleep(2000);
-        //gotoPage("Dashboard");
+        gotoPage("Dashboard");
         //gotoPage("Messageboard");
-        gotoPage("CourseBoard");
+        //gotoPage("CourseBoard");
         /*
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
         //FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
@@ -100,16 +101,25 @@ public class GuiController extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fname));
         Pane root = (Pane)loader.load();
         ((MyController)loader.getController()).setGui(this);
+        User u = ui.getUser();
         
         // parse data
         root = (Pane) new ModelControl("",false).generate(
                 root, 
-                new NameValue("userType",ui.getUser().getTypeString())
+                new NameValue("userType",u.getTypeString(),  "userFirstName",u.getFirstName() ,  "userLastName",u.getLastName(),
+                        "userFullName",u.getName(),  "username",u.getUserName())
                 );
         
         return root;
     }
     
+    void gotoPageSafe(String name) {
+        try {
+            gotoPage(name);
+        } catch (IOException ex) {
+            Logger.getLogger(GuiController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     void gotoPage(String name) throws IOException {
         Pane root = loadFxml(name+".fxml");
         if (!name.equals("Login")) {

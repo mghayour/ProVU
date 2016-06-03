@@ -9,7 +9,8 @@
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
 
-<BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoardController" stylesheets="gui/workspace.css">
+<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoardController" stylesheets="gui/workspace.css">
+<BorderPane fx:id="rooter">
     <center>
 
         <HBox styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
@@ -399,3 +400,5 @@
 
     </center>
 </BorderPane>
+
+</StackPane>

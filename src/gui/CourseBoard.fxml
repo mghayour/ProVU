@@ -13,7 +13,6 @@
 <StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CourseBoardController" stylesheets="gui/workspace.css">
 <BorderPane fx:id="rooter">
     <center>
-
         <HBox fx:id="boxes" styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
             
             
@@ -56,33 +55,29 @@
 
             
         </HBox>
-
-
-
     </center>
 </BorderPane>
 
-
-        <JFXDialog fx:id="dlg_addCourse">
-		<JFXDialogLayout styleClass="dialog">
-			<heading>
-                            <HBox styleClass="head" spacing="15" >
-				<Label>افزودن درس</Label>
-                            </HBox>
-			</heading>
-			<body>
-                            <VBox styleClass="body" spacing="10" >
-                                <Label text="نام درس را وارد کنید." minWidth="60" />
-                                <JFXTextField fx:id="txt_courseName" promptText="نام درس" minHeight="30" />
-                            </VBox>
-			</body>
-			<actions>
-                            <HBox styleClass="actions" spacing="15" >
-				<JFXButton fx:id="btn_addCourse" onAction="#btn_addCourse_clicked" styleClass="green" text="افزودن" />
-                                <JFXButton fx:id="btn_cancelDialog" onAction="#closeDialog" styleClass="red" text="بی خیال" />
-                            </HBox>
-			</actions>
-		</JFXDialogLayout>
-	</JFXDialog>            
+    <JFXDialog fx:id="dlg_addCourse">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>افزودن درس</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <Label text="نام درس را وارد کنید." minWidth="60" />
+                            <JFXTextField fx:id="txt_courseName" promptText="نام درس" minHeight="30" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton fx:id="btn_addCourse" onAction="#btn_addCourse_clicked" styleClass="green" text="افزودن" />
+                            <JFXButton fx:id="btn_cancelDialog" onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
 
 </StackPane>

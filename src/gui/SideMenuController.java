@@ -7,8 +7,13 @@ package gui;
 
 import gui.helper.ModelControlCollection;
 import helper.NameValue;
+import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
@@ -33,21 +38,37 @@ public class SideMenuController extends MyController {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         System.out.println("Im fine");
-
         
         ModelControlCollection menu = new ModelControlCollection(menu_buttons,"model/buttonInSideMenu.fxml") {
-            
+            @Override
+            public void onButtonClick(NameValue data) {
+                gui.gotoPageSafe(data.getString("fxmlName"));
+            }
         };
-        
-        NameValue val = new NameValue();
-        val.put("id", 0);
-        val.put("title", "اطلاعیه ها");
-        val.put("fxmlName", "MessageBoard");
-        menu.add(val);
-        
-        
-        
 
+        addDataToMenu(menu, "DashBoard", "داشبورد");
+        addDataToMenu(menu, "CourseBoard", "درس");
+        addDataToMenu(menu, "MessageBoard", "اطلاعیه");
+
+        setMainMenuInOutAnimation();
+        
+    }
+    
+    private void addDataToMenu(ModelControlCollection menu, String fxmName, String title) {
+        NameValue val = new NameValue();
+        val.put("title", title);
+        val.put("fxmlName", fxmName);
+        menu.add(val);        
+    }
+    
+    @FXML void btn_logout_click() {
+        if (gui==null)
+            System.out.println("Toooooo Bad :|");
+        else
+            gui.gotoPageSafe("Login");
+    }
+    
+    private void setMainMenuInOutAnimation() {
         mainMenu.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -56,7 +77,7 @@ public class SideMenuController extends MyController {
                     Duration.seconds(0.2),
                     new KeyValue(
                       mainMenu.layoutXProperty(),
-                      0
+                      -12
                     )
                   )
                 );
@@ -72,17 +93,13 @@ public class SideMenuController extends MyController {
                     Duration.seconds(0.2),
                     new KeyValue(
                       mainMenu.layoutXProperty(),
-                      -150
+                      -230
                     )
                   )
                 );
                 moveAnimate.play();                
             }
-        });
-        
-        
+        });        
     }
-    
-    
     
 }

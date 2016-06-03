@@ -127,8 +127,6 @@
     -fx-background-color: #1E6FA6;
 }
 
-
-
 .radio-button .dot {
     -fx-fill: #5264AE;
 }
@@ -166,6 +164,7 @@ Label,
 }
 
 .txt-white { -fx-text-fill: #fbfbfb; }
+.txt-red { -fx-text-fill: #fb0000; }
 .txt-med .text{-fx-font-size: 16px;}
 .txt-big .text{-fx-font-size: 24px;}
 
@@ -197,7 +196,7 @@ Label,
 /**************** mainMenuRoot ***************************/
 
 .mainMenuRoot {
-    -fx-padding: 0;
+    -fx-padding: 10px;
 }
 
 /***************** Dialog *********************************/

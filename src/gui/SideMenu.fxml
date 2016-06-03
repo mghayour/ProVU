@@ -8,11 +8,17 @@
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
 
-<Pane   layoutX="-150" layoutY="0" fx:id="mainMenu" maxWidth="150" styleClass="mainMenuRoot" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SideMenuController" stylesheets="gui/workspace.css" VBox.vgrow="ALWAYS">
+<Pane xmlns:fx="http://javafx.com/fxml/1"  layoutX="-230" layoutY="-12" fx:id="mainMenu" maxWidth="150" styleClass="mainMenuRoot" fx:controller="gui.SideMenuController" stylesheets="gui/workspace.css" VBox.vgrow="ALWAYS">
+    <VBox styleClass="card, pad-10" minWidth="200" minHeight="800" >
+        <HBox spacing="10" >
+            <ImageView><image><Image url="gui/user.png" /></image></ImageView>
+            <VBox>
+                <Label text="{userFirstName} {userLastName}" styleClass="txt-big" />
+                <JFXButton text="خروج" styleClass="txt-red" onAction="#btn_logout_click" />
+            </VBox>
+        </HBox>
     <!-- <Label styleClass="bg-blue, pad-10, txt-white, txt-big" text="=" layoutX="150" layoutY="0" minWidth="20" /> -->
-    <VBox fx:id="menu_buttons" VBox.vgrow="ALWAYS">
-            <VBox minWidth="150" >
-                <JFXButton minWidth="150" text="تست دکمه" styleClass="blue, txt-med" />
-            </VBox>        
-    </VBox>    
+        <VBox fx:id="menu_buttons" VBox.vgrow="ALWAYS" >
+        </VBox>
+    </VBox>
 </Pane>

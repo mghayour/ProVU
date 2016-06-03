@@ -40,8 +40,10 @@ public class ModelControlCollection extends ModelControl{
     }
     
     public void add(NameValue rowData) {
-        if (!rowData.containsKey("id"))
-            System.out.println("ERROR: data['id'] Not found :"+rowData.toString());
+        if (!rowData.containsKey("id")) {
+            //System.out.println("ERROR: data['id'] Not found :"+rowData.toString());
+            rowData.put("id",dataList.size()); // AutoIncreament Id
+        }
         
         // default data should add to all of rows !
         rowData.putAll(defaultData);
