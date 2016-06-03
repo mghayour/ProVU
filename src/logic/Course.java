@@ -5,22 +5,40 @@
  */
 package logic;
 
+import helper.IdValue;
+import helper.NameValue;
 import helper.PersianDateTime;
+import java.io.Serializable;
 import java.util.*;
 
 /**
  *
  * @author Ghayour
  */
-public class Course {
-    int id;
+public class Course extends IdNeeder implements Modelable {
     String name;
-    ArrayList<Student> students;
+    IdValue<Student> students;
     Teacher teacher;
-    ArrayList<Post> posts;
+    IdValue<Post> posts;
     PersianDateTime createdTime;
     
     // List<User/Student> hallet !?
+
+    public Course(String name, Teacher teacher) {
+        this.name = name;
+        this.teacher = teacher;
+        this.id = -1;
+        this.students = new IdValue<>();
+        this.posts = new IdValue<>();
+        this.createdTime = PersianDateTime.now();
+    }
+
+
+    @Override
+    public NameValue toNameValue() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
     
     
