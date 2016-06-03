@@ -5,11 +5,19 @@
  */
 package logic;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Ghayour
  */
-public interface IdNeeded {
-    public void setId(int id);
-    public int getId();
+public class IdNeeder implements IdNeeded, Serializable {
+    protected int id;
+    public void setId(int id) {
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
+
 }

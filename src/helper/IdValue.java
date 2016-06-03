@@ -6,6 +6,7 @@
 package helper;
 
 import java.util.*;
+import logic.IdNeeded;
 
 /**
  *
@@ -13,16 +14,20 @@ import java.util.*;
  */
 public class IdValue<T> extends HashMap<Integer, T> implements Iterable<T> { // need update handling for more featurs !?
     
-    void put (int id, T obj) {
+    public void put (int id, T obj) {
         super.put( (Integer)id, obj);
     }
-    T get (int id) {
-        return super.get( (Integer)id );
-    }
-    T remove(int id) {
-        return super.remove( (Integer)id );
+    
+    public void add (IdNeeded d) {
+        put(d.getId(), (T)d);
     }
     
+    public T get (int id) {
+        return super.get( (Integer)id );
+    }
+    public T remove(int id) {
+        return super.remove( (Integer)id );
+    }
     
     public Iterator<T> iterator() {
         return values().iterator();
