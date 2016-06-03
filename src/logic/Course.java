@@ -10,12 +10,13 @@ import helper.NameValue;
 import helper.PersianDateTime;
 import java.io.Serializable;
 import java.util.*;
+import javafx.beans.property.SimpleStringProperty;
 
 /**
  *
  * @author Ghayour
  */
-public class Course extends IdNeeder implements Modelable {
+public class Course extends ObjectFather {
     String name;
     IdValue<Student> students;
     Teacher teacher;
@@ -36,8 +37,15 @@ public class Course extends IdNeeder implements Modelable {
 
     @Override
     public NameValue toNameValue() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        NameValue res = super.toNameValue();
+        res.put("name", name);
+        res.put("teacherName", teacher.getName() );
+        res.put("studentCount", ""+students.size() );
+        res.put("createdDate", createdTime.toDateString() );
+        res.put("createdTime", createdTime.toString() );
+        
+        return res;
+ }
 
     
     
