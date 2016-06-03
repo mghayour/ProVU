@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author Ghayour
  */
-public class IdValue<T> extends HashMap<Integer, T> { // need update handling for more featurs !?
+public class IdValue<T> extends HashMap<Integer, T> implements Iterable<T> { // need update handling for more featurs !?
     
     void put (int id, T obj) {
         super.put( (Integer)id, obj);
@@ -21,6 +21,11 @@ public class IdValue<T> extends HashMap<Integer, T> { // need update handling fo
     }
     T remove(int id) {
         return super.remove( (Integer)id );
+    }
+    
+    
+    public Iterator<T> iterator() {
+        return values().iterator();
     }
     
 }
