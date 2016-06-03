@@ -76,8 +76,7 @@
 </BorderPane>
 
 
-	<!-- <JFXDialog fx:id="dialog_addCourse"> -->
-        <JFXDialog fx:id="dialog">
+        <JFXDialog fx:id="dlg_addCourse">
 		<JFXDialogLayout styleClass="dialog">
 			<heading>
                             <HBox styleClass="head" spacing="15" >
@@ -87,13 +86,13 @@
 			<body>
                             <VBox styleClass="body" spacing="10" >
                                 <Label text="نام درس را وارد کنید." minWidth="60" />
-                                <JFXTextField fx:id="courseName" promptText="نام درس" minHeight="30" />
+                                <JFXTextField fx:id="txt_courseName" promptText="نام درس" minHeight="30" />
                             </VBox>
 			</body>
 			<actions>
                             <HBox styleClass="actions" spacing="15" >
-				<JFXButton fx:id="btn_addCourse" styleClass="green" text="افزودن" />
-                                <JFXButton fx:id="btn_cancelDialog" onAction="#btn_cancelDialogClicked" styleClass="red" text="بی خیال" />
+				<JFXButton fx:id="btn_addCourse" onAction="#btn_addCourse_clicked" styleClass="green" text="افزودن" />
+                                <JFXButton fx:id="btn_cancelDialog" onAction="#closeDialog" styleClass="red" text="بی خیال" />
                             </HBox>
 			</actions>
 		</JFXDialogLayout>

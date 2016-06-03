@@ -57,64 +57,22 @@ public class CourseBoardController extends MyController {
     
     
 
+    @FXML JFXDialog dlg_addCourse;
+    @FXML JFXTextField txt_courseName;
     @FXML void plusBtnClicked () {
-        showDialog(dialog);
+        showDialog(dlg_addCourse);
     }
 
-    
-    
-	@FXML private JFXButton centerButton;
+    @FXML void btn_addCourse_clicked() {
+        Teacher teacher = (Teacher)gui.getUi().getUser();
+        String courseName = txt_courseName.getText();
+        DataBase db = DataBase.getInstance();
+        Course course = new Course(courseName, teacher);
+        db.addCourse(course);
+        teacher.addCourse(course);
+        
+        closeDialog();
+    }
 
-	@FXML private JFXButton topButton;
-
-	@FXML private JFXButton rightButton;
-
-	@FXML private JFXButton bottomButton;
-
-	@FXML private JFXButton leftButton;
-
-	@FXML private JFXButton acceptButton;
-
-	@FXML
-	private JFXDialog dialog;
-
-        public void initDialog()  {
-            /*
-        if(((Pane) context.getRegisteredObject("ContentPane")).getChildren().size() > 0)
-                Platform.runLater(()-> ((Pane)((Pane) context.getRegisteredObject("ContentPane")).getChildren().get(0)).getChildren().remove(1));
-*/
-        centerButton.setOnMouseClicked((e)->{
-                dialog.setTransitionType(DialogTransition.CENTER);
-                //dialog.show((StackPane) context.getRegisteredObject("ContentPane"));
-                dialog.show();
-        });
-
-        topButton.setOnMouseClicked((e)->{
-                dialog.setTransitionType(DialogTransition.TOP);
-                dialog.show();
-        });
-
-        rightButton.setOnMouseClicked((e)->{
-                dialog.setTransitionType(DialogTransition.RIGHT);
-                dialog.show();
-        });
-
-        bottomButton.setOnMouseClicked((e)->{
-                dialog.setTransitionType(DialogTransition.BOTTOM);
-                dialog.show();
-        });
-
-        leftButton.setOnMouseClicked((e)->{
-                dialog.setTransitionType(DialogTransition.LEFT);
-                dialog.show();
-        });
-
-        acceptButton.setOnMouseClicked((e)->{
-                dialog.close();
-        });
-}
-
-
-    
     
 }
