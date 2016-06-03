@@ -6,6 +6,7 @@
 package helper;
 
 import java.util.HashMap;
+import java.util.Map;
 import javafx.beans.property.*;
 import javafx.scene.control.Labeled;
 
@@ -14,6 +15,18 @@ import javafx.scene.control.Labeled;
  * @author Ghayour
  */
 public class NameValue extends HashMap<String, Object> {
+
+    public NameValue() {
+        super();
+    }
+
+    public NameValue(String... data) {
+        for(int i=0; i<data.length-1; i+=2)
+            put(data[i],data[i+1]);
+    }
+  
+    
+    
     
     public StringProperty getStringProperty(String name) {
         if (!containsKey(name)) {
@@ -43,6 +56,23 @@ public class NameValue extends HashMap<String, Object> {
             System.out.println("Cant parse int: "+obj.toString());
         }
         return res;
+    }
+
+    public String getString(String name) {
+        if (!containsKey(name)) {
+            System.out.println("ERROR: key["+name+"] not found.  NameValue:"+toString());
+            return "";
+        }
+
+        Object obj = get(name);
+        
+        if (obj instanceof String)
+            return (String)obj;
+        
+        if ( StringProperty.class.isAssignableFrom(obj.getClass()) )
+            return ((StringProperty)obj).getValue();
+        
+        return obj.toString();
     }
     
 }

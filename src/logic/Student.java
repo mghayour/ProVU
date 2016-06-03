@@ -17,8 +17,13 @@ public class Student extends User{
 
     
     @Override
-    int getType() {
+    public int getType() {
         return User.TYPE_STUDENT;
+    }
+
+    @Override
+    public String getTypeString() {
+        return "Student";
     }
 
 }

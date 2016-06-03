@@ -8,6 +8,7 @@ package gui.helper;
 import gui.GuiController;
 import helper.NameValue;
 import javafx.beans.property.*;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -55,35 +56,25 @@ public class ModelControl {
                 onButtonClick(data, event);
             }
         };
-                
-        for(Node n: root.getChildren()) {
-            if (Pane.class.isAssignableFrom(n.getClass()))
+             
+        ObservableList<Node> childs = root.getChildren();
+         
+        for(Node n: childs) {
+            if (Pane.class.isAssignableFrom(n.getClass())) {
+                // if its if : parse it
+                if (n instanceof If) {
+                    If f = (If)n;
+                    if (f.getX()!=null && f.getIs()!=null ){
+                        f.setX ( patternBinder(f.getX() , data).getValue() );
+                        f.setIs( patternBinder(f.getIs(), data).getValue() );
+                    }
+                }
                 generate( (Pane)n, data);
-            else {
-                
+            } else {                                
                 // if its button or lable
                 if ( Labeled.class.isAssignableFrom(n.getClass()) ) {
                     Labeled l = (Labeled)n;
-                    StringProperty patternResult = new SimpleStringProperty("");
-                    
-                    // extract pattern of text
-                    String pattern = l.getText();
-                    pattern=pattern.replace('}', '{');
-                    String[] parts = pattern.split("\\{"); // even parts are data keys !
-
-                    // binding pattrn with data
-                    boolean itsData=false;
-                    for (String s:parts) {
-                        StringProperty tmp = new SimpleStringProperty();
-                        if(itsData)
-                            tmp.bind( patternResult.concat(data.getStringProperty(s)) );
-                        else
-                            tmp.bind( patternResult.concat(s) );
-                        patternResult = tmp;
-                        itsData=!itsData;
-                    }
-                    
-                    l.textProperty().bind(patternResult);
+                    l.textProperty().bind( patternBinder(l.getText(), data) );
                 }
                 
                 // Onclick action
@@ -91,14 +82,43 @@ public class ModelControl {
                     Button b = (Button)n;
                     b.setOnAction(btnAction);
                 }
-                
-                
             }
-                
         }
+        
+        // check if statement
+        for (int i=0; i<childs.size(); i++) {
+            Node n = childs.get(i);
+            // if its if !
+            if (n instanceof If) {
+                If f = (If)n;
+                f.checkStatement(data);
+            }            
+        }
+
         return root;
     }
 
+    private StringProperty patternBinder(String pattern, final NameValue data) {
+        StringProperty patternResult = new SimpleStringProperty("");
+
+        // extract pattern of text
+        pattern=pattern.replace('}', '{');
+        String[] parts = pattern.split("\\{"); // even parts are data keys !
+
+        // binding pattrn with data
+        boolean itsData=false;
+        for (String s:parts) {
+            StringProperty tmp = new SimpleStringProperty();
+            if(itsData)
+                tmp.bind( patternResult.concat(data.getStringProperty(s)) );
+            else
+                tmp.bind( patternResult.concat(s) );
+            patternResult = tmp;
+            itsData=!itsData;
+        }
+
+        return patternResult;
+    }
     
     // do stuff inside anonymous class
     // We should have data[id] here !        

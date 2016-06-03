@@ -19,14 +19,19 @@ import logic.Modelable;
  */
 public class ModelControlCollection extends ModelControl{
     
+    NameValue defaultData;
     IdValue<NameValue> dataList = new IdValue<NameValue>();
     Pane root=null;
     ObservableList<Node> rootChilds;
     
-    public ModelControlCollection(Pane root,String fxmlName) {
+    public ModelControlCollection(Pane root, String fxmlName, NameValue defaultData) {
         super(fxmlName);
         this.root=root;
         rootChilds = root.getChildren();
+        this.defaultData = defaultData;
+    }
+    public ModelControlCollection(Pane root, String fxmlName) {
+        this(root, fxmlName, new NameValue());
     }
     
     public void add(Modelable obj) { //generate data with obj.fields and add it

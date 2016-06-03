@@ -51,7 +51,9 @@ public class CourseBoardController extends MyController {
         System.out.println(u.getClass().toString());
         
 
-        myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml") {
+        myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
+                new NameValue("section","myCourse",   "userType",u.getTypeString() )) {
+                    
             @Override
             public void onButtonClick (NameValue data) {
                 
@@ -64,7 +66,9 @@ public class CourseBoardController extends MyController {
             }
         };
 
-        allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml") {
+        allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml",
+                new NameValue("section","myCourse",   "userType",u.getTypeString() )) {
+                    
             @Override
             public void onButtonClick (NameValue data) {
                 //Todo: add to my courses

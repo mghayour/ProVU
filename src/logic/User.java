@@ -17,7 +17,8 @@ import java.util.*;
  */
 public abstract class User implements IdNeeded, Modelable, Serializable{
     public static final int TYPE_TEACHER = 1, TYPE_STUDENT = 2;
-    abstract int getType();
+    public abstract int getType();
+    public abstract String getTypeString();
 
     private int id=0;
     private String userName;

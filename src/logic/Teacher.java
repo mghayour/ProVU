@@ -17,10 +17,14 @@ public class Teacher extends User {
 
 
     
-    
     @Override
-    int getType() {
+    public int getType() {
         return User.TYPE_TEACHER;
+    }
+
+    @Override
+    public String getTypeString() {
+        return "Teacher";
     }
     
 }

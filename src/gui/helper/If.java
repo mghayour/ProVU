@@ -5,6 +5,7 @@
  */
 package gui.helper;
 
+import helper.NameValue;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
@@ -17,42 +18,59 @@ import javafx.scene.layout.Pane;
  */
 public class If extends Pane {
 
+    String contains=null;
+
+    String x=null;
+    String is=null;
+
     
-    public StringProperty btn_delete = new SimpleStringProperty("");
+    // Setter
+    public void setContains(String contains) {
+        this.contains = contains;
+    }
+    public void setX(String x) {
+        this.x = x;
+    }
+    public void setIs(String is) {
+        this.is = is;
+    }
     
-    public StringProperty btn_deleteProperty() {
-        return btn_delete;
+    // Getter
+    public String getContains() {
+        return contains;
     }
-
-    public String getBtn_delete() {
-        return btn_delete.getValue();
+    public String getX() {
+        return x;
     }
-
-    public void setBtn_delete(String val) {
-        this.btn_delete.set(val);
+    public String getIs() {
+        return is;
     }
-/*
-    public If() {
-        System.out.println("Cunstructor !");
-//          fill.addListener((obs, oldFill, newFill) -> filled.setFill(Paint.valueOf(newFill)));
-
-
+    
+    
+    //should have method that call from ModelControl to check statement and do stuff (+statement field)  
+    public void checkStatement(NameValue data) {
+        boolean ok = true;
+        if (contains!=null)
+            ok = ok && data.containsKey(contains);
+        
+        if (x!=null && is!=null)
+            ok = ok && data.containsKey(x) && data.getString(x).equals(is);
+        
+        statement(ok);
     }
-*/
-    @Override
-    public ObservableList<Node> getChildren() {
-  /*      System.out.println("     getChild");
-        System.out.println("     childs:"+children.size());
-        System.out.println("     Pchilds:"+ ((Pane)getParent()).getChildren().size());
-*/        
-        return children;
-        //return super.getChildren(); //To change body of generated methods, choose Tools | Templates.
-    }
+    
+    protected void statement(boolean ok) {
+        Pane father = (Pane)getParent();
+        ObservableList<Node> brothers = father.getChildren();
+        int myid=brothers.indexOf(this);
+        ObservableList<Node> childs = getChildren();
 
+        if (ok) {
+            while ( childs.size()>0 )
+                brothers.add(myid, childs.get(0) );
+        } 
+        childs.clear();
+    }
     
    
-  // should have method that call from ModelControl to check statement and do stuff (+statement field)  
-    
-
-    
 }
