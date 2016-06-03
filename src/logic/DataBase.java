@@ -115,7 +115,7 @@ public class DataBase implements Serializable{
         throw new Exception("User["+uname+"] not found");
     }
 
-    boolean userExists(String uname) {
+    public boolean userExists(String uname) {
         for (User u: user)
             if (u.getUserName().equals(uname))
                 return true;

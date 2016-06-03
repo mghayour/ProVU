@@ -18,6 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import logic.DataBase;
 import logic.Student;
+import logic.Teacher;
 import logic.UserInterface;
 import org.joda.time.DateTime;
 
@@ -54,6 +55,11 @@ public class GuiController extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         this.stage = stage;
+        
+        DataBase db = DataBase.getInstance();
+        if (! db.userExists("mnouri"))
+            db.addUser(new Teacher("mnouri", "مصطفی", "نوری", "test"));
+        
         //ui.login("mghayour", "test");
         ui.login("mnouri", "test");
         //gotoPage("Workspace");
