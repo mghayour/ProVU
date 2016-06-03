@@ -7,6 +7,7 @@ package gui.helper;
 
 import helper.*;
 import java.util.*;
+import java.util.Map.Entry;
 import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
@@ -41,7 +42,12 @@ public class ModelControlCollection extends ModelControl{
     public void add(NameValue rowData) {
         if (!rowData.containsKey("id"))
             System.out.println("ERROR: data['id'] Not found :"+rowData.toString());
-
+        
+        // default data should add to all of rows !
+        rowData.putAll(defaultData);
+        
+            
+        
         Node element = generate(rowData);
         rowData.put("element", element);
         rootChilds.add(element);

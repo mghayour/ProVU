@@ -67,7 +67,7 @@ public class CourseBoardController extends MyController {
         };
 
         allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml",
-                new NameValue("section","myCourse",   "userType",u.getTypeString() )) {
+                new NameValue("section","allCourse",   "userType",u.getTypeString() )) {
                     
             @Override
             public void onButtonClick (NameValue data) {

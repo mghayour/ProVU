@@ -48,13 +48,20 @@ public class If extends Pane {
     
     
     //should have method that call from ModelControl to check statement and do stuff (+statement field)  
+    public void checkStatement() {
+        checkStatement(null);
+    }
     public void checkStatement(NameValue data) {
         boolean ok = true;
         if (contains!=null)
             ok = ok && data.containsKey(contains);
         
-        if (x!=null && is!=null)
-            ok = ok && data.containsKey(x) && data.getString(x).equals(is);
+        if (x!=null && is!=null) {
+            if (data!=null)
+                ok = ok && data.containsKey(x) && data.getString(x).equals(is);
+            else
+                ok = ok && x.equals(is);
+        }
         
         statement(ok);
     }

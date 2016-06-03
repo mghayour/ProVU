@@ -5,6 +5,7 @@
  */
 package gui;
 
+import gui.helper.ModelControl;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -16,6 +17,8 @@ import helper.*;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.scene.*;
+import javafx.scene.layout.Pane;
 import logic.DataBase;
 import logic.Student;
 import logic.Teacher;
@@ -93,15 +96,22 @@ public class GuiController extends Application {
         return ui;
     }
 
-    private Parent loadFxml(String fname) throws IOException {
+    private Pane loadFxml(String fname) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fname));
-        Parent root = loader.load();
+        Pane root = (Pane)loader.load();
         ((MyController)loader.getController()).setGui(this);
+        
+        // parse data
+        root = (Pane) new ModelControl("",false).generate(
+                root, 
+                new NameValue("userType",ui.getUser().getTypeString())
+                );
+        
         return root;
     }
     
     void gotoPage(String name) throws IOException {
-        Parent root = loadFxml(name+".fxml");
+        Pane root = loadFxml(name+".fxml");
         if (!name.equals("Login")) {
             root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         }

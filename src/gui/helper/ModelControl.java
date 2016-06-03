@@ -23,33 +23,45 @@ import javafx.scene.layout.Pane;
  */
 public class ModelControl {
     String fxmlName;
-                
-    public ModelControl(String fxmlName) {
-        this.fxmlName = fxmlName;
+    boolean handleClicks;
+
+    public ModelControl() {
     }
+
+    public ModelControl(String fxmlName, boolean handleClicks) {
+        this.fxmlName = fxmlName;
+        this.handleClicks = handleClicks;
+    }
+    public ModelControl(String fxmlName) {
+        this(fxmlName,true);
+    }
+
     
-    public Node generate( final NameValue data ) {
+
+    public Node generate(final NameValue data) {
         Pane root = null;
         try {
             //root = (Pane)FXMLLoader.load(GuiController.class.getResource(fxmlName));
-            FXMLLoader loader = new MyFXMLLoader(getClass().getResource(fxmlName));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlName));
             root = (Pane)loader.load();
             //loader.setClassLoader(null);
         } catch(Exception e) {
             e.printStackTrace();
             return null;
         }
-
-        root.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                onRootClick(data, event);
-            }
-        });
+        
+        if(handleClicks)
+            root.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    onRootClick(data, event);
+                }
+            });
+        
         return generate(root, data);
     }
     
-    private Node generate(Pane root,final NameValue data) {
+    public Node generate(Pane root,final NameValue data) {
         final EventHandler<ActionEvent> btnAction = new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -78,7 +90,7 @@ public class ModelControl {
                 }
                 
                 // Onclick action
-                if ( Button.class.isAssignableFrom(n.getClass()) ) {
+                if ( handleClicks && Button.class.isAssignableFrom(n.getClass()) ) {
                     Button b = (Button)n;
                     b.setOnAction(btnAction);
                 }
@@ -91,14 +103,15 @@ public class ModelControl {
             // if its if !
             if (n instanceof If) {
                 If f = (If)n;
-                f.checkStatement(data);
+                //f.checkStatement(data); // not need, data parsed before !
+                f.checkStatement();
             }            
         }
 
         return root;
     }
 
-    private StringProperty patternBinder(String pattern, final NameValue data) {
+    private static StringProperty patternBinder(String pattern, final NameValue data) {
         StringProperty patternResult = new SimpleStringProperty("");
 
         // extract pattern of text
