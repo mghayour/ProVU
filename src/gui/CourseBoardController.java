@@ -54,7 +54,10 @@ public class CourseBoardController extends MyController {
         myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml") {
             @Override
             public void onButtonClick (NameValue data) {
-                //Todo: remove from my courses
+                int id = data.getInt("id");
+                u.getCourses().remove(id);
+                remove(id);
+                allCourses.remove(id);
             }
         };
 
