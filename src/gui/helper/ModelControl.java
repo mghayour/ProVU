@@ -30,7 +30,10 @@ public class ModelControl {
     public Node generate( final NameValue data ) {
         Pane root = null;
         try {
-            root = (Pane)FXMLLoader.load(GuiController.class.getResource(fxmlName));
+            //root = (Pane)FXMLLoader.load(GuiController.class.getResource(fxmlName));
+            FXMLLoader loader = new MyFXMLLoader(getClass().getResource(fxmlName));
+            root = (Pane)loader.load();
+            //loader.setClassLoader(null);
         } catch(Exception e) {
             e.printStackTrace();
             return null;
@@ -102,8 +105,12 @@ public class ModelControl {
     // notice: after button action, root action will NOT run !!!
     public void onRootClick  (NameValue data, MouseEvent e) { onRootClick(data); }
     public void onRootClick  (NameValue data) { }
-    
-    public void onButtonClick (NameValue data, ActionEvent e) { onButtonClick(data); }
+
+    public void onButtonClick (NameValue data, ActionEvent e) {
+        onButtonClick(data, ((Node)e.getSource()).getId() );
+        onButtonClick(data);
+    }
+    public void onButtonClick (NameValue data, String BtnId) { }
     public void onButtonClick (NameValue data) { }
     
 }
