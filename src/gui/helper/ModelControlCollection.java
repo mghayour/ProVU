@@ -19,7 +19,9 @@ import logic.Modelable;
  * @author Ghayour
  */
 public class ModelControlCollection extends ModelControl{
+    static private int controlCollectionId = 0;
     
+    int id = controlCollectionId++;
     NameValue defaultData;
     IdValue<NameValue> dataList = new IdValue<NameValue>();
     Pane root=null;
@@ -51,7 +53,7 @@ public class ModelControlCollection extends ModelControl{
             
         
         Node element = generate(rowData);
-        rowData.put("element", element);
+        rowData.put("element"+id, element);
         rootChilds.add(element);
         
         dataList.put(rowData.getInt("id"), rowData);
@@ -61,7 +63,7 @@ public class ModelControlCollection extends ModelControl{
         // remove from data list
         NameValue elementData = dataList.remove(id);
         // remove element from parent
-        rootChilds.remove((Node)elementData.get("element"));
+        rootChilds.remove((Node)elementData.get("element"+this.id));
     }
     
     public NameValue get(int id) {

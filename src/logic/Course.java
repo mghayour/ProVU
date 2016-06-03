@@ -51,9 +51,16 @@ public class Course extends ObjectFather {
 
     public void addStudent(User user) {
         students.add(user);
+        user.addCourse(this);
         ((StringProperty)myNameValue.get("studentCount")).set(""+students.size());
     }
 
+    public IdValue<User> getStudents() {
+        return students;
+    }
+
+
+    
     
     
     

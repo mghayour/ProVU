@@ -64,9 +64,11 @@ public class CourseBoardController extends MyController {
                     //remove course
                     int id = data.getInt("id");
                     u.getCourses().remove(id);
-                    db.getCourse().remove(id);
-                    remove(id);
                     allCourses.remove(id);
+                    myCourses.remove(id);
+                    Course c = db.getCourse().remove(id);
+                    for (User s: c.getStudents())
+                        s.getCourses().remove(id);
                 }
 
                 if (btnId.equals("btn_addStudent")) {                    
@@ -87,12 +89,12 @@ public class CourseBoardController extends MyController {
         };
         
         
-        for(Course c: u.getCourses())
-            myCourses.add(c);
         
         for(Course c: db.getCourse())
             allCourses.add(c);
         
+        for(Course c: u.getCourses())
+            myCourses.add(c);
         
     }
     
