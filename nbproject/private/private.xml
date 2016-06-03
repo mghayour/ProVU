@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/helper/ModelControl.java</file>
-            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/helper/MyFXMLLoader.java</file>
-            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/helper/If.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/CourseBoard.fxml</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/logic/ObjectFather.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/logic/Post.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/logic/Message.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/helper/ModelControlCollection.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/logic/Course.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/CourseBoardController.java</file>
+            <file>file:/G:/barnameh%20newisi/JAVA/BP/Graphic/JavaFX/ProVU/src/gui/model/myCourseInCourseBoard.fxml</file>
         </group>
     </open-files>
 </project-private>
