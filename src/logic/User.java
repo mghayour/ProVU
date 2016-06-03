@@ -5,9 +5,11 @@
  */
 package logic;
 
+import helper.IdValue;
 import helper.NameValue;
 import helper.PersianDateTime;
 import java.io.Serializable;
+import java.util.*;
 
 /**
  *
@@ -23,7 +25,8 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     private String lastName;
     private String password;
     private PersianDateTime registerTime;
-
+    protected IdValue<Course> courses;
+    
     
     public User(String userName, String firstName, String lastName, String password, PersianDateTime registerTime) {
         this.userName = userName;
@@ -31,6 +34,7 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
         this.lastName = lastName;
         this.password = password;
         this.registerTime = registerTime;
+        this.courses = new IdValue<>();
     }
     
     public User(String userName, String firstName, String lastName, String password) {
@@ -61,7 +65,11 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     public String getName() {
         return firstName.substring(0, 1)+". "+lastName;
     }
-
+    public IdValue<Course> getCourses() {
+        return courses;
+    }
+    
+    
     public Boolean checkPassword(String pass) {
         return (pass == null ? password == null : pass.equals(password));
     }
@@ -79,6 +87,10 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     @Override
     public String toString() {
         return getName();
+    }
+
+    public void addCourse(Course course) {
+        courses.put(course.getId(),course);
     }
     
     
