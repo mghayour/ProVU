@@ -14,7 +14,7 @@ import java.util.*;
  *
  * @author Ghayour
  */
-public class Message extends IdNeeder implements Modelable {
+public class Message extends ObjectFather implements Modelable {
     private String content;
     private User sender;
     private PersianDateTime sendTime;
