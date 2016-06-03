@@ -122,6 +122,11 @@ public class DataBase implements Serializable{
         return false;
     }
 
+    public IdValue<Course> getCourse() {
+        return course;
+    }
+
+    
     
     
 }
