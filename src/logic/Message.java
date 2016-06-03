@@ -29,13 +29,13 @@ public class Message extends ObjectFather implements Modelable {
     
     @Override
     public NameValue toNameValue() {
-        NameValue res = new NameValue();
-        res.put("id", id);
-        res.put("content", content);
-        res.put("sender", sender.getName());
-        res.put("sendTime", sendTime.toString());
-        
-        return res;
+        if (myNameValue==null) {
+            myNameValue = super.toNameValue();
+            myNameValue.put("content", content);
+            myNameValue.put("sender", sender.getName());
+            myNameValue.put("sendTime", sendTime.toString());
+        }
+        return myNameValue;
     }
 
 

@@ -143,7 +143,7 @@ public class ModelControl {
         onButtonClick(data, ((Node)e.getSource()).getId() );
         onButtonClick(data);
     }
-    public void onButtonClick (NameValue data, String BtnId) { }
+    public void onButtonClick (NameValue data, String btnId) { }
     public void onButtonClick (NameValue data) { }
     
 }

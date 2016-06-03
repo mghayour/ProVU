@@ -80,4 +80,26 @@
             </JFXDialogLayout>
     </JFXDialog>            
 
+    <JFXDialog fx:id="dlg_addStudent">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>افزودن دانشجو</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <Label text="نام کاربری دانشجو را وارد کنید." minWidth="60" />
+                            <JFXTextField fx:id="txt_studentName" promptText="username" minHeight="30" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton fx:id="btn_addCourse" onAction="#btn_addStudent_clicked" styleClass="green" text="افزودن" />
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
 </StackPane>

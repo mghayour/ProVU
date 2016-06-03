@@ -18,9 +18,6 @@ public class Post extends Message{
     String title;
     ArrayList<Comment> comments = new ArrayList<>();
 
-    
-    private transient NameValue myNameValue = null;
-
     public Post(String title, String content, User sender, PersianDateTime sendTime) {
         super(content, sender, sendTime);
         this.title = title;

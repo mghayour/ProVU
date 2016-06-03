@@ -13,7 +13,10 @@
 <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
     <Label text="{name}" minWidth="100" styleClass="em, em-books, txt-med" />
     <If x="{section}" is="myCourse" >
-        <JFXButton text="حذف" styleClass="red, txt-med" />
+        <JFXButton id="btn_delete" text="حذف" styleClass="red, txt-med" />
+        <If x="{userType}" is="Teacher" >
+            <JFXButton id="btn_addStudent" text="دانشجو+" styleClass="green, txt-white, txt-med" />
+        </If>
     </If>
     <If x="{section}, {userType}" is="allCourse, Student" >
         <JFXButton text="اضافه" styleClass="green, txt-med" />

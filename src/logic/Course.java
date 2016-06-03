@@ -11,6 +11,7 @@ import helper.PersianDateTime;
 import java.io.Serializable;
 import java.util.*;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 /**
  *
@@ -18,7 +19,7 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class Course extends ObjectFather {
     String name;
-    IdValue<Student> students;
+    IdValue<User> students;
     Teacher teacher;
     IdValue<Post> posts;
     PersianDateTime createdTime;
@@ -36,16 +37,22 @@ public class Course extends ObjectFather {
 
 
     @Override
-    public NameValue toNameValue() {
-        NameValue res = super.toNameValue();
-        res.put("name", name);
-        res.put("teacherName", teacher.getName() );
-        res.put("studentCount", ""+students.size() );
-        res.put("createdDate", createdTime.toDateString() );
-        res.put("createdTime", createdTime.toString() );
-        
-        return res;
- }
+    public NameValue toNameValue() {       
+        if (myNameValue==null) {
+            myNameValue = super.toNameValue();
+            myNameValue.put("name", name);
+            myNameValue.put("teacherName", teacher.getName() );
+            myNameValue.put("studentCount", new SimpleStringProperty(""+students.size()) );
+            myNameValue.put("createdDate", createdTime.toDateString() );
+            myNameValue.put("createdTime", createdTime.toString() );
+        }
+        return myNameValue;
+    }
+
+    public void addStudent(User user) {
+        students.add(user);
+        ((StringProperty)myNameValue.get("studentCount")).set(""+students.size());
+    }
 
     
     

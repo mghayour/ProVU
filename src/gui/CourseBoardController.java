@@ -20,6 +20,8 @@ import javafx.scene.layout.*;
 import static gui.Helper.*;
 import gui.helper.ModelControlCollection;
 import helper.NameValue;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.beans.property.StringProperty;
 import logic.*;
@@ -55,15 +57,24 @@ public class CourseBoardController extends MyController {
                 new NameValue("section","myCourse",   "userType",u.getTypeString() )) {
                     
             @Override
-            public void onButtonClick (NameValue data) {
+            
+            public void onButtonClick (NameValue data, String btnId) {
                 
-                //remove course
-                int id = data.getInt("id");
-                u.getCourses().remove(id);
-                db.getCourse().remove(id);
-                remove(id);
-                allCourses.remove(id);
-            }
+                if (btnId.equals("btn_delete")) {
+                    //remove course
+                    int id = data.getInt("id");
+                    u.getCourses().remove(id);
+                    db.getCourse().remove(id);
+                    remove(id);
+                    allCourses.remove(id);
+                }
+
+                if (btnId.equals("btn_addStudent")) {                    
+                    // show  addStudent dialog
+                    currentCourseId = data.getInt("id");
+                    showDialog(dlg_addStudent);
+                }
+}
         };
 
         allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml",
@@ -89,7 +100,7 @@ public class CourseBoardController extends MyController {
 
     
     
-
+    // Add course dialog
     @FXML JFXDialog dlg_addCourse;
     @FXML JFXTextField txt_courseName;
     @FXML void plusBtnClicked () {
@@ -110,5 +121,27 @@ public class CourseBoardController extends MyController {
         closeDialog();
     }
 
+    
+    
+    
+    
+    // Add Student dialog
+    @FXML JFXDialog dlg_addStudent;
+    int currentCourseId=0;
+    @FXML JFXTextField txt_studentName;
+    @FXML void btn_addStudent_clicked() {
+        DataBase db = DataBase.getInstance();
+        String username = txt_studentName.getText();
+        try {
+            User student = db.getUserByUsername(username);
+            db.getCourse().get(currentCourseId).addStudent(student);
+        } catch (Exception ex) {
+            Logger.getLogger(CourseBoardController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        closeDialog();
+    }
+    
+    
     
 }

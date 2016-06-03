@@ -21,6 +21,8 @@ public class ObjectFather implements IdNeeded, Serializable, Modelable {
         return id;
     }
 
+    
+    protected transient NameValue myNameValue = null;
     @Override
     public NameValue toNameValue() {
         NameValue res = new NameValue();
