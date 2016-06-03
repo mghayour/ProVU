@@ -16,7 +16,13 @@ import javafx.scene.control.Labeled;
 public class NameValue extends HashMap<String, Object> {
     
     public StringProperty getStringProperty(String name) {
+        if (!containsKey(name)) {
+            System.out.println("ERROR: key["+name+"] not found.  NameValue:"+toString());
+            return new SimpleStringProperty("");
+        }
+
         Object obj = get(name);
+            
         if ( StringProperty.class.isAssignableFrom(obj.getClass()) )
             return (StringProperty)obj;
         
