@@ -11,6 +11,7 @@ import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.layout.*;
+import logic.Modelable;
 
 /**
  *
@@ -28,8 +29,9 @@ public class ModelControlCollection extends ModelControl{
         rootChilds = root.getChildren();
     }
     
-    // TODO:
-    // public void add(Object obj) { generate data with obj.fields and add it
+    public void add(Modelable obj) { //generate data with obj.fields and add it
+        add(obj.toNameValue());
+    }
     
     public void add(NameValue rowData) {
         Node element = generate(rowData);
