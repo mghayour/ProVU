@@ -75,6 +75,10 @@ public class Course extends ObjectFather {
         return students;
     }
 
+    public IdValue<Post> getPosts() {
+        return posts;
+    }
+
 
 
     
