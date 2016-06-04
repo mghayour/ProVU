@@ -71,5 +71,10 @@ public class ModelControlCollection extends ModelControl{
     public NameValue get(int id) {
         return dataList.get(id);
     }
+
+    public void clear() {
+        for(NameValue e: dataList)
+            remove(e.getInt("id"));
+    }
     
 }
