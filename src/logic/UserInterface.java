@@ -88,5 +88,12 @@ public class UserInterface {
             db.getUser(uid)
         );
     }
+
+    public Post newPost(String title, String content, Course course) {
+        Post post = new Post(title, content, user);
+        db.addPost(post);
+        course.addPost(post);
+        return post;
+    }
     
 }

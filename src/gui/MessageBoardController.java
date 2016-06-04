@@ -28,6 +28,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
+import javafx.scene.web.HTMLEditor;
 import logic.*;
 //import gui.animation.*;
 
@@ -58,12 +59,6 @@ public class MessageBoardController extends MyController {
         return myNameValue;
     }
     
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        super.initialize(url, rb);
-    }
-
     @Override
     public void setGui(GuiController gui) {
         super.setGui(gui);
@@ -119,10 +114,20 @@ public class MessageBoardController extends MyController {
         showDialog(dlg_selectCourse);
     }
     
-    
-    @FXML void btn_newPost_click() {
+    @FXML JFXDialog dlg_newPost;
+    @FXML void btn_newPostDialog_click() {
+        if (currentCourse.containsKey("course"))
+            showDialog(dlg_newPost);
     }
     
+    @FXML HTMLEditor hEdit_newPostContent; 
+    @FXML JFXTextField hEdit_newPostTitle; 
+    @FXML void btn_addNewPost_click() {
+        String content = hEdit_newPostContent.getHtmlText();
+        String title = hEdit_newPostTitle.getText();
+        Post post = gui.getUi().newPost(title, content, (Course)currentCourse.get("course"));
+        posts.add(post);
+    }
 
     
 }

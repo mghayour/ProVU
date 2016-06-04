@@ -79,6 +79,10 @@ public class Course extends ObjectFather {
         return posts;
     }
 
+    void addPost(Post post) {
+        posts.add(post);
+    }
+
 
 
     

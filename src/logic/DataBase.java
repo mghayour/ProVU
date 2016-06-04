@@ -104,6 +104,10 @@ public class DataBase implements Serializable{
         c.setId(courseAutoId++);
         course.add(c);
     }
+    void addPost(Post post) {
+        post.setId(messageAutoId++);
+        message.add(post);
+    }
     
     
     // GetObjects
@@ -125,14 +129,13 @@ public class DataBase implements Serializable{
     public IdValue<Course> getCourse() {
         return course;
     }
-
     public Course getCourse(int cid) {
         return course.get(cid);
     }
-
     User getUser(int uid) {
         return user.get(uid);
     }
+
 
     
     

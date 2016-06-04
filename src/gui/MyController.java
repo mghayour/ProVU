@@ -66,9 +66,6 @@ public abstract class MyController implements Initializable, Modelable {
     }
     
     
-    
-    
-    
     // dialog functions
     private JFXDialog currentDialog=null;
     protected void showDialog(JFXDialog dialog) {

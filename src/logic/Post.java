@@ -22,6 +22,10 @@ public class Post extends Message{
         super(content, sender, sendTime);
         this.title = title;
     }
+
+    Post(String title, String content, User sender) {
+        this(title, content, sender, PersianDateTime.now());
+    }
             
     @Override
     public NameValue toNameValue() {
