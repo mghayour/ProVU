@@ -55,9 +55,16 @@ public class Course extends ObjectFather {
         ((StringProperty)myNameValue.get("studentCount")).set(""+students.size());
     }
 
+    void removeStudent(User user) {
+        students.remove(user.id);
+        user.removeCourse(this.id);
+        ((StringProperty)myNameValue.get("studentCount")).set(""+students.size());        
+    }
+
     public IdValue<User> getStudents() {
         return students;
     }
+
 
 
     

@@ -93,6 +93,10 @@ public abstract class User extends ObjectFather {
     public void addCourse(Course course) {
         courses.put(course.getId(),course);
     }
+
+    void removeCourse(int cid) {
+        courses.remove(cid);
+    }
     
     
     
