@@ -118,6 +118,7 @@ public class MessageBoardController extends MyController {
         
         // show selected post
         web_postContent.getEngine().loadContent(p.getContent());
+        web_postContent.setDisable(true);
 
         // close select dialog
         closeDialog();        
