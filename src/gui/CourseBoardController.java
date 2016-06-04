@@ -54,7 +54,7 @@ public class CourseBoardController extends MyController {
         
 
         myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
-              toNameValue().combine(new NameValue("section","myCourse"))  ) {
+              toNameValue().combine(new NameValue("section","myCourse", "page","CourseBoard"))  ) {
                     
             @Override            
             public void onButtonClick (NameValue data, String btnId) {
@@ -76,7 +76,7 @@ public class CourseBoardController extends MyController {
         };
 
         allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml",
-              toNameValue().combine(new NameValue("section","allCourse"))  ) {
+              toNameValue().combine(new NameValue("section","allCourse", "page","CourseBoard"))  ) {
                     
             @Override
             public void onButtonClick (NameValue data) {

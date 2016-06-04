@@ -38,10 +38,10 @@ import logic.*;
 public class MessageBoardController extends MyController {
     
     @FXML private Pane rooter;
-    @FXML private VBox messageSubjectHolder;
-    ModelControlCollection messages;
+    @FXML private VBox messageSubjectHolder, vbx_myCourseContent;
+    ModelControlCollection messages, myCourses;
     NameValue currentPost, currentCourse;
-
+    
     @Override
     public NameValue toNameValue() {
         if (myNameValue==null) {
@@ -73,6 +73,7 @@ public class MessageBoardController extends MyController {
             }
         };
         
+        
         for (int i=0; i<100; i++) {
             NameValue data = new NameValue();
             data.put("id",i);
@@ -87,10 +88,41 @@ public class MessageBoardController extends MyController {
 
     }
 
-    
-    @FXML void btn_viewPost_click() {
+    @Override
+    public void setGui(GuiController gui) {
+        super.setGui(gui);
+
+        DataBase db = DataBase.getInstance();
+        User u = gui.getUi().getUser();
+        
+        
+        myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
+              toNameValue().combine(new NameValue("section","myCourse", "page","MessageBoard"))  ) {
+                    
+            @Override            
+            public void onButtonClick (NameValue data, String btnId) {
+
+                if (btnId.equals("btn_showCourse")) {        
+                    // show  needed course TODO
+                }
+}
+        };
+
+        
+        for(Course c: u.getCourses())
+            myCourses.add(c);
+
     }
-    @FXML void btn_viewPost_click_pro(int id) {
+
+    
+    
+    @FXML JFXDialog dlg_selectCourse;
+    @FXML void btn_selectCourse_click() {
+        showDialog(dlg_selectCourse);
+    }
+    
+    
+    @FXML void btn_newPost_click() {
     }
     
 

@@ -12,7 +12,7 @@
 
 <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
     <Label text="{name}" minWidth="80" styleClass="em, em-books, txt-med" />
-    <If x="{section}" is="myCourse" >
+    <If x="{section}, {page}" is="myCourse, CourseBoard" >
         <If x="{user.type}" is="Teacher" >
             <JFXButton id="btn_showCourse" text="مشاهده" styleClass="green, txt-white, txt-med" />
         </If>
@@ -20,11 +20,19 @@
             <JFXButton id="btn_delete" text="حذف" styleClass="red, txt-med" />
         </If>
     </If>
-    <If x="{section}, {user.type}" is="allCourse, Student" >
+    <If x="{page}, {section}, {user.type}" is="CourseBoard, allCourse, Student" >
         <JFXButton text="اضافه" styleClass="green, txt-med" />
     </If>
+
     <Pane HBox.hgrow="ALWAYS" />
-    <Label text="{teacherName}" minWidth="80" styleClass="em, em-pen" />
-    <Label text="{studentCount}" minWidth="50" styleClass="em, em-users" />
-    <Label text="{createdDate}" minWidth="100" styleClass="em, em-date" />
+
+    <If x="{section}, {page}" is="myCourse, MessageBoard" >
+        <JFXButton id="btn_selectCourse" text="انتخاب" styleClass="green, txt-white, txt-med" />
+    </If>
+    
+    <If x="{page}" is="CourseBoard" >
+        <Label text="{teacherName}" minWidth="80" styleClass="em, em-pen" />
+        <Label text="{studentCount}" minWidth="50" styleClass="em, em-users" />
+        <Label text="{createdDate}" minWidth="100" styleClass="em, em-date" />
+    </If>
 </HBox>
