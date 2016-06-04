@@ -74,7 +74,8 @@ public class If extends Pane {
 
         if (ok) {
             while ( childs.size()>0 )
-                brothers.add(myid, childs.get(0) );
+                brothers.add(myid, childs.get( childs.size()-1 ) );
+            brothers.remove(this);
         } 
         childs.clear();
     }
