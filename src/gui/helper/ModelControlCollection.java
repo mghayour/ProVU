@@ -46,6 +46,8 @@ public class ModelControlCollection extends ModelControl{
             //System.out.println("ERROR: data['id'] Not found :"+rowData.toString());
             rowData.put("id",dataList.size()); // AutoIncreament Id
         }
+        if (dataList.containsKey(rowData.getInt("id")))
+            return;
         
         // default data should add to all of rows !
         rowData.putAll(defaultData);
