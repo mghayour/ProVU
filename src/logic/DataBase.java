@@ -126,6 +126,10 @@ public class DataBase implements Serializable{
         return course;
     }
 
+    public Course getCourse(int cid) {
+        return course.get(cid);
+    }
+
     
     
     
