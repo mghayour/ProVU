@@ -30,4 +30,10 @@ public class ObjectFather implements IdNeeded, Serializable, Modelable {
         return res;
     }
 
+    public static NameValue toEmptyNameValue() {
+        NameValue res = new NameValue();
+        res.put("id", 0);
+        return res;        
+    }
+
 }

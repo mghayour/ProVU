@@ -35,6 +35,7 @@ public class Course extends ObjectFather {
         this.createdTime = PersianDateTime.now();
     }
 
+    
 
     @Override
     public NameValue toNameValue() {       
@@ -48,7 +49,16 @@ public class Course extends ObjectFather {
         }
         return myNameValue;
     }
-
+    public static NameValue toEmptyNameValue () {
+        NameValue res = ObjectFather.toEmptyNameValue();
+        res.put("name", "");
+        res.put("teacherName", "");
+        res.put("studentCount", "");
+        res.put("createdDate", "");
+        res.put("createdTime", "");
+        return res;
+    }
+    
     public void addStudent(User user) {
         students.add(user);
         user.addCourse(this);

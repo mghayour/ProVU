@@ -37,6 +37,13 @@ public class Message extends ObjectFather implements Modelable {
         }
         return myNameValue;
     }
+    public static NameValue toEmptyNameValue () {
+        NameValue res = ObjectFather.toEmptyNameValue();
+        res.put("content", "");
+        res.put("sender", "");
+        res.put("sendTime", "");
+        return res;
+    }
 
 
     

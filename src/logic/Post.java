@@ -32,6 +32,12 @@ public class Post extends Message{
         } 
         return myNameValue;
     }
+    public static NameValue toEmptyNameValue () {
+        NameValue res = ObjectFather.toEmptyNameValue();
+        res.put("title", "");
+        res.put("commentCount", "");
+        return res;
+    }
 
     // Setter
     public void addComment(Comment cmt) {
