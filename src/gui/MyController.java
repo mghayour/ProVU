@@ -53,18 +53,16 @@ public abstract class MyController implements Initializable, Modelable {
     
 
     // model
+    NameValue myNameValue=null;
     @Override
     public NameValue toNameValue() {
-        NameValue res  = new NameValue();
-        User u = gui.getUi().getUser();
+        if (myNameValue==null) {
+            myNameValue = new NameValue();
+            User u = gui.getUi().getUser();
 
-        res.put("user",u.toNameValue());
-        /** /
-        res = new NameValue("userType",u.getTypeString(),  "userFirstName",u.getFirstName() ,  "userLastName",u.getLastName(),
-        "userFullName",u.getName(),  "username",u.getUserName());
-        /**/
-        
-        return res;
+            myNameValue.put("user",u.toNameValue());
+        }
+        return myNameValue;
     }
     
     
