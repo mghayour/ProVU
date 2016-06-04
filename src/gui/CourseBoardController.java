@@ -131,6 +131,9 @@ public class CourseBoardController extends MyController {
         if (u.getType()==User.TYPE_TEACHER)
             allCourses.remove(id);
         myCourses.remove(id);
+        courseStudents.clear();
+        currentCourseId=-1;
+        currentCourseName.set("");
         gui.getUi().removeCourse(id);
     }
 
