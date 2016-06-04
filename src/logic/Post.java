@@ -33,7 +33,7 @@ public class Post extends Message{
         return myNameValue;
     }
     public static NameValue toEmptyNameValue () {
-        NameValue res = ObjectFather.toEmptyNameValue();
+        NameValue res = Message.toEmptyNameValue();
         res.put("title", "");
         res.put("commentCount", "");
         return res;
