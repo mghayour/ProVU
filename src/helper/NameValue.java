@@ -118,7 +118,7 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
         for( Entry<String, Object> e: that) {
             String key=e.getKey();
             if (this.containsKey(key))
-                this.getStringProperty(key).bind(that.getStringProperty(key));
+                this.getStringProperty(key).set(that.getString(key));
             else
                 put(key, that.getStringProperty(key));
         }
