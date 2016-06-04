@@ -113,5 +113,16 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
         return res;
     }
 
+    // todo bind with inner depth ...
+    public void bind(NameValue that) {
+        for( Entry<String, Object> e: that) {
+            String key=e.getKey();
+            if (this.containsKey(key))
+                this.getStringProperty(key).bind(that.getStringProperty(key));
+            else
+                put(key, that.getStringProperty(key));
+        }
+    }
+
     
 }
