@@ -135,6 +135,10 @@ public class DataBase implements Serializable{
     User getUser(int uid) {
         return user.get(uid);
     }
+    public Post getPost(int pid) {
+        return (Post)message.get(pid);
+    }
+
 
 
     

@@ -45,6 +45,12 @@ public class Message extends ObjectFather implements Modelable {
         return res;
     }
 
+    
+    //Getter
+    public String getContent() {
+        return content;
+    }
+    
 
     
  }

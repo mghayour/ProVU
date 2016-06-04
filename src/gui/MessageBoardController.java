@@ -29,6 +29,7 @@ import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.web.HTMLEditor;
+import javafx.scene.web.WebView;
 import logic.*;
 //import gui.animation.*;
 
@@ -69,9 +70,7 @@ public class MessageBoardController extends MyController {
         posts = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
             @Override
             public void onButtonClick (NameValue data) {
-                StringProperty number = data.getStringProperty("number");
-                int n = data.getInt("number") + 1;
-                number.set(""+n);
+                selectPost(data.getInt("id"));
             }
         };
 
@@ -108,6 +107,22 @@ public class MessageBoardController extends MyController {
         closeDialog();        
     }
     
+    @FXML WebView web_postContent;
+    void selectPost(int pid) {
+        DataBase db = DataBase.getInstance();
+        Post p = db.getPost(pid);
+
+        // show post details
+        currentPost.bind(p.toNameValue());
+        currentPost.put("post", p);
+        
+        // show selected post
+        web_postContent.getEngine().loadContent(p.getContent());
+
+        // close select dialog
+        closeDialog();        
+    }
+    
     
     @FXML JFXDialog dlg_selectCourse;
     @FXML void btn_selectCourse_click() {
@@ -127,6 +142,7 @@ public class MessageBoardController extends MyController {
         String title = hEdit_newPostTitle.getText();
         Post post = gui.getUi().newPost(title, content, (Course)currentCourse.get("course"));
         posts.add(post);
+        closeDialog();
     }
 
     

@@ -126,7 +126,7 @@ public class PersianDateTime implements Serializable{
     
     @Override
     public String toString() {
-        return this.toDateString() + " " + this.toTimeString();
+        return this.toDateString() + "   " + this.toTimeString();
     }
 
     public String toDateString() {

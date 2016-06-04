@@ -46,7 +46,7 @@
                         <Label text="{currentPost.sendTime}"  minWidth="140" styleClass="em, em-date" />
                     </HBox>
                     <VBox styleClass="card-item" minHeight="200">
-                        <WebView />
+                        <WebView fx:id="web_postContent" />
                     </VBox>
 
                     <!--<HTMLEditor /> -->
