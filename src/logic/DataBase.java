@@ -130,6 +130,10 @@ public class DataBase implements Serializable{
         return course.get(cid);
     }
 
+    User getUser(int uid) {
+        return user.get(uid);
+    }
+
     
     
     

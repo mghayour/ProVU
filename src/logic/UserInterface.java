@@ -79,8 +79,14 @@ public class UserInterface {
         return addStudentToCourse(user, courseId);
     }
     public boolean addStudentToCourse(User student, int courseId) {
-        db.getCourse().get(courseId).addStudent(student);
+        db.getCourse(courseId).addStudent(student);
         return true;
+    }
+
+    public void removeCourseFromUser(int cid, int uid) {
+        db.getCourse(cid).removeStudent(
+            db.getUser(uid)
+        );
     }
     
 }
