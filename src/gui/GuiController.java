@@ -38,16 +38,8 @@ public class GuiController extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {        
         DataBase db = DataBase.getInstance();
-        /***
-        db.user.add(
-                new Student("mghayour", "مهدی", "غیور", "test")
-        );/**
-        System.out.println(db.user.toString());
-        System.out.println(db.user.size());
-*/
         launch(args);
     }
     
@@ -63,36 +55,25 @@ public class GuiController extends Application {
         DataBase db = DataBase.getInstance();
         if (! db.userExists("mnouri"))
             db.addUser(new Teacher("mnouri", "مصطفی", "نوری", "test"));
+        
         if (! db.userExists("mghayour"))
             db.addUser(new Teacher("mghayour", "مهدی", "غیور", "test"));
+        
+        if (! db.userExists("stu1"))
+            db.addUser(new Teacher("stu1", "یکی", "بود", "test"));
+        
+        if (! db.userExists("stu2"))
+            db.addUser(new Teacher("stu2", "یکی", "نبود", "test"));
+        
         
         //ui.login("mghayour", "test");
         ui.login("mnouri", "test");
         //gotoPage("Workspace");
         //gotoPage("Login");
-        //Thread.sleep(2000);
+
         gotoPage("Dashboard");
         //gotoPage("Messageboard");
         //gotoPage("CourseBoard");
-        /*
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("MessageBoard.fxml"));
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("CourseBoard.fxml"));
-
-
-        Parent root = loader.load();
-        ((LoginController)loader.getController()).setGui(this);
-        //root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
-
-        Scene scene = new Scene(root);
-        //scene.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
-        stage.setScene(scene);
-        stage.setMaximized(true);
-        //setFullScreen(stage);
-        stage.show();
-*/
-        
     }
 
     public UserInterface getUi() {
