@@ -39,7 +39,7 @@ public class MessageBoardController extends MyController {
     
     @FXML private Pane rooter;
     @FXML private VBox messageSubjectHolder, vbx_myCourseContent;
-    ModelControlCollection messages, myCourses;
+    ModelControlCollection posts, myCourses;
     NameValue currentPost, currentCourse;
     
     @Override
@@ -62,30 +62,6 @@ public class MessageBoardController extends MyController {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         super.initialize(url, rb);
-        
-       
-        messages = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
-            @Override
-            public void onButtonClick (NameValue data) {
-                StringProperty number = data.getStringProperty("number");
-                int n = data.getInt("number") + 1;
-                number.set(""+n);
-            }
-        };
-        
-        
-        for (int i=0; i<100; i++) {
-            NameValue data = new NameValue();
-            data.put("id",i);
-            data.put("title",new SimpleStringProperty("کوئیز جاوا"));
-            data.put("show",new SimpleStringProperty("مشاهده"));
-            data.put("number",new SimpleStringProperty(""+i));
-            
-            messages.add(data);
-        }
-        for (int i=0; i<100; i+=2)
-            messages.remove(i);
-
     }
 
     @Override
@@ -95,25 +71,47 @@ public class MessageBoardController extends MyController {
         DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
         
-        
-        myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
-              toNameValue().combine(new NameValue("section","myCourse", "page","MessageBoard"))  ) {
-                    
-            @Override            
-            public void onButtonClick (NameValue data, String btnId) {
-
-                if (btnId.equals("btn_showCourse")) {        
-                    // show  needed course TODO
-                }
-}
+        posts = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
+            @Override
+            public void onButtonClick (NameValue data) {
+                StringProperty number = data.getStringProperty("number");
+                int n = data.getInt("number") + 1;
+                number.set(""+n);
+            }
         };
 
+        myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
+                        toNameValue().combine(new NameValue("section","myCourse", "page","MessageBoard"))  ) {
+            @Override            
+            public void onButtonClick (NameValue data, String btnId) {
+                if (btnId.equals("btn_selectCourse")) {        
+                    // select course
+                    selectCourse(data.getInt("id"));
+                }
+            }
+        };
         
         for(Course c: u.getCourses())
             myCourses.add(c);
-
     }
 
+    
+    void selectCourse(int cid) {
+        DataBase db = DataBase.getInstance();
+        Course c = db.getCourse(cid);
+
+        // show course details
+        currentCourse.bind(c.toNameValue());
+        currentCourse.put("course", c);
+        
+        // show selected course
+        posts.clear();
+        for(Post p: c.getPosts())
+            posts.add(p);
+
+        // close select dialog
+        closeDialog();        
+    }
     
     
     @FXML JFXDialog dlg_selectCourse;
