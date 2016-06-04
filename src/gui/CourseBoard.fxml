@@ -24,7 +24,7 @@
                     <HBox spacing="25" styleClass="card-item" >
                         <JFXButton text="افزودن دانشجو" styleClass="green, txt-white, txt-med" onAction="#btn_plusStudentClicked" />
                         <Pane HBox.hgrow="ALWAYS" />
-                        <JFXButton id="btn_delete" text="حذف درس" styleClass="red, txt-med" />
+                        <JFXButton  text="حذف درس" styleClass="red, txt-med" onAction="#btn_removeCourseClicked" />
                     </HBox>
                     <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
                         <content>

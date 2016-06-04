@@ -59,21 +59,6 @@ public class CourseBoardController extends MyController {
             @Override            
             public void onButtonClick (NameValue data, String btnId) {
                 
-                if (btnId.equals("btn_delete")) {
-                    //remove course
-                    int id = data.getInt("id");
-                    if (u.getType()==User.TYPE_TEACHER)
-                        allCourses.remove(id);
-                    myCourses.remove(id);
-                    gui.getUi().removeCourse(id);
-                }
-
-                if (btnId.equals("btn_addStudent")) {        
-                    // show  addStudent dialog
-                    currentCourseId = data.getInt("id");
-                    showDialog(dlg_addStudent);
-                }
-
                 if (btnId.equals("btn_showCourse")) {        
                     // show  addStudent dialog
                     currentCourseId = data.getInt("id");
@@ -91,7 +76,7 @@ public class CourseBoardController extends MyController {
                 //add to my courses
                 int id = data.getInt("id");
                 gui.getUi().addMeToCourse(id);
-                myCourses.add(db.getCourse().get(id));
+                myCourses.add(db.getCourse(id));
             }
         };
 
@@ -103,6 +88,9 @@ public class CourseBoardController extends MyController {
             @Override
             public void onButtonClick (NameValue data) {
                 // remove student from course
+                int uid = data.getInt("id");
+                gui.getUi().removeCourseFromUser(currentCourseId, uid);
+                remove(uid);
             }
         };
         
@@ -132,7 +120,18 @@ public class CourseBoardController extends MyController {
     
     
     @FXML void btn_plusStudentClicked() {
-        
+        if (currentCourseId>=0)
+            showDialog(dlg_addStudent);        
+    }
+    
+    @FXML void btn_removeCourseClicked() {
+        //remove course
+        int id=currentCourseId;
+        User u = gui.getUi().getUser();
+        if (u.getType()==User.TYPE_TEACHER)
+            allCourses.remove(id);
+        myCourses.remove(id);
+        gui.getUi().removeCourse(id);
     }
 
     void showCourseContent() {
@@ -166,14 +165,20 @@ public class CourseBoardController extends MyController {
     
     // Add Student dialog
     @FXML JFXDialog dlg_addStudent;
-    int currentCourseId=0;
+    int currentCourseId=-1;
     @FXML JFXTextField txt_studentName;
     @FXML void btn_addStudent_clicked() {
-        
-        String username = txt_studentName.getText();
-        gui.getUi().addStudentToCourse(username, currentCourseId);
-        
-        closeDialog();
+        try {
+            DataBase db = DataBase.getInstance();
+            String username = txt_studentName.getText();
+            User u = db.getUserByUsername(username);
+            gui.getUi().addStudentToCourse(u, currentCourseId);
+            courseStudents.add(u);
+            
+            closeDialog();
+        } catch (Exception ex) {
+            Logger.getLogger(CourseBoardController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     
