@@ -182,6 +182,8 @@ Label,
 .em-pencil { -fx-background-image : url('img/emoji/pencil.png'); }
 .em-users { -fx-background-image : url('img/emoji/busts_in_silhouette.png'); }
 .em-menu { -fx-background-image : url('img/emoji/menu.png'); }
+.em-user { -fx-background-image : url('img/emoji/user.png'); }
+.em-id { -fx-background-image : url('img/emoji/id.png'); }
 
 /**************  Field  *************************/
 .text-field {
