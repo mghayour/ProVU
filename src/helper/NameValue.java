@@ -106,5 +106,12 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
         return entrySet().iterator();
     }
 
+    public NameValue combine(NameValue that) {
+        NameValue res = new NameValue();
+        res.putAll(this);
+        res.putAll(that);
+        return res;
+    }
+
     
 }
