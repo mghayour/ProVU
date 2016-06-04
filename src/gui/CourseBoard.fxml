@@ -20,7 +20,7 @@
                 <HBox spacing="25" styleClass="card-item, bg-blue, header" >
                     <Label styleClass="head-title" text="درس های من"  />
                     <Pane HBox.hgrow="ALWAYS" />
-                    <If x="{userType}" is="Teacher" >
+                    <If x="{user.type}" is="Teacher" >
                         <JFXButton text="+" styleClass="green, txt-white, txt-med" onAction="#plusBtnClicked" />
                     </If>
                 </HBox>
