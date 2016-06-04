@@ -73,8 +73,8 @@ public class ModelControlCollection extends ModelControl{
     }
 
     public void clear() {
-        for(NameValue e: dataList)
-            remove(e.getInt("id"));
+        rootChilds.clear();
+        dataList.clear();
     }
     
 }
