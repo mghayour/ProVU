@@ -34,15 +34,10 @@ import logic.*;
  */
 public class CourseBoardController extends MyController {
     
-    @FXML private VBox vbx_myCourseContent, vbx_allCourseContent, vbx_CourseStudentContents;
-    
+    @FXML private VBox vbx_myCourseContent, vbx_allCourseContent, vbx_CourseStudentContents;    
     private ModelControlCollection myCourses, allCourses, courseStudents;
 
     
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        super.initialize(url, rb);
-    }
 
     @Override
     public void setGui(GuiController gui) {
@@ -51,11 +46,9 @@ public class CourseBoardController extends MyController {
        
         DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
-        
 
         myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
-              toNameValue().combine(new NameValue("section","myCourse", "page","CourseBoard"))  ) {
-                    
+                            toNameValue().combine(new NameValue("section","myCourse", "page","CourseBoard"))  ) {
             @Override            
             public void onButtonClick (NameValue data, String btnId) {
 
@@ -65,19 +58,17 @@ public class CourseBoardController extends MyController {
                     myCourses.remove(id);
                     gui.getUi().removeCourse(id);
                 }
-
                 if (btnId.equals("btn_showCourse")) {        
                     // show course students (teacher)
                     currentCourseId = data.getInt("id");
                     currentCourseName.set(data.getString("name"));
                     showCourseContent();
                 }
-}
+            }
         };
 
         allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml",
-              toNameValue().combine(new NameValue("section","allCourse", "page","CourseBoard"))  ) {
-                    
+                            toNameValue().combine(new NameValue("section","allCourse", "page","CourseBoard"))  ) {
             @Override
             public void onButtonClick (NameValue data) {
                 //add to my courses
@@ -87,7 +78,6 @@ public class CourseBoardController extends MyController {
             }
         };
 
-        
         if (u.getType()==User.TYPE_TEACHER)
         courseStudents = new ModelControlCollection(vbx_CourseStudentContents, "model/StudentInCourseBoard.fxml",
               toNameValue().combine(new NameValue("section","courseStudents"))  ) {
@@ -99,16 +89,13 @@ public class CourseBoardController extends MyController {
                 gui.getUi().removeCourseFromUser(currentCourseId, uid);
                 remove(uid);
             }
-        };
-        
-        
+        };        
         
         for(Course c: db.getCourse())
             allCourses.add(c);
         
         for(Course c: u.getCourses())
             myCourses.add(c);
-        
     }
 
     
@@ -121,9 +108,6 @@ public class CourseBoardController extends MyController {
         }
         return myNameValue;
     }
-    
-    
-
     
     
     @FXML void btn_plusStudentClicked() {
@@ -168,9 +152,6 @@ public class CourseBoardController extends MyController {
         
         closeDialog();
     }
-
-    
-    
     
     
     // Add Student dialog
@@ -190,7 +171,4 @@ public class CourseBoardController extends MyController {
             Logger.getLogger(CourseBoardController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    
-    
 }
