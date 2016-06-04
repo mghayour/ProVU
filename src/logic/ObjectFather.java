@@ -32,7 +32,7 @@ public class ObjectFather implements IdNeeded, Serializable, Modelable {
 
     public static NameValue toEmptyNameValue() {
         NameValue res = new NameValue();
-        res.put("id", 0);
+        res.put("id", -1);
         return res;        
     }
 
