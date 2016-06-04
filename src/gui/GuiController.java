@@ -60,10 +60,10 @@ public class GuiController extends Application {
             db.addUser(new Teacher("mghayour", "مهدی", "غیور", "test"));
         
         if (! db.userExists("stu1"))
-            db.addUser(new Teacher("stu1", "یکی", "بود", "test"));
+            db.addUser(new Student("stu1", "یکی", "بود", "test"));
         
         if (! db.userExists("stu2"))
-            db.addUser(new Teacher("stu2", "یکی", "نبود", "test"));
+            db.addUser(new Student("stu2", "یکی", "نبود", "test"));
         
         
         //ui.login("mghayour", "test");
