@@ -7,6 +7,7 @@ package gui;
 
 import com.jfoenix.controls.JFXDialog;
 import static gui.Helper.addBackground;
+import helper.NameValue;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,7 +24,7 @@ import logic.*;
  *
  * @author Ghayour
  */
-public abstract class MyController implements Initializable {
+public abstract class MyController implements Initializable, Modelable {
     
     @FXML protected StackPane backpane;
     @FXML protected Pane rooter;
@@ -51,6 +52,25 @@ public abstract class MyController implements Initializable {
     }
     
 
+    // model
+    @Override
+    public NameValue toNameValue() {
+        NameValue res  = new NameValue();
+        User u = gui.getUi().getUser();
+
+        res.put("user",u.toNameValue());
+        /** /
+        res = new NameValue("userType",u.getTypeString(),  "userFirstName",u.getFirstName() ,  "userLastName",u.getLastName(),
+        "userFullName",u.getName(),  "username",u.getUserName());
+        /**/
+        
+        return res;
+    }
+    
+    
+    
+    
+    
     // dialog functions
     private JFXDialog currentDialog=null;
     protected void showDialog(JFXDialog dialog) {

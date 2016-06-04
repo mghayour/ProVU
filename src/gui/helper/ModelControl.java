@@ -73,7 +73,7 @@ public class ModelControl {
          
         for(Node n: childs) {
             if (Pane.class.isAssignableFrom(n.getClass())) {
-                // if its if : parse it
+                // if its if : parse it !
                 if (n instanceof If) {
                     If f = (If)n;
                     if (f.getX()!=null && f.getIs()!=null ){
@@ -122,9 +122,17 @@ public class ModelControl {
         boolean itsData=false;
         for (String s:parts) {
             StringProperty tmp = new SimpleStringProperty();
-            if(itsData)
-                tmp.bind( patternResult.concat(data.getStringProperty(s)) );
-            else
+            if(itsData) {
+                String[] dataPath = s.split("\\.");
+                NameValue dataPart = data;
+                for (int i=0; i<dataPath.length-1; i++)
+                    dataPart = dataPart.getNameValue(dataPath[i]);
+                
+                s=dataPath[dataPath.length-1]; // last part of path
+                tmp.bind( patternResult.concat(
+                        dataPart.getStringProperty(s)
+                ) );
+            } else
                 tmp.bind( patternResult.concat(s) );
             patternResult = tmp;
             itsData=!itsData;

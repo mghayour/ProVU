@@ -100,14 +100,13 @@ public class GuiController extends Application {
     private Pane loadFxml(String fname) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fname));
         Pane root = (Pane)loader.load();
-        ((MyController)loader.getController()).setGui(this);
-        User u = ui.getUser();
+        MyController controller = (MyController)loader.getController();
+        controller.setGui(this);
         
         // parse data
         root = (Pane) new ModelControl("",false).generate(
-                root, 
-                new NameValue("userType",u.getTypeString(),  "userFirstName",u.getFirstName() ,  "userLastName",u.getLastName(),
-                        "userFullName",u.getName(),  "username",u.getUserName())
+                root,
+                controller.toNameValue()
                 );
         
         return root;

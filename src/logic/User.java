@@ -15,12 +15,11 @@ import java.util.*;
  *
  * @author Ghayour
  */
-public abstract class User implements IdNeeded, Modelable, Serializable{
+public abstract class User extends ObjectFather {
     public static final int TYPE_TEACHER = 1, TYPE_STUDENT = 2;
     public abstract int getType();
     public abstract String getTypeString();
 
-    private int id=0;
     private String userName;
     private String firstName;
     private String lastName;
@@ -41,11 +40,7 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     public User(String userName, String firstName, String lastName, String password) {
         this(userName, firstName, lastName, password, PersianDateTime.now());
     }
-
  
-    // Setter
-    @Override
-    public void setId(int id) { this.id = id; } // just should use in DB.add !
     
     //Getter
     public int getId() {
@@ -77,12 +72,17 @@ public abstract class User implements IdNeeded, Modelable, Serializable{
     
     @Override
     public NameValue toNameValue() {
-        NameValue res = new NameValue();
-        res.put("id", id);
-        res.put("name", getName());
-        res.put("registerTime", registerTime.toString());
+        if (myNameValue==null) {
+            myNameValue = super.toNameValue();
+            myNameValue.put("name", getName());
+            myNameValue.put("type", getTypeString());
+            myNameValue.put("firstName", getFirstName());
+            myNameValue.put("lastName", getLastName());
+            myNameValue.put("username", getUserName());
+            myNameValue.put("registerTime", registerTime.toString());
+        }
         
-        return res;
+        return myNameValue;
     }
 
     @Override

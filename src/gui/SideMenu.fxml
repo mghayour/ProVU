@@ -13,11 +13,10 @@
         <HBox spacing="10" >
             <ImageView><image><Image url="gui/user.png" /></image></ImageView>
             <VBox>
-                <Label text="{userFirstName} {userLastName}" styleClass="txt-big" />
+                <Label text="{user.firstName} {user.lastName}" styleClass="txt-big" />
                 <JFXButton text="خروج" styleClass="txt-red" onAction="#btn_logout_click" />
             </VBox>
         </HBox>
-    <!-- <Label styleClass="bg-blue, pad-10, txt-white, txt-big" text="=" layoutX="150" layoutY="0" minWidth="20" /> -->
         <VBox fx:id="menu_buttons" VBox.vgrow="ALWAYS" >
         </VBox>
     </VBox>

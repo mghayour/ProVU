@@ -35,12 +35,18 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
         put (obj.getKey(), obj.getValue());
     }
     
-    public StringProperty getStringProperty(String name) {
+    
+    private boolean keyProblem(String name) {
         if (!containsKey(name)) {
             System.out.println("ERROR: key["+name+"] not found.  NameValue:"+toString());
-            return new SimpleStringProperty("");
+            return true;
         }
-
+        return false;
+    }
+    
+    public StringProperty getStringProperty(String name) {
+        if (keyProblem(name))    return new SimpleStringProperty("");
+        
         Object obj = get(name);
             
         if ( StringProperty.class.isAssignableFrom(obj.getClass()) )
@@ -50,8 +56,10 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
     }
     
     public int getInt(String name) {
+        if (keyProblem(name))    return -1;
+
         Object obj = get(name);
-        int res=0;
+        int res=-1;
         try {
             String str;
             if ( StringProperty.class.isAssignableFrom(obj.getClass()) )
@@ -66,10 +74,7 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
     }
 
     public String getString(String name) {
-        if (!containsKey(name)) {
-            System.out.println("ERROR: key["+name+"] not found.  NameValue:"+toString());
-            return "";
-        }
+        if (keyProblem(name))    return "";
 
         Object obj = get(name);
         
@@ -82,10 +87,24 @@ public class NameValue extends HashMap<String, Object> implements Iterable<Map.E
         return obj.toString();
     }
     
+    public NameValue getNameValue(String name) {
+        if (keyProblem(name))    return null;
+
+        Object obj = get(name);
+        
+        if (obj instanceof NameValue)
+            return (NameValue)obj;
+        
+        System.out.println("ERROR: key["+name+"] is not NameValue!  NameValue:"+toString());
+        
+        return null;
+    }
+    
 
     @Override
     public Iterator<Entry<String, Object>> iterator() {
         return entrySet().iterator();
     }
+
     
 }
