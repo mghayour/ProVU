@@ -67,7 +67,7 @@ public class CourseBoardController extends MyController {
                 }
 
                 if (btnId.equals("btn_showCourse")) {        
-                    // show  addStudent dialog (teacher)
+                    // show course students (teacher)
                     currentCourseId = data.getInt("id");
                     currentCourseName.set(data.getString("name"));
                     showCourseContent();
