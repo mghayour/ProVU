@@ -20,6 +20,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 
 import static gui.Helper.*;
+import javafx.beans.property.SimpleStringProperty;
 import logic.DataBase;
 import logic.User;
 //import gui.animation.*;
@@ -80,7 +81,7 @@ public class LoginController extends MyController {
     private void btn_login_click(ActionEvent event) {        
         if (!currentContent.equals("loginContent.fxml")) {
             loadContentPanel("loginContent.fxml");
-            title.setText("Login");            
+            title.textProperty().bind(new SimpleStringProperty("Login"));
             return;
         }
 
@@ -99,7 +100,7 @@ public class LoginController extends MyController {
     private void btn_register_click(ActionEvent event) {
         if (!currentContent.equals("registerContent.fxml")) {
             loadContentPanel("registerContent.fxml");
-            title.setText("Register");            
+            title.textProperty().bind(new SimpleStringProperty("Register"));
             return;
         }
 

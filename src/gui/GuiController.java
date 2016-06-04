@@ -63,6 +63,8 @@ public class GuiController extends Application {
         DataBase db = DataBase.getInstance();
         if (! db.userExists("mnouri"))
             db.addUser(new Teacher("mnouri", "مصطفی", "نوری", "test"));
+        if (! db.userExists("mghayour"))
+            db.addUser(new Teacher("mghayour", "مهدی", "غیور", "test"));
         
         //ui.login("mghayour", "test");
         ui.login("mnouri", "test");

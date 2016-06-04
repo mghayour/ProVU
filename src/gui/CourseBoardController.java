@@ -50,25 +50,21 @@ public class CourseBoardController extends MyController {
        
         DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
-        System.out.println(u.getClass().toString());
         
 
         myCourses = new ModelControlCollection(vbx_myCourseContent, "model/myCourseInCourseBoard.fxml",
-                new NameValue("section","myCourse",   "userType",u.getTypeString() )) {
+              toNameValue().combine(new NameValue("section","myCourse"))  ) {
                     
-            @Override
-            
+            @Override            
             public void onButtonClick (NameValue data, String btnId) {
                 
                 if (btnId.equals("btn_delete")) {
                     //remove course
                     int id = data.getInt("id");
-                    u.getCourses().remove(id);
-                    allCourses.remove(id);
+                    if (u.getType()==User.TYPE_TEACHER)
+                        allCourses.remove(id);
                     myCourses.remove(id);
-                    Course c = db.getCourse().remove(id);
-                    for (User s: c.getStudents())
-                        s.getCourses().remove(id);
+                    gui.getUi().removeCourse(id);
                 }
 
                 if (btnId.equals("btn_addStudent")) {                    
@@ -80,11 +76,14 @@ public class CourseBoardController extends MyController {
         };
 
         allCourses = new ModelControlCollection(vbx_allCourseContent, "model/myCourseInCourseBoard.fxml",
-                new NameValue("section","allCourse",   "userType",u.getTypeString() )) {
+              toNameValue().combine(new NameValue("section","allCourse"))  ) {
                     
             @Override
             public void onButtonClick (NameValue data) {
-                //Todo: add to my courses
+                //add to my courses
+                int id = data.getInt("id");
+                gui.getUi().addMeToCourse(id);
+                myCourses.add(db.getCourse().get(id));
             }
         };
         
@@ -110,13 +109,8 @@ public class CourseBoardController extends MyController {
     }
 
     @FXML void btn_addCourse_clicked() {
-        DataBase db = DataBase.getInstance();
-        Teacher teacher = (Teacher)gui.getUi().getUser();
+        Course course = gui.getUi().addCourse( txt_courseName.getText() );
         
-        String courseName = txt_courseName.getText();
-        Course course = new Course(courseName, teacher);
-        db.addCourse(course);
-        teacher.addCourse(course);
         myCourses.add(course);
         allCourses.add(course);
         
@@ -132,14 +126,9 @@ public class CourseBoardController extends MyController {
     int currentCourseId=0;
     @FXML JFXTextField txt_studentName;
     @FXML void btn_addStudent_clicked() {
-        DataBase db = DataBase.getInstance();
+        
         String username = txt_studentName.getText();
-        try {
-            User student = db.getUserByUsername(username);
-            db.getCourse().get(currentCourseId).addStudent(student);
-        } catch (Exception ex) {
-            Logger.getLogger(CourseBoardController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        gui.getUi().addStudentToCourse(username, currentCourseId);
         
         closeDialog();
     }
