@@ -5,6 +5,9 @@
  */
 package logic;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Ghayour
@@ -37,4 +40,47 @@ public class UserInterface {
         
         return true;
     }
+    
+    
+    public Course addCourse (String courseName) {
+        if (user.getType() != User.TYPE_TEACHER)
+            return null;
+                
+        Course course = new Course(courseName, (Teacher)user);
+        db.addCourse(course);
+        user.addCourse(course);
+
+        return course;
+    }
+    
+    public boolean removeCourse (int courseId) {
+        if (user.getType()==User.TYPE_TEACHER) {
+            Course c = db.getCourse().remove(courseId);
+            user.getCourses().remove(courseId);
+            for (User s: c.getStudents())
+                s.getCourses().remove(courseId);
+        } else if (user.getType()==User.TYPE_STUDENT) {
+            Course c = db.getCourse().get(courseId);
+            c.removeStudent(user);
+        }
+        
+        return true;
+    }
+    
+    public boolean addStudentToCourse(String username, int courseId) {
+        try {
+            return addStudentToCourse(db.getUserByUsername(username), courseId);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        }
+    }
+    public boolean addMeToCourse(int courseId) {
+        return addStudentToCourse(user, courseId);
+    }
+    public boolean addStudentToCourse(User student, int courseId) {
+        db.getCourse().get(courseId).addStudent(student);
+        return true;
+    }
+    
 }
