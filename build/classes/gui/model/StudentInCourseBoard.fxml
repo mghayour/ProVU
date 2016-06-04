@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.* ?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+<?import gui.helper.* ?>
+
+<HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
+    <Label text="{name}" minWidth="100" styleClass="em, em-books, txt-user" />
+    <Label text="{username}" minWidth="85" styleClass="em, em-id" />
+    <Pane HBox.hgrow="ALWAYS" />
+    <JFXButton id="btn_delete" text="حذف" styleClass="red, txt-med" />
+    <Label text="{registerTime}" minWidth="140" styleClass="em, em-date" />
+</HBox>

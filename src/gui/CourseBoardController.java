@@ -23,6 +23,7 @@ import helper.NameValue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import logic.*;
 //import gui.animation.*;
@@ -33,9 +34,9 @@ import logic.*;
  */
 public class CourseBoardController extends MyController {
     
-    @FXML private VBox vbx_myCourseContent, vbx_allCourseContent;
+    @FXML private VBox vbx_myCourseContent, vbx_allCourseContent, vbx_CourseStudentContents;
     
-    private ModelControlCollection myCourses = null, allCourses = null;
+    private ModelControlCollection myCourses, allCourses, courseStudents;
 
     
     @Override
@@ -67,10 +68,17 @@ public class CourseBoardController extends MyController {
                     gui.getUi().removeCourse(id);
                 }
 
-                if (btnId.equals("btn_addStudent")) {                    
+                if (btnId.equals("btn_addStudent")) {        
                     // show  addStudent dialog
                     currentCourseId = data.getInt("id");
                     showDialog(dlg_addStudent);
+                }
+
+                if (btnId.equals("btn_showCourse")) {        
+                    // show  addStudent dialog
+                    currentCourseId = data.getInt("id");
+                    currentCourseName.set(data.getString("name"));
+                    showCourseContent();
                 }
 }
         };
@@ -86,6 +94,17 @@ public class CourseBoardController extends MyController {
                 myCourses.add(db.getCourse().get(id));
             }
         };
+
+        
+        if (u.getType()==User.TYPE_TEACHER)
+        courseStudents = new ModelControlCollection(vbx_CourseStudentContents, "model/StudentInCourseBoard.fxml",
+              toNameValue().combine(new NameValue("section","courseStudents"))  ) {
+                    
+            @Override
+            public void onButtonClick (NameValue data) {
+                // remove student from course
+            }
+        };
         
         
         
@@ -96,9 +115,33 @@ public class CourseBoardController extends MyController {
             myCourses.add(c);
         
     }
+
+    
+    StringProperty currentCourseName = new SimpleStringProperty("");
+    @Override
+    public NameValue toNameValue() {
+        if (myNameValue==null) {
+            myNameValue = super.toNameValue();
+            myNameValue.put("currentCourseName",currentCourseName);
+        }
+        return myNameValue;
+    }
     
     
 
+    
+    
+    @FXML void btn_plusStudentClicked() {
+        
+    }
+
+    void showCourseContent() {
+        DataBase db = DataBase.getInstance();
+        Course c = db.getCourse(currentCourseId);
+        courseStudents.clear();
+        for (User u: c.getStudents())
+            courseStudents.add(u);
+    }
     
     
     // Add course dialog

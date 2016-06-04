@@ -11,11 +11,19 @@
 <?import gui.helper.* ?>
 
 <HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
-    <Label text="{name}" minWidth="100" styleClass="em, em-books, txt-med" />
-    <If x="{section}" is="myCourse" >
+    <Label text="{name}" minWidth="90" styleClass="em, em-books, txt-med" />
+    <If x="{section}" is="myCourse0" >
         <JFXButton id="btn_delete" text="حذف" styleClass="red, txt-med" />
         <If x="{user.type}" is="Teacher" >
             <JFXButton id="btn_addStudent" text="دانشجو+" styleClass="green, txt-white, txt-med" />
+        </If>
+    </If>
+    <If x="{section}" is="myCourse" >
+        <If x="{user.type}" is="Teacher" >
+            <JFXButton id="btn_showCourse" text="مشاهده" styleClass="green, txt-white, txt-med" />
+        </If>
+        <If x="{user.type}" is="Student" >
+            <JFXButton id="btn_delete" text="حذف" styleClass="red, txt-med" />
         </If>
     </If>
     <If x="{section}, {user.type}" is="allCourse, Student" >
@@ -24,5 +32,5 @@
     <Pane HBox.hgrow="ALWAYS" />
     <Label text="{teacherName}" minWidth="85" styleClass="em, em-pen" />
     <Label text="{studentCount}" minWidth="50" styleClass="em, em-users" />
-    <Label text="{createdDate}" minWidth="140" styleClass="em, em-date" />
+    <Label text="{createdDate}" minWidth="110" styleClass="em, em-date" />
 </HBox>

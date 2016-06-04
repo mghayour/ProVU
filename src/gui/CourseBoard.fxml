@@ -16,6 +16,28 @@
         <HBox fx:id="boxes" styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
             
             
+            <If x="{user.type}" is="Teacher" >
+                <VBox fx:id="courseStudentsBox" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="150" >
+                    <HBox spacing="25" styleClass="card-item, bg-blue, header" >
+                        <Label styleClass="head-title" text="درس {currentCourseName}"  />
+                    </HBox>
+                    <HBox spacing="25" styleClass="card-item" >
+                        <JFXButton text="افزودن دانشجو" styleClass="green, txt-white, txt-med" onAction="#btn_plusStudentClicked" />
+                        <Pane HBox.hgrow="ALWAYS" />
+                        <JFXButton id="btn_delete" text="حذف درس" styleClass="red, txt-med" />
+                    </HBox>
+                    <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
+                        <content>
+                            <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="vbx_CourseStudentContents" >
+
+
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </If>
+
+                        
             <VBox fx:id="myCourseBox" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
                 <HBox spacing="25" styleClass="card-item, bg-blue, header" >
                     <Label styleClass="head-title" text="درس های من"  />
@@ -33,8 +55,6 @@
                         </VBox>
                     </content>
                 </ScrollPane>
-                                
-                
             </VBox>
 
 
