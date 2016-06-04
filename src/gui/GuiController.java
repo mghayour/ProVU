@@ -71,8 +71,8 @@ public class GuiController extends Application {
         //gotoPage("Workspace");
         //gotoPage("Login");
 
-        gotoPage("Dashboard");
-        //gotoPage("Messageboard");
+        //gotoPage("Dashboard");
+        gotoPage("Messageboard");
         //gotoPage("CourseBoard");
     }
 
