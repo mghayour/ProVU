@@ -58,9 +58,16 @@ public class CourseBoardController extends MyController {
                     
             @Override            
             public void onButtonClick (NameValue data, String btnId) {
-                
+
+                if (btnId.equals("btn_delete")) {
+                    //remove my course (student)
+                    int id = data.getInt("id");
+                    myCourses.remove(id);
+                    gui.getUi().removeCourse(id);
+                }
+
                 if (btnId.equals("btn_showCourse")) {        
-                    // show  addStudent dialog
+                    // show  addStudent dialog (teacher)
                     currentCourseId = data.getInt("id");
                     currentCourseName.set(data.getString("name"));
                     showCourseContent();
