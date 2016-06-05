@@ -87,6 +87,9 @@ public class MessageBoardController extends MyController {
         
         for(Course c: u.getCourses())
             myCourses.add(c);
+        
+        // auto ask for select course
+        btn_selectCourse_click();
     }
 
     
