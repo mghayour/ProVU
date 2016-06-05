@@ -59,8 +59,8 @@ public abstract class MyController implements Initializable, Modelable {
         if (myNameValue==null) {
             myNameValue = new NameValue();
             User u = gui.getUi().getUser();
-
-            myNameValue.put("user",u.toNameValue());
+            if (u!=null)
+                myNameValue.put("user",u.toNameValue());
         }
         return myNameValue;
     }

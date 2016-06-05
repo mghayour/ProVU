@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
+<?import gui.helper.If ?>
 
 <StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoardController" stylesheets="gui/workspace.css">
 <BorderPane fx:id="rooter">
@@ -23,7 +24,9 @@
                 <HBox spacing="25" styleClass="card-item, header" >
                     <JFXButton text="انتخاب درس" styleClass="green" onAction="#btn_selectCourse_click" />
                     <Pane HBox.hgrow="ALWAYS" />
-                    <JFXButton text="اطلاعیه جدید" styleClass="green" onAction="#btn_newPostDialog_click" />
+                    <If x="{user.type}" is="Teacher" >
+                        <JFXButton text="اطلاعیه جدید" styleClass="green" onAction="#btn_newPostDialog_click" />
+                    </If>
                 </HBox>
                 <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
                     <content>
