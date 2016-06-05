@@ -67,12 +67,12 @@ public class GuiController extends Application {
         
         
         //ui.login("mghayour", "test");
-        ui.login("mnouri", "test");
+        //ui.login("mnouri", "test");
         //gotoPage("Workspace");
-        //gotoPage("Login");
+        gotoPage("Login");
 
         //gotoPage("Dashboard");
-        gotoPage("Messageboard");
+        //gotoPage("Messageboard");
         //gotoPage("CourseBoard");
     }
 
