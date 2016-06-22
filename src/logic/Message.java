@@ -25,6 +25,12 @@ public class Message extends ObjectFather implements Modelable {
         this.sendTime = sendTime;
     }
     
+    public Message(String content, User sender) {
+        this.content = content;
+        this.sender = sender;
+        this.sendTime = PersianDateTime.now();
+    }
+    
     
     
     @Override

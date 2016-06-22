@@ -150,4 +150,24 @@ public class MessageBoardController extends MyController {
     }
 
     
+    // Add comment
+    @FXML JFXDialog dlg_newComment;
+    @FXML HTMLEditor hEdit_newCommentContent; 
+    @FXML public void btn_CommentDialog_Clicked() {
+        if (currentPost!=null && currentPost.containsKey("post")) 
+            showDialog(dlg_newComment);
+    }
+    @FXML public void btn_addNewComment_click() {
+        if (currentPost.containsKey("post")) {
+            Post post = (Post)currentPost.get("post");
+            if (post != null) {
+                Comment comment = new Comment(hEdit_newCommentContent.getHtmlText(), gui.getUi().getUser());
+                post.addComment(comment);
+                closeDialog();
+            }
+        }
+    }
+    
+    
+            
 }

@@ -58,13 +58,15 @@
                 <VBox styleClass="card" VBox.vgrow="ALWAYS">
                     <HBox spacing="25" styleClass="card-item, bg-red, header" >
                         <Label styleClass="head-title" text="نظرات"  />
+                        <Pane HBox.hgrow="ALWAYS" />
+                        <JFXButton text="+" styleClass="green, txt-white, txt-med" onAction="#btn_CommentDialog_Clicked" />
                     </HBox>
                     <ScrollPane  HBox.hgrow="ALWAYS" fitToWidth="true"  maxHeight="500">
                         <content>
                             <VBox>
 
                                 <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
+                                    
                                 </VBox>
                                 <HBox spacing="8" styleClass="card-item" >
                                     <Pane HBox.hgrow="ALWAYS" />
@@ -73,7 +75,9 @@
                                 </HBox>
 
                                 <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
+                                    <Pane HBox.hgrow="ALWAYS">
+                                        <WebView />
+                                    </Pane>
                                 </VBox>
                                 <HBox spacing="8" styleClass="card-item" >
                                     <Pane HBox.hgrow="ALWAYS" />
@@ -203,6 +207,28 @@
                     <actions>
                         <HBox styleClass="actions" spacing="15" >
                             <JFXButton onAction="#btn_addNewPost_click" styleClass="green" text="افزودن" />
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+    <JFXDialog fx:id="dlg_newComment">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>نظر جدید</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <HTMLEditor fx:id="hEdit_newCommentContent" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#btn_addNewComment_click" styleClass="green" text="افزودن" />
                             <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
                         </HBox>
                     </actions>
