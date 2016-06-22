@@ -67,12 +67,12 @@ public class GuiController extends Application {
         
         
         //ui.login("mghayour", "test");
-        //ui.login("mnouri", "test");
+        ui.login("mnouri", "test");
         //gotoPage("Workspace");
-        gotoPage("Login");
+        //gotoPage("Login");
 
         //gotoPage("Dashboard");
-        //gotoPage("Messageboard");
+        gotoPage("Messageboard");
         //gotoPage("CourseBoard");
     }
 
@@ -107,12 +107,16 @@ public class GuiController extends Application {
         if (!name.equals("Login")) {
             root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         }
-
-        stage.setMaximized(false);
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setMaximized(true);
         
+        Scene scene = stage.getScene();
+        if (scene==null) {
+            stage.setMaximized(false);
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setMaximized(true);
+        } else {
+            scene.setRoot(root);
+        }
         /*
         if (!stage.isFullScreen())
             //stage.setMaximized(true);
