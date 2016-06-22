@@ -10,9 +10,13 @@
 <?import com.jfoenix.controls.* ?>
 <?import gui.helper.* ?>
 
-<HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
-    <Label text="{name}" minWidth="80" styleClass="em, em-user, txt-med" />
-    <Label text="{username}" minWidth="60" styleClass="em, em-id" />
-    <Pane HBox.hgrow="ALWAYS" />
-    <JFXButton id="btn_delete" text="حذف" styleClass="red, txt-med" />
-</HBox>
+<VBox>
+    <VBox styleClass="card-item" maxHeight="150">
+        <WebText text="{content}" />
+    </VBox>
+    <HBox spacing="8" styleClass="card-item" >
+        <Pane HBox.hgrow="ALWAYS" />
+        <Label text="{sender}" minWidth="90" styleClass="em, em-pen" />
+        <Label text="{sendTime}"  minWidth="140" styleClass="em, em-date" />
+    </HBox>
+</VBox>
