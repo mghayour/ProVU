@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.* ?>
-<?import gui.helper.If ?>
+<?import gui.helper.* ?>
 
 <StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoardController" stylesheets="gui/workspace.css">
 <BorderPane fx:id="rooter">
@@ -63,81 +63,7 @@
                     </HBox>
                     <ScrollPane  HBox.hgrow="ALWAYS" fitToWidth="true"  maxHeight="500">
                         <content>
-                            <VBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <Pane HBox.hgrow="ALWAYS">
-                                        <WebView />
-                                    </Pane>
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
-
-                                <VBox styleClass="card-item" maxHeight="250">
-                                    <WebView />
-                                </VBox>
-                                <HBox spacing="8" styleClass="card-item" >
-                                    <Pane HBox.hgrow="ALWAYS" />
-                                    <Label text="م. نوری" minWidth="90" styleClass="em, em-pen" />
-                                    <Label text="20/2/95 (هفته پیش)"  minWidth="140" styleClass="em, em-date" />
-                                </HBox>
+                            <VBox fx:id="vbx_comments" >
 
 
                             </VBox>
