@@ -21,12 +21,8 @@ xmlns:fx="http://javafx.com/fxml/1"
 <BorderPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  fx:id="rooter" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController" stylesheets="gui/login.css">
     <center>
        
-        <VBox maxHeight="20"  maxWidth="300" styleClass="card" >
-            <Label  minHeight="16" minWidth="69" fx:id="label" text="TEST"  />
-        </VBox>
- 
         
-        <VBox maxHeight="20" maxWidth="300" styleClass="card" >
+        <VBox fx:id="loginCard" maxHeight="20" maxWidth="300" styleClass="card" >
             <HBox styleClass="card-item" spacing="10" >
                 <ImageView><image><Image url="gui/user.png" /></image></ImageView>
                 <VBox spacing="5"  >
@@ -35,12 +31,14 @@ xmlns:fx="http://javafx.com/fxml/1"
                 </VBox>
 
             </HBox>
+            <VBox styleClass="card-item" spacing="10">
+                <Label fx:id="lbl_error" text="" styleClass="error" />
+            </VBox>
 
             <VBox styleClass="card-item" spacing="10" fx:id="contentPanel" >
                 
             </VBox>
             <VBox styleClass="card-item" spacing="10">
-                
                 <HBox spacing="5" styleClass="padder" >
                     <JFXButton text="Register" minWidth="100" onAction="#btn_register_click" fx:id="btn_register" />
                     <Pane HBox.hgrow="ALWAYS" />

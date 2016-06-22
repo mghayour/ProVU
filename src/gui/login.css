@@ -121,5 +121,7 @@
    -fx-border-insets: 10px;
    -fx-background-insets: 10px;*/
 }
-
+.error {
+    -fx-text-fill: #f50;
+}
 

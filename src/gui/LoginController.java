@@ -20,7 +20,13 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 
 import static gui.Helper.*;
+import javafx.animation.Animation;
+import javafx.animation.Interpolator;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.util.Duration;
 import logic.DataBase;
 import logic.User;
 //import gui.animation.*;
@@ -31,9 +37,11 @@ import logic.User;
  */
 public class LoginController extends MyController {
     
+    @FXML private Label lbl_error;
     @FXML private Label title;
     @FXML private Pane rooter;
     @FXML private VBox contentPanel;
+    @FXML private VBox loginCard;
     
     // inner content elements (fill with Lookup !)
     private JFXTextField username;
@@ -85,15 +93,20 @@ public class LoginController extends MyController {
             return;
         }
 
+        boolean sucessLogin = false;
         try {
-            if (gui.getUi().login(username.getText(), password.getText()))
+            if (gui.getUi().login(username.getText(), password.getText())) {
+                sucessLogin = true;
                 gui.gotoDashBoard();
-            else
+            } else {
                 System.out.println("Username not found");
+                lbl_error.setText("Username not found");
+            }
         } catch (Exception ex) {
-            System.out.println("ERROR LOGIN: "+ex.getMessage());
+            lbl_error.textProperty().bind(new SimpleStringProperty("Username and Password does not match."));
         }
-        
+        lbl_error.textProperty().bind(new SimpleStringProperty(""));
+            
     }
 
     @FXML
