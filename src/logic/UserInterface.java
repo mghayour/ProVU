@@ -95,5 +95,12 @@ public class UserInterface {
         course.addPost(post);
         return post;
     }
+
+    public Comment newComment(String content, Post post) {
+        Comment cmt = new Comment(content, user);
+        db.addComment(cmt);
+        post.addComment(cmt);
+        return cmt;
+    }
     
 }

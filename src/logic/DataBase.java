@@ -108,6 +108,10 @@ public class DataBase implements Serializable{
         post.setId(messageAutoId++);
         message.add(post);
     }
+    void addComment(Comment cmt) {
+        cmt.setId(messageAutoId++);
+        message.add(cmt);
+    }
     
     
     // GetObjects
