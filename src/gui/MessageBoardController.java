@@ -40,8 +40,8 @@ import logic.*;
 public class MessageBoardController extends MyController {
     
     @FXML private Pane rooter;
-    @FXML private VBox messageSubjectHolder, vbx_myCourseContent;
-    ModelControlCollection posts, myCourses;
+    @FXML private VBox messageSubjectHolder, vbx_myCourseContent, vbx_comments;
+    ModelControlCollection posts, myCourses, comments;
     NameValue currentPost, currentCourse;
     
     @Override
@@ -67,6 +67,9 @@ public class MessageBoardController extends MyController {
         DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
         
+        //comments = new ModelControlCollection(vbx_comments, "model/CommentsInMessageBoard.fxml",toNameValue()); // edit comment !?
+        comments = new ModelControlCollection(vbx_comments, "model/messageItemInMessageBoard.fxml"); // edit comment !?
+
         posts = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
             @Override
             public void onButtonClick (NameValue data) {
@@ -84,6 +87,8 @@ public class MessageBoardController extends MyController {
                 }
             }
         };
+        
+       
         
         for(Course c: u.getCourses())
             myCourses.add(c);
@@ -124,7 +129,14 @@ public class MessageBoardController extends MyController {
         web_postContent.setDisable(true);
 
         // close select dialog
-        closeDialog();        
+        closeDialog();
+        
+        // show this post comments
+        comments.clear();
+        for(Comment c: p.getComments())
+            comments.add(c);
+        
+        System.out.println(comments.toString());
     }
     
     
@@ -161,8 +173,8 @@ public class MessageBoardController extends MyController {
         if (currentPost.containsKey("post")) {
             Post post = (Post)currentPost.get("post");
             if (post != null) {
-                Comment comment = new Comment(hEdit_newCommentContent.getHtmlText(), gui.getUi().getUser());
-                post.addComment(comment);
+                Comment cmt = gui.getUi().newComment(hEdit_newCommentContent.getHtmlText(), post);
+                comments.add(cmt);
                 closeDialog();
             }
         }
