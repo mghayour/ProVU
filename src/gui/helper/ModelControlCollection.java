@@ -12,6 +12,7 @@ import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.layout.*;
+import logic.Comment;
 import logic.Modelable;
 
 /**
@@ -76,5 +77,6 @@ public class ModelControlCollection extends ModelControl{
         rootChilds.clear();
         dataList.clear();
     }
+
     
 }

@@ -81,7 +81,13 @@ public class ModelControl {
                         f.setIs( patternBinder(f.getIs(), data).getValue() );
                     }
                 }
-                generate( (Pane)n, data);
+                
+                if (n instanceof WebText) {
+                    WebText wt = (WebText)n;
+                    wt.setText( patternBinder(wt.getText(), data).toString() );
+                } else
+                    generate( (Pane)n, data);
+                
             } else {                                
                 // if its button or lable
                 if ( Labeled.class.isAssignableFrom(n.getClass()) ) {
