@@ -81,8 +81,11 @@ public class MessageBoardController extends MyController {
         for(Course c: u.getCourses())
             myCourses.add(c);
         
+        init_tahvilRadios();
+        
         // auto ask for select course
         btn_selectCourse_click();
+        
     }
 
     
@@ -206,6 +209,24 @@ public class MessageBoardController extends MyController {
                 closeDialog();
             }
         }
+    }
+    
+    
+    
+    
+    // Tamrin
+    @FXML public HBox hbx_mohlateTahvil, hbx_postType;
+    @FXML public JFXRadioButton rad_tamrinPost, rad_post;
+    @FXML public void rdo_tamrin_Changed() {
+        if(rad_tamrinPost.isSelected())
+            hbx_postType.getChildren().add(hbx_mohlateTahvil);
+        else
+            hbx_postType.getChildren().remove(hbx_mohlateTahvil);
+    }
+    
+    private void init_tahvilRadios() {
+        rdo_tamrin_Changed();
+        //rad_tamrinPost.addEventHandler(EventType., null);
     }
     
     

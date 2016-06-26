@@ -125,6 +125,25 @@
                             <HBox spacing="15" >
                                 <Label text="عنوان" />
                                 <JFXTextField minWidth="300" fx:id="hEdit_newPostTitle" promptText="عنوان اطلاعیه" minHeight="30" />
+                                <Pane HBox.hgrow="ALWAYS" />
+                            </HBox>
+                            <HBox spacing="5" fx:id="hbx_postType" minHeight="30" >
+                                <Label text="نوع اطلاعیه:" />
+                                <JFXRadioButton fx:id="rad_post" selected="true" text="اطلاعیه" onAction="#rdo_tamrin_Changed" >
+                                        <toggleGroup>
+                                                <ToggleGroup fx:id="rad_type" />
+                                        </toggleGroup>
+                                </JFXRadioButton>
+                                <JFXRadioButton fx:id="rad_tamrinPost" selected="false" text="تمرین" toggleGroup="$rad_type" onAction="#rdo_tamrin_Changed" />
+                                
+                                <Pane HBox.hgrow="ALWAYS" maxWidth="200" />
+                                <HBox spacing="5" fx:id="hbx_mohlateTahvil" >
+                                    <Label text="مهلت تحویل تا" />
+                                    <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_tamrin_Day" promptText="7" minHeight="30" />
+                                    <Label text="روز و" />
+                                    <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_tamrin_Hour" promptText="0" minHeight="30" />
+                                    <Label text="ساعت آینده" />
+                                </HBox>
                             </HBox>
                             <HTMLEditor fx:id="hEdit_newPostContent" />
                         </VBox>
