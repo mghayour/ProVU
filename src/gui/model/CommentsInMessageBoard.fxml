@@ -12,11 +12,11 @@
 
 <VBox>
     <VBox styleClass="card-item" maxHeight="150">
-        <WebText text="CONTENT" />
+        <WebText text="{content}" />
     </VBox>
     <HBox spacing="8" styleClass="card-item" >
         <Pane HBox.hgrow="ALWAYS" />
-        <Label text="SENDER" minWidth="90" styleClass="em, em-pen" />
-        <Label text="S"  minWidth="140" styleClass="em, em-date" />
+        <Label text="{sender}" minWidth="90" styleClass="em, em-pen" />
+        <Label text="{sendTime}"  minWidth="140" styleClass="em, em-date" />
     </HBox>
 </VBox>

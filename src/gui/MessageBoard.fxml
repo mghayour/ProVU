@@ -51,8 +51,6 @@
                     <VBox styleClass="card-item" minHeight="200">
                         <WebView fx:id="web_postContent" />
                     </VBox>
-
-                    <!--<HTMLEditor /> -->
                 </VBox>
                 
                 <VBox styleClass="card" VBox.vgrow="ALWAYS">

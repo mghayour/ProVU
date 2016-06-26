@@ -42,7 +42,8 @@ public class ModelControl {
         Pane root = null;
         try {
             //root = (Pane)FXMLLoader.load(GuiController.class.getResource(fxmlName));
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlName));
+            //FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlName));
+            FXMLLoader loader = new FXMLLoader(GuiController.class.getResource(fxmlName));
             root = (Pane)loader.load();
             //loader.setClassLoader(null);
         } catch(Exception e) {
@@ -84,7 +85,7 @@ public class ModelControl {
                 
                 if (n instanceof WebText) {
                     WebText wt = (WebText)n;
-                    wt.setText( patternBinder(wt.getText(), data).toString() );
+                    wt.setText( patternBinder(wt.getText(), data).get() );
                 } else
                     generate( (Pane)n, data);
                 

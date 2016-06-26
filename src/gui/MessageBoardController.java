@@ -10,23 +10,11 @@ package gui;
 //import javafx.css.StyleableObjectProperty
 //import com.fxexperience.javafx.animation.*;
 import com.jfoenix.controls.*;
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 
-import static gui.Helper.*;
-import gui.helper.ModelControl;
 import gui.helper.ModelControlCollection;
 import helper.NameValue;
-import java.util.HashMap;
-import javafx.beans.property.*;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Node;
-import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.web.HTMLEditor;
 import javafx.scene.web.WebView;
@@ -67,8 +55,8 @@ public class MessageBoardController extends MyController {
         DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
         
-        //comments = new ModelControlCollection(vbx_comments, "model/CommentsInMessageBoard.fxml",toNameValue()); // edit comment !?
-        comments = new ModelControlCollection(vbx_comments, "model/messageItemInMessageBoard.fxml"); // edit comment !?
+        comments = new ModelControlCollection(vbx_comments, "model/CommentsInMessageBoard.fxml",toNameValue()); // edit comment !?
+        //comments = new ModelControlCollection(vbx_comments, "model/messageItemInMessageBoard.fxml"); // edit comment !?
 
         posts = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
             @Override
@@ -147,8 +135,10 @@ public class MessageBoardController extends MyController {
     
     @FXML JFXDialog dlg_newPost;
     @FXML void btn_newPostDialog_click() {
-        if (currentCourse.containsKey("course"))
+        if (currentCourse.containsKey("course")) {
+            hEdit_newPostContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
             showDialog(dlg_newPost);
+        }
     }
     
     @FXML HTMLEditor hEdit_newPostContent; 
@@ -166,8 +156,10 @@ public class MessageBoardController extends MyController {
     @FXML JFXDialog dlg_newComment;
     @FXML HTMLEditor hEdit_newCommentContent; 
     @FXML public void btn_CommentDialog_Clicked() {
-        if (currentPost!=null && currentPost.containsKey("post")) 
+        if (currentPost!=null && currentPost.containsKey("post")) {
+            hEdit_newCommentContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
             showDialog(dlg_newComment);
+        }
     }
     @FXML public void btn_addNewComment_click() {
         if (currentPost.containsKey("post")) {
