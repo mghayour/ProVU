@@ -102,6 +102,7 @@ public class MessageBoardController extends MyController {
         // close select dialog
         closeDialog();        
     }
+
     
     @FXML WebView web_postContent;
     void selectPost(int pid) {
@@ -124,7 +125,6 @@ public class MessageBoardController extends MyController {
         for(Comment c: p.getComments())
             comments.add(c);
         
-        System.out.println(comments.toString());
     }
     
     
@@ -133,7 +133,12 @@ public class MessageBoardController extends MyController {
         showDialog(dlg_selectCourse);
     }
     
+    
+    // new post
     @FXML JFXDialog dlg_newPost;
+    @FXML HTMLEditor hEdit_newPostContent; 
+    @FXML JFXTextField hEdit_newPostTitle; 
+    
     @FXML void btn_newPostDialog_click() {
         if (currentCourse.containsKey("course")) {
             hEdit_newPostContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
@@ -141,14 +146,45 @@ public class MessageBoardController extends MyController {
         }
     }
     
-    @FXML HTMLEditor hEdit_newPostContent; 
-    @FXML JFXTextField hEdit_newPostTitle; 
     @FXML void btn_addNewPost_click() {
         String content = hEdit_newPostContent.getHtmlText();
         String title = hEdit_newPostTitle.getText();
         Post post = gui.getUi().newPost(title, content, (Course)currentCourse.get("course"));
         posts.add(post);
         closeDialog();
+    }
+
+    
+    // Edit post
+    @FXML JFXDialog dlg_editPost;
+    @FXML HTMLEditor hEdit_editPostContent; 
+    @FXML JFXTextField hEdit_editPostTitle; 
+    
+    @FXML void btn_editPostDialog_click() {
+        if (currentCourse.containsKey("course")) {
+            Post p = (Post)currentPost.get("post");
+            hEdit_editPostContent.setHtmlText(p.getContent());
+            hEdit_editPostTitle.setText(p.getTitle());
+            showDialog(dlg_editPost);
+        }
+    }
+    
+    @FXML void btn_saveEditedPost_click() {
+        Post p = (Post)currentPost.get("post");
+        String content = hEdit_editPostContent.getHtmlText();
+        String title = hEdit_editPostTitle.getText();
+        gui.getUi().editPost(title, content, p);
+        
+        // show post details
+        currentPost.bind(p.toNameValue());
+        
+        // show selected post
+        web_postContent.getEngine().loadContent(p.getContent());
+        web_postContent.setDisable(true);
+
+        // close select dialog
+        closeDialog();
+        
     }
 
     

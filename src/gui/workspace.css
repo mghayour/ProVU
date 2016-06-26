@@ -127,6 +127,10 @@
     -fx-background-color: #1E6FA6;
 }
 
+.button.col-white {
+    -fx-text-fill: WHITE;
+}
+
 .radio-button .dot {
     -fx-fill: #5264AE;
 }

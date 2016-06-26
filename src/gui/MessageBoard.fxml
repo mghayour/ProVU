@@ -43,6 +43,7 @@
                 <VBox styleClass="card"  minHeight="100" maxHeight="400">
                     <HBox spacing="25" styleClass="card-item, bg-blue, header" >
                         <Label styleClass="head-title" text="{currentPost.title}"  />
+                        <JFXButton text="ویرایش" styleClass="col-white"  onAction="#btn_editPostDialog_click" />
                         <Pane HBox.hgrow="ALWAYS" />
                         <Label text="{currentPost.sender}" minWidth="90" styleClass="em, em-pen" />
                         <Label text="{currentCourse.name}" minWidth="70" styleClass="em, em-books" />
@@ -131,6 +132,32 @@
                     <actions>
                         <HBox styleClass="actions" spacing="15" >
                             <JFXButton onAction="#btn_addNewPost_click" styleClass="green" text="افزودن" />
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+    <JFXDialog fx:id="dlg_editPost">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>ویرایش اطلاعیه</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <HBox spacing="15" >
+                                <Label text="عنوان" />
+                                <JFXTextField minWidth="300" fx:id="hEdit_editPostTitle" promptText="عنوان اطلاعیه" minHeight="30" />
+                            </HBox>
+                            <HTMLEditor fx:id="hEdit_editPostContent" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#btn_saveEditedPost_click" styleClass="green" text="ثبت" />
                             <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
                         </HBox>
                     </actions>

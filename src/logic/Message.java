@@ -9,6 +9,7 @@ import helper.NameValue;
 import helper.PersianDateTime;
 import java.io.Serializable;
 import java.util.*;
+import javafx.beans.property.SimpleStringProperty;
 
 /**
  *
@@ -39,7 +40,7 @@ public class Message extends ObjectFather implements Modelable {
             myNameValue = super.toNameValue();
             myNameValue.put("content", content);
             myNameValue.put("sender", sender.getName());
-            myNameValue.put("sendTime", sendTime.toString());
+            myNameValue.put("sendTime", new SimpleStringProperty(""+sendTime) );
         }
         return myNameValue;
     }
@@ -51,6 +52,19 @@ public class Message extends ObjectFather implements Modelable {
         return res;
     }
 
+    //Setter
+    public void setContent(String content) {
+        this.content = content;
+        if (myNameValue != null)
+            myNameValue.getStringProperty("conrent").set(content);
+    }
+    
+    public void setSendTime(PersianDateTime sendTime) {
+        this.sendTime = sendTime;
+        if (myNameValue != null)
+            myNameValue.getStringProperty("sendTime").set(""+sendTime);        
+    }
+    
     
     //Getter
     public String getContent() {

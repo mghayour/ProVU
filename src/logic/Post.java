@@ -31,7 +31,7 @@ public class Post extends Message{
     public NameValue toNameValue() {
         if (myNameValue==null) {
             myNameValue = super.toNameValue();
-            myNameValue.put("title", title);
+            myNameValue.put("title", new SimpleStringProperty(""+title) );
             myNameValue.put("commentCount", new SimpleStringProperty(""+comments.size()) );
         } 
         return myNameValue;
@@ -44,6 +44,13 @@ public class Post extends Message{
     }
 
     // Setter
+    
+    public void setTitle(String title) {
+        this.title = title;
+        if (myNameValue != null)
+            myNameValue.getStringProperty("title").set(title);
+    }
+
     public void addComment(Comment cmt) {
         comments.add(cmt);
         myNameValue.getStringProperty("commentCount").set(""+comments.size());
@@ -53,6 +60,14 @@ public class Post extends Message{
     public List<Comment> getComments() {
         return comments;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    
+    
+    
 
     
     

@@ -5,6 +5,7 @@
  */
 package logic;
 
+import helper.PersianDateTime;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -96,11 +97,18 @@ public class UserInterface {
         return post;
     }
 
+    public void editPost(String title, String content, Post p) {
+        p.setContent(content);
+        p.setTitle(title);
+        p.setSendTime(PersianDateTime.now());
+    }
+
     public Comment newComment(String content, Post post) {
         Comment cmt = new Comment(content, user);
         db.addComment(cmt);
         post.addComment(cmt);
         return cmt;
     }
-    
+
+        
 }
