@@ -14,11 +14,14 @@ import javafx.fxml.FXML;
 import javafx.scene.layout.Pane;
 
 import gui.helper.ModelControlCollection;
+import helper.IdValue;
 import helper.NameValue;
 import helper.PersianDateTime;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.scene.control.TextField;
@@ -235,6 +238,9 @@ public class MessageBoardController extends MyController {
     @FXML public void btn_CommentDialog_Clicked() {
         if (currentPost!=null && currentPost.containsKey("post")) {
             Post p = (Post)currentPost.get("post");
+            
+            
+            // Tamrin Answer
             if ( p.getType() == Post.TYPE_TAMRIN_POST ) {
                 TamrinPost tp = (TamrinPost)p;
                 
@@ -247,14 +253,19 @@ public class MessageBoardController extends MyController {
                 File file = fileChooser.showOpenDialog(gui.getStage());
                 System.out.println("selected file : "+file);
                 Comment cmt = gui.getUi().addAnswer(file, tp);
-                DataBase db = DataBase.getInstance();
-                for(NameValue nv: comments.getDataList()) {
-                    int id = nv.getInt("id");
-                    if(!db.containsMessage(id))
-                        comments.remove(id);
+                if (cmt!=null) {
+                    DataBase db = DataBase.getInstance();
+                    Set<Integer> cData = comments.getDataList().keySet();
+                    Integer[] currentCId = new Integer[cData.size()];
+                    cData.toArray(currentCId);
+                    
+                    // sync showing comments with post (old answers may be removed)
+                    for (Integer id: currentCId)
+                        if(!db.containsMessage(id))
+                            comments.remove(id);
+                    
+                    comments.add(cmt);
                 }
-                comments.add(cmt);
-                
             }else{
                 hEdit_newCommentContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
                 showDialog(dlg_newComment);

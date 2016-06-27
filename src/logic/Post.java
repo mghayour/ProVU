@@ -70,7 +70,7 @@ public class Post extends Message{
     }
 
     void removeComment(Comment cmt) {
-        comments.remove(cmt.getId());
+        comments.remove(cmt);
     }
     
     

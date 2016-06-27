@@ -7,6 +7,7 @@ package logic;
 
 import helper.PersianDateTime;
 import java.io.File;
+import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -134,16 +135,21 @@ public class UserInterface {
                 fileContents+=scanner.nextLine()+"\n";
             
             // remove last sends by this user
-            for (Comment cmt : post.getComments())
-                if (cmt.getSender().equals(user))
+            List<Comment> comments = post.getComments();
+            for (int j=0; j<comments.size(); j++) {
+                Comment cmt = comments.get(j);
+                if (cmt.getSender().equals(user)) {
                     removeComment(cmt, post);
+                    j--;
+                }
+            }
             
             // add new submit
-            if (post != null)
-                return newComment(fileContents, post);
+            return newComment(fileContents, post);
 
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            //System.out.println("ERROR:"+ex.getMessage());
+            ex.printStackTrace();
         }
         return null;
     }
