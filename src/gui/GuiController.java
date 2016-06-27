@@ -19,6 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.scene.*;
 import javafx.scene.layout.Pane;
+import javafx.stage.Window;
 import logic.DataBase;
 import logic.Student;
 import logic.Teacher;
@@ -132,6 +133,12 @@ public class GuiController extends Application {
             ex.printStackTrace();
         }
     }
+
+    public Stage getStage() {
+        return stage;
+    }
+
+    
 
     
     

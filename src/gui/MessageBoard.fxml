@@ -48,6 +48,7 @@
                         <Label text="{currentPost.sender}" minWidth="90" styleClass="em, em-pen" />
                         <Label text="{currentCourse.name}" minWidth="70" styleClass="em, em-books" />
                         <Label text="{currentPost.sendTime}"  minWidth="140" styleClass="em, em-date" />
+                        <Label text="مهلت تحویل {currentPost.tahvilTime}"  minWidth="140" styleClass="em, em-date" />
                     </HBox>
                     <VBox styleClass="card-item" minHeight="200">
                         <WebView fx:id="web_postContent" />

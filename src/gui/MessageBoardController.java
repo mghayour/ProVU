@@ -15,9 +15,13 @@ import javafx.scene.layout.Pane;
 
 import gui.helper.ModelControlCollection;
 import helper.NameValue;
+import helper.PersianDateTime;
+import java.io.File;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
 import javafx.scene.web.HTMLEditor;
 import javafx.scene.web.WebView;
+import javafx.stage.FileChooser;
 import logic.*;
 //import gui.animation.*;
 
@@ -149,10 +153,21 @@ public class MessageBoardController extends MyController {
         }
     }
     
+    @FXML public TextField txt_tamrin_Day, txt_tamrin_Hour;
     @FXML void btn_addNewPost_click() {
+        UserInterface ui = gui.getUi();
+        Course c = (Course)currentCourse.get("course");
         String content = hEdit_newPostContent.getHtmlText();
         String title = hEdit_newPostTitle.getText();
-        Post post = gui.getUi().newPost(title, content, (Course)currentCourse.get("course"));
+        Post post=null;
+        if (rad_tamrinPost.isSelected()) {
+            long currentTimestamp = PersianDateTime.now().getTimeStamp();
+            long tahvilTimestamp = currentTimestamp + Integer.parseInt(txt_tamrin_Hour.getText())*3600000 + Integer.parseInt(txt_tamrin_Day.getText())*86400000;
+            PersianDateTime mohlateTahvil=new PersianDateTime( tahvilTimestamp );
+            post = ui.newTamrin(title, content, c, mohlateTahvil);
+        } else {
+            post = ui.newPost(title, content, c);
+        }
         posts.add(post);
         closeDialog();
     }
@@ -196,8 +211,16 @@ public class MessageBoardController extends MyController {
     @FXML HTMLEditor hEdit_newCommentContent; 
     @FXML public void btn_CommentDialog_Clicked() {
         if (currentPost!=null && currentPost.containsKey("post")) {
-            hEdit_newCommentContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
-            showDialog(dlg_newComment);
+            if ( ((Post)currentPost.get("post")).getType() == Post.TYPE_TAMRIN_POST ) {
+                FileChooser fileChooser = new FileChooser();
+                //FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+                //fileChooser.getExtensionFilters().add(extFilter);
+                File file = fileChooser.showOpenDialog(gui.getStage());
+                System.out.println(file);
+            }else{
+                hEdit_newCommentContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
+                showDialog(dlg_newComment);
+            }
         }
     }
     @FXML public void btn_addNewComment_click() {
