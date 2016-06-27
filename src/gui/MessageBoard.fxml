@@ -214,4 +214,26 @@
     </JFXDialog>            
 
 
+
+    <JFXDialog fx:id="dlg_showingAnswer">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>مشاهده پاسخ</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <TextArea fx:id="txa_answerContent" minWidth="450" minHeight="500" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بستن" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
 </StackPane>

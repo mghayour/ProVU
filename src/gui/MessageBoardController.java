@@ -24,9 +24,11 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.scene.control.TextField;
+import javafx.geometry.NodeOrientation;
+import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.web.HTMLEditor;
+import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import logic.*;
@@ -40,6 +42,9 @@ public class MessageBoardController extends MyController {
     
     @FXML private Pane rooter;
     @FXML private VBox messageSubjectHolder, vbx_myCourseContent, vbx_comments;
+    @FXML private TextArea txa_answerContent;
+    @FXML private JFXDialog dlg_showingAnswer;
+    
     ModelControlCollection posts, myCourses, comments;
     NameValue currentPost, currentCourse;
     
@@ -66,9 +71,15 @@ public class MessageBoardController extends MyController {
         DataBase db = DataBase.getInstance();
         User u = gui.getUi().getUser();
         
-        comments = new ModelControlCollection(vbx_comments, "model/CommentsInMessageBoard.fxml",toNameValue()); // edit comment !?
-        //comments = new ModelControlCollection(vbx_comments, "model/messageItemInMessageBoard.fxml"); // edit comment !?
-
+        comments = new ModelControlCollection(vbx_comments, "model/CommentsInMessageBoard.fxml",toNameValue()){        
+            @Override
+            public void onButtonClick (NameValue data) {
+                txa_answerContent.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
+                txa_answerContent.setText(data.getString("content"));
+                showDialog(dlg_showingAnswer);
+            }
+        }; 
+        
         posts = new ModelControlCollection(messageSubjectHolder, "model/messageItemInMessageBoard.fxml") {
             @Override
             public void onButtonClick (NameValue data) {
