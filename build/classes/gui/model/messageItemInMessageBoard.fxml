@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.* ?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+
+<HBox spacing="8" styleClass="card-item" HBox.hgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" >
+    <Label text="{title}"  styleClass="em, em-message" />
+    <JFXButton text="مشاهده" />
+    <Pane HBox.hgrow="ALWAYS" />
+    <Label text="{commentCount}" minWidth="50" styleClass="em, em-speech" />
+    <Label text="{sendTime}" minWidth="140" styleClass="em, em-date" />
+</HBox>

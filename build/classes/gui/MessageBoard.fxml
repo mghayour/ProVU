@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.* ?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+<?import gui.helper.* ?>
+
+<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="backpane"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoardController" stylesheets="gui/workspace.css">
+<BorderPane fx:id="rooter">
+    <center>
+
+        <HBox styleClass="" spacing="15" HBox.hgrow="ALWAYS" >
+            
+            
+            <VBox styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
+                <HBox spacing="25" styleClass="card-item, bg-orange, header" >
+                    <Label styleClass="head-title" text="اطلاعیه های {currentCourse.name}"  />
+                </HBox>
+                <HBox spacing="25" styleClass="card-item, header" >
+                    <JFXButton text="انتخاب درس" styleClass="green" onAction="#btn_selectCourse_click" />
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <If x="{user.type}" is="Teacher" >
+                        <JFXButton text="اطلاعیه جدید" styleClass="green" onAction="#btn_newPostDialog_click" />
+                    </If>
+                </HBox>
+                <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
+                    <content>
+                        <VBox fx:id="messageSubjectHolder" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" >
+                            
+
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </VBox>
+
+            <VBox spacing="15" HBox.hgrow="ALWAYS" >
+                
+                <VBox styleClass="card"  minHeight="100" maxHeight="400">
+                    <HBox spacing="25" styleClass="card-item, bg-blue, header" >
+                        <Label styleClass="head-title" text="{currentPost.title}"  />
+                        <JFXButton text="ویرایش" styleClass="col-white"  onAction="#btn_editPostDialog_click" />
+                        <Pane HBox.hgrow="ALWAYS" />
+                        <Label text="{currentPost.sender}" minWidth="90" styleClass="em, em-pen" />
+                        <Label text="{currentCourse.name}" minWidth="70" styleClass="em, em-books" />
+                        <Label text="{currentPost.sendTime}"  minWidth="140" styleClass="em, em-date" />
+                        <Label text="مهلت تحویل {currentPost.tahvilTime}"  minWidth="140" styleClass="em, em-date" />
+                    </HBox>
+                    <VBox styleClass="card-item" minHeight="200">
+                        <WebView fx:id="web_postContent" />
+                    </VBox>
+                </VBox>
+                
+                <VBox styleClass="card" VBox.vgrow="ALWAYS">
+                    <HBox spacing="25" styleClass="card-item, bg-red, header" >
+                        <Label styleClass="head-title" text="نظرات"  />
+                        <Pane HBox.hgrow="ALWAYS" />
+                        <JFXButton text="+" styleClass="green, txt-white, txt-med" onAction="#btn_CommentDialog_Clicked" />
+                    </HBox>
+                    <ScrollPane  HBox.hgrow="ALWAYS" fitToWidth="true"  maxHeight="500">
+                        <content>
+                            <VBox fx:id="vbx_comments" >
+
+
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                        
+                </VBox>
+                
+            </VBox>
+            
+            
+        </HBox>
+
+    </center>
+</BorderPane>
+
+
+    <JFXDialog fx:id="dlg_selectCourse">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>انتخاب درس</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <VBox fx:id="myCourseBox" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="350" >
+                                <HBox spacing="25" styleClass="card-item, bg-blue, header" >
+                                    <Label styleClass="head-title" text="درس های من"  />
+                                </HBox>
+                                <ScrollPane  HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fitToWidth="true">
+                                    <content>
+                                        <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" fx:id="vbx_myCourseContent" >
+
+
+                                        </VBox>
+                                    </content>
+                                </ScrollPane>
+                            </VBox>
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+    <JFXDialog fx:id="dlg_newPost">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>اطلاعیه جدید</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <HBox spacing="15" >
+                                <Label text="عنوان" />
+                                <JFXTextField minWidth="300" fx:id="hEdit_newPostTitle" promptText="عنوان اطلاعیه" minHeight="30" />
+                                <Pane HBox.hgrow="ALWAYS" />
+                            </HBox>
+                            <HBox spacing="5" fx:id="hbx_postType" minHeight="30" >
+                                <Label text="نوع اطلاعیه:" />
+                                <JFXRadioButton fx:id="rad_post" selected="true" text="اطلاعیه" onAction="#rdo_tamrin_Changed" >
+                                        <toggleGroup>
+                                                <ToggleGroup fx:id="rad_type" />
+                                        </toggleGroup>
+                                </JFXRadioButton>
+                                <JFXRadioButton fx:id="rad_tamrinPost" selected="false" text="تمرین" toggleGroup="$rad_type" onAction="#rdo_tamrin_Changed" />
+                                
+                                <Pane HBox.hgrow="ALWAYS" maxWidth="200" />
+                                <HBox spacing="5" fx:id="hbx_mohlateTahvil" >
+                                    <Label text="مهلت تحویل تا" />
+                                    <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_tamrin_Day" promptText="7" minHeight="30" text="7" />
+                                    <Label text="روز و" />
+                                    <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_tamrin_Hour" promptText="0" minHeight="30" text="0" />
+                                    <Label text="ساعت آینده" />
+                                </HBox>
+                            </HBox>
+                            <HTMLEditor fx:id="hEdit_newPostContent" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#btn_addNewPost_click" styleClass="green" text="افزودن" />
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+    <JFXDialog fx:id="dlg_editPost">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>ویرایش اطلاعیه</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <HBox spacing="15" >
+                                <Label text="عنوان" />
+                                <JFXTextField minWidth="300" fx:id="hEdit_editPostTitle" promptText="عنوان اطلاعیه" minHeight="30" />
+                            </HBox>
+                            <HBox spacing="5" fx:id="hbx_edit_mohlateTahvil" >
+                                <Label text="مهلت تحویل تا" />
+                                <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_edit_tamrin_Day" promptText="7" minHeight="30" text="7" />
+                                <Label text="روز و" />
+                                <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_edit_tamrin_Hour" promptText="0" minHeight="30" text="0" />
+                                <Label text="ساعت آینده" />
+                            </HBox>
+                            <HTMLEditor fx:id="hEdit_editPostContent" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#btn_saveEditedPost_click" styleClass="green" text="ثبت" />
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+    <JFXDialog fx:id="dlg_newComment">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>نظر جدید</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <HTMLEditor fx:id="hEdit_newCommentContent" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#btn_addNewComment_click" styleClass="green" text="افزودن" />
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بی خیال" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+
+    <JFXDialog fx:id="dlg_showingAnswer">
+            <JFXDialogLayout styleClass="dialog">
+                    <heading>
+                        <HBox styleClass="head" spacing="15" >
+                            <Label>مشاهده پاسخ</Label>
+                        </HBox>
+                    </heading>
+                    <body>
+                        <VBox styleClass="body" spacing="10" >
+                            <TextArea fx:id="txa_answerContent" minWidth="450" minHeight="500" />
+                        </VBox>
+                    </body>
+                    <actions>
+                        <HBox styleClass="actions" spacing="15" >
+                            <JFXButton onAction="#closeDialog" styleClass="red" text="بستن" />
+                        </HBox>
+                    </actions>
+            </JFXDialogLayout>
+    </JFXDialog>            
+
+
+</StackPane>

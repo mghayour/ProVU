@@ -1,0 +1,223 @@
+/** clock.css (place input same directory as Clock.java and ensure build script copies the file to the same location as Clock.class) */
+
+
+
+.root {
+    -fx-background-color: #fff;
+    -fx-padding: 12;
+}
+
+.material-elem {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+
+
+.tmp {
+    /*    -fx-background-image: url("button.png");
+    /*-fx-background-position: center center;
+    /*-fx-background-repeat: stretch;*/
+    /*-fx-background-color: linear-gradient(to bottom, cornsilk, burlywood);
+    /*-fx-background-color: linear-gradient(to bottom, cornsilk, wheat);*/
+    /*-fx-background-insets: 5;*/
+    /*-fx-effect: dropshadow(three-pass-box, wheat, 10, 0, 0, 0);*/
+}
+
+
+/**************  Padding  ***********************/
+.pad-0 {
+    -fx-padding: 0px;
+}
+.pad-10 {
+    -fx-padding: 10px;
+}
+
+.pad-top {
+    -fx-padding-top: 10px;
+}
+.no-pad-top {
+    -fx-padding-top: 1px;
+}
+
+.pad-5 {
+    -fx-padding: 5px;
+}
+
+.padder {
+    -fx-padding: 10 20 10 20;
+    
+}
+
+
+/**************  Card   *************************/
+
+.card {
+    -fx-background-color: linear-gradient(to bottom, #fff, #fcfcfc);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 2);
+}
+
+.card-item {
+    -fx-background-color: #fff;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #ddd;
+    -fx-padding: 5 15 5 15;
+}
+
+.card-item-top {
+    -fx-border-width: 1 0 1 0;    
+}
+
+
+/**************  Notification *************************/
+.notifications {
+    -fx-padding: 8 20 20 20;
+}
+.notifications HBox {
+    -fx-padding: 20px;
+    -fx-background-color: #F39C12;
+    /*-fx-background-color: linear-gradient(to bottom, #F39C12, #F2A529);
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 2);*/
+    
+    -fx-background-radius: 2;
+}
+
+.notifications HBox ImageView {
+    /*-fx-effect: dropshadow(three-pass-box, rgba(255,255,255,0.5), 25, 0, 0, 2);*/
+    -fx-opacity: 0.1;
+}
+.notifications HBox .caption,
+.notifications HBox .caption .text {
+    -fx-font-family: "B Nazanin";
+    
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to top, #fff, #eee);    
+}
+.notifications HBox .description,
+.notifications HBox .description .text {
+    -fx-font-family: "B Nazanin";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: #eee;
+}
+
+/**************  BG-Color  **********************/
+
+.bg-cyan { -fx-background-color: #00C0EF; }
+.bg-green { -fx-background-color: #00A65A; }
+.bg-red { -fx-background-color: #F56954; }
+.bg-orange { -fx-background-color: #F39C12; }
+.bg-blue { -fx-background-color: #1E6FA6; /*#0063A6;*/ }
+
+
+/**************  BUTTON *************************/
+.button.blue,
+.button.green,
+.button.red {
+    -fx-padding: 0.2em 0.4em;
+    -fx-font-size: 16px;
+    -fx-background-color: #DE1124;
+    -fx-pref-width: 100;
+    -fx-text-fill: WHITE;
+}
+.button.green {
+    -fx-background-color: #32C50F;
+}
+.button.blue {
+    -fx-background-color: #1E6FA6;
+}
+
+.button.col-white {
+    -fx-text-fill: WHITE;
+}
+
+.radio-button .dot {
+    -fx-fill: #5264AE;
+}
+
+
+/**************  Title & Text *******************/
+Label,
+.text{
+    -fx-font-family: "B Koodak";
+    /*-fx-font-weight: bold;*/
+    -fx-font-size: 14px;
+    -fx-font-smoothing-type: gray;
+}
+
+.title {
+    -fx-font-size: 37px;
+    -fx-font-family: "Brandish";
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to top, #aaa, #555);
+}
+
+.description {
+    -fx-font-size: 10px;
+    -fx-text-fill: #999;
+}
+
+.card-item.header Label {
+    -fx-text-fill: #fbfbfb;
+}
+.card-item.header Label.head-title .text,
+.card-item.header Label.head-title {
+    -fx-font-family: "B Nazanin";
+    -fx-font-size: 18px; 
+    -fx-font-weight: bold;
+}
+
+.txt-white { -fx-text-fill: #fbfbfb; }
+.txt-red { -fx-text-fill: #fb0000; }
+.txt-med .text{-fx-font-size: 16px;}
+.txt-big .text{-fx-font-size: 24px;}
+
+.em {
+    -fx-padding: 5 5 5 25;
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: left center;    
+}
+.em-speech { -fx-background-image : url('img/emoji/speech_balloon.png'); }
+.em-date { -fx-background-image : url('img/emoji/date.png'); }
+.em-books { -fx-background-image : url('img/emoji/books.png'); }
+.em-pen { -fx-background-image : url('img/emoji/black_nib.png'); }
+.em-message { -fx-background-image : url('img/emoji/envelope20x20.png'); }
+.em-check { -fx-background-image : url('img/emoji/white_check_mark.png'); }
+.em-pencil { -fx-background-image : url('img/emoji/pencil.png'); }
+.em-users { -fx-background-image : url('img/emoji/busts_in_silhouette.png'); }
+.em-menu { -fx-background-image : url('img/emoji/menu.png'); }
+.em-user { -fx-background-image : url('img/emoji/user.png'); }
+.em-id { -fx-background-image : url('img/emoji/id.png'); }
+
+/**************  Field  *************************/
+.text-field {
+    
+    /*
+   -fx-padding: 10px;
+   -fx-border-insets: 10px;
+   -fx-background-insets: 10px;*/
+}
+
+
+/**************** mainMenuRoot ***************************/
+
+.mainMenuRoot {
+    -fx-padding: 10px;
+}
+
+/***************** Dialog *********************************/
+.dialog {
+    -fx-padding: 10px 15px 10px 15px;
+}
+.dialog .head {
+    -fx-padding: 0px 0px 0px 8px;
+}
+.dialog .head .text {
+    -fx-font-size: 18px;
+}
+.dialog .body {
+    -fx-padding: 10px 20px 8px 20px;
+}
+.dialog .actions {
+    -fx-padding: 0px 20px 10px 20px;
+}

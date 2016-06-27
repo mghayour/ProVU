@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.* ?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.* ?>
+<?import gui.helper.* ?>
+
+<VBox>
+    <If x="{currentPost.type}" is="post" >
+        <VBox styleClass="card-item" maxHeight="150">
+            <WebText text="{content}" />
+        </VBox>
+    </If>
+    <HBox spacing="8" styleClass="card-item" >
+        <If x="{currentPost.type}" is="tamrinPost" >
+            <JFXButton text="مشاهده" styleClass="green" />
+        </If>
+        <Pane HBox.hgrow="ALWAYS" />
+        <Label text="{sender}" minWidth="90" styleClass="em, em-pen" />
+        <Label text="{sendTime}"  minWidth="140" styleClass="em, em-date" />
+    </HBox>
+</VBox>
