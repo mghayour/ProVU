@@ -20,4 +20,6 @@ public class Comment extends Message {
         super(content, sender);
     }
     
+    
+    
 }

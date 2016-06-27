@@ -17,6 +17,10 @@ import gui.helper.ModelControlCollection;
 import helper.NameValue;
 import helper.PersianDateTime;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
 import javafx.scene.web.HTMLEditor;
@@ -211,12 +215,27 @@ public class MessageBoardController extends MyController {
     @FXML HTMLEditor hEdit_newCommentContent; 
     @FXML public void btn_CommentDialog_Clicked() {
         if (currentPost!=null && currentPost.containsKey("post")) {
-            if ( ((Post)currentPost.get("post")).getType() == Post.TYPE_TAMRIN_POST ) {
+            Post p = (Post)currentPost.get("post");
+            if ( p.getType() == Post.TYPE_TAMRIN_POST ) {
+                TamrinPost tp = (TamrinPost)p;
+                
+                if(tp.getTahvilTime().before(PersianDateTime.now())) {
+                    System.out.println("TahvilTime finished.");
+                    return;
+                }
+                
                 FileChooser fileChooser = new FileChooser();
-                //FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
-                //fileChooser.getExtensionFilters().add(extFilter);
                 File file = fileChooser.showOpenDialog(gui.getStage());
-                System.out.println(file);
+                System.out.println("selected file : "+file);
+                Comment cmt = gui.getUi().addAnswer(file, tp);
+                DataBase db = DataBase.getInstance();
+                for(NameValue nv: comments.getDataList()) {
+                    int id = nv.getInt("id");
+                    if(!db.containsMessage(id))
+                        comments.remove(id);
+                }
+                comments.add(cmt);
+                
             }else{
                 hEdit_newCommentContent.setHtmlText("<html dir=\"rtl\"><head></head><body contenteditable=\"true\"></body></html>");
                 showDialog(dlg_newComment);

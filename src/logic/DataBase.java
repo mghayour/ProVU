@@ -143,6 +143,14 @@ public class DataBase implements Serializable{
         return (Post)message.get(pid);
     }
 
+    void removeComment(Comment cmt) {
+        message.remove(cmt.getId());
+    }
+
+    public boolean containsMessage(int id) {
+        return message.containsKey(id);
+    }
+
 
 
     

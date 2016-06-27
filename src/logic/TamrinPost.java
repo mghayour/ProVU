@@ -5,7 +5,9 @@
  */
 package logic;
 
+import helper.NameValue;
 import helper.PersianDateTime;
+import javafx.beans.property.SimpleStringProperty;
 
 /**
  *
@@ -19,6 +21,30 @@ public class TamrinPost extends Post {
         super(title, content, sender, sendTime);
         this.tahvilTime = tahvilTime;
     }
+    public TamrinPost(String title, String content, User sender, PersianDateTime tahvilTime) {
+        this(title, content, sender, PersianDateTime.now(), tahvilTime);
+    }
+
+    
+    @Override
+    public NameValue toNameValue() {
+        if (myNameValue==null) {
+            myNameValue = super.toNameValue();
+            myNameValue.put("tahvilTime", new SimpleStringProperty(""+tahvilTime) );
+            myNameValue.put("type", "tamrinPost" );
+        } 
+        return myNameValue;
+    }
+    
+    
+    public int getType() {
+        return TYPE_TAMRIN_POST;
+    }
+
+    public PersianDateTime getTahvilTime() {
+        return tahvilTime;
+    }
+    
 
     
     

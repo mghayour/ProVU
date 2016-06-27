@@ -11,10 +11,15 @@
 <?import gui.helper.* ?>
 
 <VBox>
-    <VBox styleClass="card-item" maxHeight="150">
-        <WebText text="{content}" />
-    </VBox>
+    <If x="{currentPost.type}" is="post" >
+        <VBox styleClass="card-item" maxHeight="150">
+            <WebText text="{content}" />
+        </VBox>
+    </If>
     <HBox spacing="8" styleClass="card-item" >
+        <If x="{currentPost.type}" is="tamrinPost" >
+            <JFXButton text="مشاهده" styleClass="green" />
+        </If>
         <Pane HBox.hgrow="ALWAYS" />
         <Label text="{sender}" minWidth="90" styleClass="em, em-pen" />
         <Label text="{sendTime}"  minWidth="140" styleClass="em, em-date" />

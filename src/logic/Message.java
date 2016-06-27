@@ -16,6 +16,9 @@ import javafx.beans.property.SimpleStringProperty;
  * @author Ghayour
  */
 public class Message extends ObjectFather implements Modelable {
+    
+    public static final int TYPE_POST=1, TYPE_TAMRIN_POST=2, TYPE_COMMENT=3;
+    
     private String content;
     private User sender;
     private PersianDateTime sendTime;
@@ -69,6 +72,10 @@ public class Message extends ObjectFather implements Modelable {
     //Getter
     public String getContent() {
         return content;
+    }
+
+    public User getSender() {
+        return sender;
     }
     
 

@@ -6,6 +6,8 @@
 package logic;
 
 import helper.PersianDateTime;
+import java.io.File;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -109,6 +111,43 @@ public class UserInterface {
         post.addComment(cmt);
         return cmt;
     }
+    
+    private void removeComment(Comment cmt, Post post) {
+        db.removeComment(cmt);
+        post.removeComment(cmt);
+    }
+
+    public TamrinPost newTamrin(String title, String content, Course course, PersianDateTime mohlateTahvil) {
+        TamrinPost tpost = new TamrinPost(title, content, user, mohlateTahvil);
+        db.addPost(tpost);
+        course.addPost(tpost);
+        return tpost;        
+    }
+
+    public Comment addAnswer(File file, TamrinPost post) {
+        try {
+            
+            // reading file
+            Scanner scanner = new Scanner(file);
+            String fileContents = "";
+            while(scanner.hasNextLine())
+                fileContents+=scanner.nextLine()+"\n";
+            
+            // remove last sends by this user
+            for (Comment cmt : post.getComments())
+                if (cmt.getSender().equals(user))
+                    removeComment(cmt, post);
+            
+            // add new submit
+            if (post != null)
+                return newComment(fileContents, post);
+
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return null;
+    }
+
 
         
 }

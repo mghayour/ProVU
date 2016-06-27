@@ -73,6 +73,11 @@ public class ModelControlCollection extends ModelControl{
         return dataList.get(id);
     }
 
+    public IdValue<NameValue> getDataList() {
+        return dataList;
+    }
+    
+
     public void clear() {
         rootChilds.clear();
         dataList.clear();

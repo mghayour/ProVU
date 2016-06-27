@@ -33,24 +33,26 @@ public class Post extends Message{
             myNameValue = super.toNameValue();
             myNameValue.put("title", new SimpleStringProperty(""+title) );
             myNameValue.put("commentCount", new SimpleStringProperty(""+comments.size()) );
-        } 
+            myNameValue.put("tahvilTime", new SimpleStringProperty("") );
+            myNameValue.put("type", "post" );
+        }
         return myNameValue;
     }
     public static NameValue toEmptyNameValue () {
         NameValue res = Message.toEmptyNameValue();
         res.put("title", "");
         res.put("commentCount", "");
+        res.put("tahvilTime", "");
+        res.put("type", "");
         return res;
     }
 
     // Setter
-    
     public void setTitle(String title) {
         this.title = title;
         if (myNameValue != null)
             myNameValue.getStringProperty("title").set(title);
     }
-
     public void addComment(Comment cmt) {
         comments.add(cmt);
         myNameValue.getStringProperty("commentCount").set(""+comments.size());
@@ -60,11 +62,16 @@ public class Post extends Message{
     public List<Comment> getComments() {
         return comments;
     }
-
     public String getTitle() {
         return title;
     }
+    public int getType() {
+        return TYPE_POST;
+    }
 
+    void removeComment(Comment cmt) {
+        comments.remove(cmt.getId());
+    }
     
     
     
