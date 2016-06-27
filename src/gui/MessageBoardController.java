@@ -167,6 +167,7 @@ public class MessageBoardController extends MyController {
         if (rad_tamrinPost.isSelected()) {
             long currentTimestamp = PersianDateTime.now().getTimeStamp();
             long tahvilTimestamp = currentTimestamp + Integer.parseInt(txt_tamrin_Hour.getText())*3600000 + Integer.parseInt(txt_tamrin_Day.getText())*86400000;
+            tahvilTimestamp+=300000; // 5min
             PersianDateTime mohlateTahvil=new PersianDateTime( tahvilTimestamp );
             post = ui.newTamrin(title, content, c, mohlateTahvil);
         } else {
@@ -180,13 +181,22 @@ public class MessageBoardController extends MyController {
     // Edit post
     @FXML JFXDialog dlg_editPost;
     @FXML HTMLEditor hEdit_editPostContent; 
-    @FXML JFXTextField hEdit_editPostTitle; 
-    
+    @FXML JFXTextField hEdit_editPostTitle, txt_edit_tamrin_Day, txt_edit_tamrin_Hour; 
+    @FXML HBox hbx_edit_mohlateTahvil;
     @FXML void btn_editPostDialog_click() {
         if (currentCourse.containsKey("course")) {
             Post p = (Post)currentPost.get("post");
             hEdit_editPostContent.setHtmlText(p.getContent());
             hEdit_editPostTitle.setText(p.getTitle());
+            if (p.getType()==Post.TYPE_TAMRIN_POST) {
+                hbx_edit_mohlateTahvil.setVisible(true);
+                TamrinPost tp = (TamrinPost)p;
+                long tobeTime = tp.getTahvilTime().getTimeStamp() - PersianDateTime.now().getTimeStamp();
+                txt_edit_tamrin_Day.setText(""+(tobeTime/86400000l));
+                txt_edit_tamrin_Hour.setText(""+((tobeTime%86400000l)/3600000l));
+            } else {
+                hbx_edit_mohlateTahvil.setVisible(false);
+            }
             showDialog(dlg_editPost);
         }
     }
@@ -196,7 +206,16 @@ public class MessageBoardController extends MyController {
         String content = hEdit_editPostContent.getHtmlText();
         String title = hEdit_editPostTitle.getText();
         gui.getUi().editPost(title, content, p);
-        
+
+        if (p.getType()==Post.TYPE_TAMRIN_POST) {
+            long currentTimestamp = PersianDateTime.now().getTimeStamp();
+            long tahvilTimestamp = currentTimestamp + Integer.parseInt(txt_edit_tamrin_Hour.getText())*3600000 + Integer.parseInt(txt_edit_tamrin_Day.getText())*86400000;
+            tahvilTimestamp+=300000; // 5min
+            PersianDateTime mohlateTahvil=new PersianDateTime( tahvilTimestamp );
+            TamrinPost tp = (TamrinPost)p;
+            tp.setTahvilTime(mohlateTahvil);
+        }
+
         // show post details
         currentPost.bind(p.toNameValue());
         

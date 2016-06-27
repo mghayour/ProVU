@@ -44,8 +44,14 @@ public class TamrinPost extends Post {
     public PersianDateTime getTahvilTime() {
         return tahvilTime;
     }
-    
 
+    public void setTahvilTime(PersianDateTime tahvilTime) {
+        this.tahvilTime = tahvilTime;
+        if (myNameValue!=null)
+            myNameValue.getStringProperty("tahvilTime").set(""+tahvilTime);
+    }
+    
+    
     
     
 }

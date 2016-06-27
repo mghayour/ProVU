@@ -172,6 +172,13 @@
                                 <Label text="عنوان" />
                                 <JFXTextField minWidth="300" fx:id="hEdit_editPostTitle" promptText="عنوان اطلاعیه" minHeight="30" />
                             </HBox>
+                            <HBox spacing="5" fx:id="hbx_edit_mohlateTahvil" >
+                                <Label text="مهلت تحویل تا" />
+                                <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_edit_tamrin_Day" promptText="7" minHeight="30" text="7" />
+                                <Label text="روز و" />
+                                <JFXTextField minWidth="30" maxWidth="50" fx:id="txt_edit_tamrin_Hour" promptText="0" minHeight="30" text="0" />
+                                <Label text="ساعت آینده" />
+                            </HBox>
                             <HTMLEditor fx:id="hEdit_editPostContent" />
                         </VBox>
                     </body>
