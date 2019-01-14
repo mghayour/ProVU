@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="100b0eaa-d886-4f35-aea2-7b60b129d9ea" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/+1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/1234.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/8ball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/abcd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/accept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/aerial_tramway.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/airplane.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/alarm_clock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/alien.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/angel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/anger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/angry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/anguished.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/apple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/aquarius.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/aries.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_double_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_double_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_forward.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_heading_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_lower_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_lower_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_right_hook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_up_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_up_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_upper_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrow_upper_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrows_clockwise.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/arrows_counterclockwise.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/art.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/articulated_lorry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/astonished.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/atm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/baby.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/baby_bottle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/baby_chick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/baby_symbol.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/baggage_claim.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/balloon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bamboo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/banana.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bangbang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bar_chart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/barber.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/basketball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bath.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bathtub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/battery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/beer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/beers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/beetle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bento.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bicyclist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bike.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bikini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bird.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_joker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_medium_small_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_medium_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_small_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/black_square_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/blossom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/blowfish.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/blue_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/blue_car.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/blue_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/blush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/boar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/boat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bookmark_tabs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/boom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/boot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bowling.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bowtie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/boy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bride_with_veil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bridge_at_night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/briefcase.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/broken_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bullettrain_front.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bullettrain_side.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/busstop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/bust_in_silhouette.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/busts_in_silhouette.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cactus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/calling.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/camel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cancer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/candy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/capital_abcd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/capricorn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/car.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/card_index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/carousel_horse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cat2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/chart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/chart_with_upwards_trend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/checkered_flag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cherries.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cherry_blossom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/chestnut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/children_crossing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/chocolate_bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/christmas_tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/church.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cinema.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/circus_tent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/city_sunrise.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clapper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clipboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock1030.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock1130.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock1230.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock130.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock230.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock330.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock430.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock730.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock830.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clock930.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/closed_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/closed_lock_with_key.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/closed_umbrella.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cloud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/clubs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cocktail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/coffee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cold_sweat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/collision.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/computer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/confetti_ball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/confounded.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/congratulations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/construction.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/convenience_store.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cookie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cool.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/copyright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/couple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/couplekiss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cow2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/credit_card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/crocodile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/crossed_flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/crown.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/crying_cat_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/crystal_ball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cupid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/curly_loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/currency_exchange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/custard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/customs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/cyclone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dancer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dancers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dango.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/de.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/department_store.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/diamond_shape_with_a_dot_inside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/diamonds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/disappointed_relieved.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dizzy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dizzy_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dog2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dolls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/donut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/door.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/doughnut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dragon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dragon_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/droplet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/dvd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/e-mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ear_of_rice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/earth_africa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/earth_americas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/earth_asia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/egg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/eggplant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/eight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/eight_spoked_asterisk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/electric_plug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/es.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/euro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/european_castle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/european_post_office.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/evergreen_tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/exclamation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/expressionless.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/eyeglasses.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/facepunch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/factory.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fallen_leaf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/family.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fast_forward.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fax.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fearful.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/feelsgood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/feet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ferris_wheel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/file_folder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fire_engine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fireworks.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/first_quarter_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/first_quarter_moon_with_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fish.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fish_cake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fishing_pole_and_fish.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/five.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/flashlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/floppy_disk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/flushed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/foggy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/football.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fountain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/four.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/four_leaf_clover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/free.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fried_shrimp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/frog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/frowning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/fuelpump.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/full_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/full_moon_with_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/game_die.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/gb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/gem.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ghost.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/gift.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/gift_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/girl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/globe_with_meridians.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/goat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/goberserk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/golf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/grapes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/green_apple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/green_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/green_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/grey_exclamation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/grey_question.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/grimacing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/grin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/grinning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/guardsman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/guitar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/gun.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/haircut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hamburger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hammer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hamster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/handbag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hankey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hatched_chick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/headphones.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hear_no_evil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heart_decoration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heart_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heartpulse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hearts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_check_mark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_division_sign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_dollar_sign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_exclamation_mark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_minus_sign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_multiplication_x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/heavy_plus_sign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/helicopter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/herb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/high_brightness.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/high_heel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hocho.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/honey_pot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/honeybee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/horse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/horse_racing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hospital.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hotel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hotsprings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hourglass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/house.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/house_with_garden.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hurtrealbad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/hushed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ice_cream.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/icecream.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/id.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ideograph_advantage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/imp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/inbox_tray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/incoming_envelope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/information_desk_person.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/information_source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/innocent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/interrobang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/it.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/izakaya_lantern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/japan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/japanese_castle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/japanese_goblin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/japanese_ogre.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/joy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/joy_cat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/jp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/key.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/keycap_ten.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kimono.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kiss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kissing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kissing_cat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kissing_closed_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kissing_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kissing_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kissing_smiling_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/koko.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/kr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/large_blue_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/large_blue_diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/large_orange_diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/last_quarter_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/last_quarter_moon_with_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/laughing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/left_luggage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/left_right_arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/leftwards_arrow_with_hook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/leo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/leopard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/libra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/link.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/lips.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/lipstick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/lock_with_ink_pen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/lollipop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/loudspeaker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/love_hotel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/love_letter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/low_brightness.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mag_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mahjong.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mailbox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mailbox_with_no_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/man_with_gua_pi_mao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/man_with_turban.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mans_shoe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/maple_leaf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/massage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/meat_on_bone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/melon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/memo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mens.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/metal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/metro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/microphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/microscope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/milky_way.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/minibus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/minidisc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mobile_phone_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/money_with_wings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/moneybag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/monkey_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/monorail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mortar_board.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mountain_bicyclist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mountain_cableway.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mountain_railway.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mouse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mouse2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/movie_camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mushroom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/musical_keyboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/musical_note.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/musical_score.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/mute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/nail_care.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/name_badge.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/neckbeard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/necktie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/negative_squared_cross_mark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/neutral_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/new_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/new_moon_with_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/newspaper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ng.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/nine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_bell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_bicycles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_entry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_entry_sign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_good.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_mouth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/no_pedestrians.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/non-potable_water.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/nose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/notebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/notebook_with_decorative_cover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/notes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/o.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ocean.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/octocat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/octopus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/office.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ok.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ok_hand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ok_woman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/older_woman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/oncoming_automobile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/oncoming_bus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/oncoming_police_car.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/oncoming_taxi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/one.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/open_hands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/open_mouth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/outbox_tray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/package.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/page_facing_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/page_with_curl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/palm_tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/panda_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/paperclip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/parking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/part_alternation_mark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/partly_sunny.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/passport_control.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/paw_prints.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/peach.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pencil2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/penguin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pensive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/persevere.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/person_frowning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/person_with_pouting_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/phone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pig.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pig2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pig_nose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pisces.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pizza.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/plus1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/point_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/point_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/point_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/point_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/point_up_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/police_car.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/poodle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/poop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/post_office.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/postal_horn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/potable_water.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pouch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/poultry_leg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pound.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/princess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/punch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/purple_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/purse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/pushpin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/put_litter_in_its_place.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/question.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rabbit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/racehorse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/radio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rage1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rage2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rage3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rage4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/raised_hand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/raised_hands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ramen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/recycle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/red_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/registered.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/relaxed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/repeat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/repeat_one.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/restroom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/revolving_hearts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rewind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ribbon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rice_ball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rice_cracker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rice_scene.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ring.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rocket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/roller_coaster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rooster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rotating_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/round_pushpin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rowboat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ru.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/rugby_football.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/runner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/running.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/running_shirt_with_sash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sagittarius.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sailboat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sandal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/santa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/satellite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/satisfied.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/school.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/school_satchel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/scissors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/scorpius.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/scream.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/scream_cat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/scroll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/seat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/secret.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/see_no_evil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/seedling.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/seven.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shaved_ice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sheep.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ship.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shipit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shirt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shoe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/shower.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/six.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/six_pointed_star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/skull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sleeping.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/small_blue_diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/small_orange_diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/small_red_triangle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/small_red_triangle_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/smile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/smile_cat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/smiley.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/smoking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/snail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/snake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/snowboarder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/snowflake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/snowman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sob.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/soccer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/soon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sound.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/space_invader.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/spades.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sparkler.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sparkling_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/speak_no_evil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/speaker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/speedboat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/squirrel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/star2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/stars.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/station.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/steam_locomotive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/stew.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/straight_ruler.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/strawberry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/stuck_out_tongue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/stuck_out_tongue_closed_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/stuck_out_tongue_winking_eye.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sun_with_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sunglasses.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sunny.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sunrise.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sunrise_over_mountains.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/surfer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sushi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/suspect.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/suspension_railway.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sweat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sweat_drops.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sweat_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/sweet_potato.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/swimmer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/symbols.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/syringe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tanabata_tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tangerine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/taurus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/taxi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/telephone_receiver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/telescope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/thought_balloon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/three.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/thumbsdown.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/thumbsup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/ticket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tiger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tiger2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tired_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/toilet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tokyo_tower.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tomato.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tongue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tophat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tractor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/traffic_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/train.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/train2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/triangular_flag_on_post.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/trident.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/triumph.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/trolleybus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/trollface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/trophy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tropical_drink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tropical_fish.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/truck.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/trumpet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tshirt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tulip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/tv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/twisted_rightwards_arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/two.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/two_hearts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/two_men_holding_hands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u5408.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u55b6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u6307.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u6708.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u6709.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u6e80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u7121.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u7533.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u7981.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/u7a7a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/uk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/umbrella.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/unamused.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/underage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/unlock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/v.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/vertical_traffic_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/vhs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/vibration_mode.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/video_camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/video_game.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/violin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/vs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/walking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/waning_crescent_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/watch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/water_buffalo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wave.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wavy_dash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/waxing_crescent_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/waxing_gibbous_moon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/weary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wedding.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/whale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/whale2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wheelchair.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/white_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/white_flower.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/white_large_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/white_medium_small_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/white_medium_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/white_square_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wind_chime.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wolf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/woman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/womans_clothes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/womans_hat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/womens.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/worried.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/wrench.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/yellow_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/yen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/yum.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/zap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/zero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/gui/img/emoji/REF/zzz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/private.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/profiler/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/retriever/catalog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/project.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase.data" afterPath="$PROJECT_DIR$/DataBase.data" />
+    </list>
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="ProVU.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/provu/ProVU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#497#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/Login.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/GuiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#3736#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="520" />
+    <option name="width" value="780" />
+    <option name="height" value="830" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ProVU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProVU" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProVU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProVU" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProVU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProVU" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProVU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProVU" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="provu" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="100b0eaa-d886-4f35-aea2-7b60b129d9ea" name="Default" comment="" />
+      <created>1520831473105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520831473105</updated>
+      <workItem from="1520831479413" duration="52000" />
+      <workItem from="1520831974007" duration="297000" />
+      <workItem from="1523084587769" duration="547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="896000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/provu/ProVU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/GuiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/provu/ProVU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProVU.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/GuiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/provu/ProVU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ProVU</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
